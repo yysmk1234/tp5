@@ -1,0 +1,4049 @@
+[ 2017-01-23T13:54:20+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.379022s][吞吐率：2.64req/s] [内存消耗：1,402.38kb] [文件加载：36]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:46:04+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.128205s][吞吐率：7.80req/s] [内存消耗：1,690.38kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T16:46:14+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.045601s][吞吐率：21.93req/s] [内存消耗：1,261.84kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:47:33+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,262.00kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:48:20+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,262.00kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:48:20+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,262.00kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:48:31+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,262.03kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:50:13+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,262.03kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:50:13+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,262.03kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:52:39+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/hello.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/hello.html [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：1,461.11kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:52:40+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.039601s][吞吐率：25.25req/s] [内存消耗：1,260.70kb] [文件加载：33]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->reload[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T16:52:40+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D
+[ log ] localhost/thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,296.52kb] [文件加载：36]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => '{:url(\'demo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'hello' => 'setattr\')}',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:00:15+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D
+[ log ] localhost/thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,296.69kb] [文件加载：36]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => '{:url(\'demo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'hello' => 'setattr\')}',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:00:22+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,260.70kb] [文件加载：33]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->reload[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:00:22+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D
+[ log ] localhost/thinkphp/public/index.php/demo/hello/%7B:url('demo/hello/setattr')%7D [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,296.52kb] [文件加载：36]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => '{:url(\'demo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'hello' => 'setattr\')}',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:01:34+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,530.41kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:01:45+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,260.74kb] [文件加载：33]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->reload[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:01:45+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,530.72kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:03:31+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,319.27kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->reload[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:03:31+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,531.02kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:03:35+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,319.27kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->reload[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-01-23T17:03:35+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,531.02kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:24:14+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.059004s][吞吐率：16.95req/s] [内存消耗：1,690.71kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:03+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,690.90kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:16+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,539.30kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:19+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,531.15kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:26+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,531.15kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:26+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,539.29kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:30+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,531.15kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:25:57+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,699.05kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:26:00+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,531.08kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:26:01+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,539.31kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:26:04+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,531.08kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:26:05+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,539.31kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:26:08+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,531.08kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:29:42+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：1,702.81kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:29:45+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：1,531.07kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:29:50+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.128008s][吞吐率：7.81req/s] [内存消耗：1,470.50kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS1') [ RunTime:0.081004s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:29:53+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.050002s][吞吐率：20.00req/s] [内存消耗：1,531.41kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:30:03+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addterminal.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addterminal.html [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：1,470.52kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addterminal',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'terminal_type' => 'PC2',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addTerminal[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('terminal_type','PC2') [ RunTime:0.038002s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T17:30:06+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,531.76kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:00:49+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,032.05kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:01:43+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html [运行时间：0.034001s][吞吐率：29.41req/s] [内存消耗：1,032.06kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:01:47+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,032.06kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:01:48+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,032.06kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:01:51+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/reload.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/reload.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,032.06kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'reload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'set',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:01:57+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,032.14kb] [文件加载：30]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '=', expecting ',' or ';'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:65]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:24+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,532.77kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:33+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：1,471.94kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE name = 'IOS' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.083004s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:36+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,533.15kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:36+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,533.42kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:41+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,471.94kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE name = 'IOS' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.041002s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:06:44+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,533.74kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:07:48+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,510.61kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS' [ RunTime:0.011001s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:07:53+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,510.61kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS' [ RunTime:0.001000s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:07:55+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,510.61kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS' [ RunTime:0.000000s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:07:59+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,510.61kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS' [ RunTime:0.001000s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:08:10+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,533.74kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:08:18+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,510.61kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS' [ RunTime:0.000000s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:08:50+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：1,471.98kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS2',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS2' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS2') [ RunTime:0.036002s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:08:54+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,534.13kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:10:49+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,699.02kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:10:53+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.055004s][吞吐率：18.18req/s] [内存消耗：1,510.70kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS1' [ RunTime:0.000000s ]
+[ error ] [2]Attempt to assign property of non-object[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:15:11+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,511.22kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS1' [ RunTime:0.001000s ]
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:15:18+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,534.79kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:15:21+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,511.23kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT value FROM attr WHERE value = 'IOS1' [ RunTime:0.000000s ]
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:16:42+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,534.79kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:16:44+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,512.46kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM attr WHERE value = 'IOS1' [ RunTime:0.001000s ]
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:17:02+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,699.43kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:17:05+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,512.46kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS1',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM attr WHERE value = 'IOS1' [ RunTime:0.001000s ]
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:19:27+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,534.94kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:19:34+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.130007s][吞吐率：7.69req/s] [内存消耗：1,472.74kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(*) FROM attr WHERE value = 'IOS' [ RunTime:0.028001s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.059004s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:19:36+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,472.74kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(*) FROM attr WHERE value = 'IOS' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.023001s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:19:43+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,535.66kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:20:19+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,511.30kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(*) FROM attr WHERE value = 'IOS' [ RunTime:0.000000s ]
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:68]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:21:02+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,308.63kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:66]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:21:09+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,308.63kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS3',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:66]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:21:15+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,308.67kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS44',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:66]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:22:56+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,308.65kb] [文件加载：37]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS44',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant sta - assumed 'sta'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:66]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:24:47+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,535.27kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:24:51+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.100005s][吞吐率：10.00req/s] [内存消耗：1,472.35kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(*) FROM attr WHERE value = 'IOS' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.046002s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:24:55+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,535.59kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:26:15+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,535.59kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:26:18+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：1,472.37kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IOS' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] insert into attr ( name ,value ) values ('game_type','IOS') [ RunTime:0.053003s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:26:28+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,536.06kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.011001s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:26:32+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,473.80kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IOS' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:36+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.103006s][吞吐率：9.71req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '24',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '24' [ RunTime:0.074004s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:37+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.182010s][吞吐率：5.49req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '19',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '19' [ RunTime:0.131007s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:37+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.172010s][吞吐率：5.81req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '23' [ RunTime:0.114006s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:37+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.178011s][吞吐率：5.62req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '20',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '20' [ RunTime:0.132007s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:37+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.172010s][吞吐率：5.81req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '22',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '22' [ RunTime:0.120007s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:37+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/deleteattr.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/deleteattr.html [运行时间：0.170010s][吞吐率：5.88req/s] [内存消耗：1,471.68kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'deleteattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '5',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'id' => '25',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->deleteAttr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] delete from attr where id = '25' [ RunTime:0.124007s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:27:40+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,533.94kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:21+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,474.04kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IOS' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:25+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,474.04kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS2',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IOS2' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:30+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,474.04kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IOS3',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IOS3' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:34+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,534.18kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:43+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,474.04kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'ios3',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'ios3' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:30:48+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,534.18kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:33:21+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,474.06kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'iioos',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'iioos' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:33:25+08:00 ] ::1 ::1 GET /thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss
+[ log ] localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：1,534.18kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'sss',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\thinkphp\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:34:36+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：1,511.54kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IIIOSS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IIIOSS' [ RunTime:0.000000s ]
+[ error ] [8]Use of undefined constant name - assumed 'name'[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:69]
+
+---------------------------------------------------------------
+[ 2017-01-23T18:35:06+08:00 ] ::1 ::1 POST /thinkphp/public/index.php/demo/hello/addgametype.html
+[ log ] localhost/thinkphp/public/index.php/demo/hello/addgametype.html [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,511.33kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgametype',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/thinkphp/public/index.php/demo/hello/setattr.html?game_type=sss',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'IIIOSS',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGametype[ C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT count(name) FROM attr WHERE value = 'IIIOSS' [ RunTime:0.001000s ]
+[ error ] [8]未定义数组索引: name[C:\xampp\htdocs\thinkphp\application\demo\controller\Hello.php:69]
+
+---------------------------------------------------------------

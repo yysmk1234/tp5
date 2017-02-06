@@ -1,0 +1,71 @@
+//创建项目表
+CREATE TABLE project (
+    project_id INT(10)PRIMARY KEY AUTO_INCREMENT,
+    project_name  VARCHAR(32)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建分组表
+CREATE TABLE group_ (
+    group_id INT(10)PRIMARY KEY AUTO_INCREMENT,
+    group_name  VARCHAR(32)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建项目测试关联表
+CREATE TABLE project_test (
+    id INT(10) PRIMARY KEY AUTO_INCREMENT,
+    project_id INT(10),
+    test_id INT(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建项目分组关联表
+CREATE TABLE project_group (
+    id INT(10) PRIMARY KEY AUTO_INCREMENT,
+    project_id INT(10),
+    group_id INT(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建分组测试关联表
+CREATE TABLE group_test(
+    id	INT(10) PRIMARY KEY AUTO_INCREMENT,
+    group_id INT(10),
+    test_id INT(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建测试表
+CREATE TABLE test(
+    test_id INT(10) PRIMARY KEY AUTO_INCREMENT,
+    u_id		INT(10),
+    g_id		INT(10),
+    status_		INT(10),
+	test_name		VARCHAR(32),
+    data_name		VARCHAR(32),
+    tag_name		VARCHAR(32),
+    data_tag_name	VARCHAR(32)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建被试表
+CREATE TABLE tester (
+    u_id		INT(10) PRIMARY KEY AUTO_INCREMENT,
+    u_name		VARCHAR(64),
+	u_sex_id		INT(1),
+	u_age_id		INT(10),
+	u_year_id		INT(10),
+	u_experience_id		INT(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建属性表
+CREATE TABLE attr(
+	id			INT(10) PRIMARY KEY AUTO_INCREMENT,
+	name		VARCHAR(32),
+	value		VARCHAR(64),
+	pos			TINYINT(3)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//创建游戏表
+CREATE TABLE game (
+    g_id		INT(10) PRIMARY KEY AUTO_INCREMENT,
+	g_type		VARCHAR(32),
+	terminal_type_id		INT(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+//
