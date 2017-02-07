@@ -7,6 +7,9 @@ use think\Db;
 
 class Hello extends Controller
 {
+    public $res_arr = array(
+    'sta'=>"",
+    );
     public function hello()                                                             //欢迎页面
     {
         return $this->fetch();
@@ -56,9 +59,42 @@ class Hello extends Controller
             return $uuid;
         }
     }
+    //添加字段
+    public function addAttr(Request $request){
+
+        $res = array_keys($request->post())[0];
+        $name = '';
+        switch ($res){
+            case 'game_type': $name = 'game_type';
+                break;
+            case 'terminal_type': $name = 'terminal_type';
+                break;
+            case 'sex': $name = 'sex_type';
+                break;
+            case 'age_group': $name = 'age_type';
+                break;
+            case 'game_experience': $name = 'game_experience';
+                break;
+            case 'game_year': $name = 'game_year';
+                break;
+        }
+
+        $value = array_values($request->post())[0];
+        $check = Db::query("select count(name) as num from attr where value = '$value'");
+       // print_r($check[0]['num']);
+        if ($check[0]['num'] > 0){
+            $res_arr['sta'] = 2;
+            $data = json_encode($res_arr);
+            print_r($data);
+        }
+        //$result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
+
+    }
+
+
     public function addGametype(Request $request){                     //添加游戏类型
         $value = $request->post('game_type');
-        $name = "game_type";
+        $name = "";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){
             return "提交成功o(￣▽￣)d";
@@ -66,14 +102,14 @@ class Hello extends Controller
     }
     public function addTerminal(Request $request){                    //添加游戏终端类型
         $value = $request->post('terminal_type');
-        $name = "terminal_type";
+        $name = "";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){
             return "提交成功o(￣▽￣)d";
         }
     }
     public function addSexType(Request $request){                    //添加性别类型
-        $value = $request->post('sex');
+        $value = $request->post('');
         $name = "sex_type";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){
@@ -81,7 +117,7 @@ class Hello extends Controller
         }
     }
     public function addAgeType(Request $request){                    //添加年龄范围
-        $value = $request->post('age_group');
+        $value = $request->post('');
         $name = "age_type";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){
@@ -89,7 +125,7 @@ class Hello extends Controller
         }
     }
     public function addGamee(Request $request){                    //添加游戏经历
-        $value = $request->post('game_experience');
+        $value = $request->post('');
         $name = "game_experience";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){
@@ -97,7 +133,7 @@ class Hello extends Controller
         }
     }
     public function addGameYear(Request $request){                    //添加游戏年限
-        $value = $request->post('game_year');
+        $value = $request->post('');
         $name = "game_year";
         $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
         if($result){

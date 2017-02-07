@@ -135,38 +135,40 @@
             $('.btn-primary').click(function(){
               var val =   $(this).parents('form').find('input[type="text"]').val();               //获取输入框里的值
               var flag =  $(this).parents('form').find('input[type="text"]').attr('id');          //获取输入框的id值用以判断
-                var url = '';
+//                var url = '';
                 var data = $(this).parents('form').serialize();
 //                alert(flag);
-                switch (flag){
-                    case 'game_t': url = "{:url('demo/hello/addgametype')}";
-                        break;
-                    case 'terminal_t': url = "{:url('demo/hello/addterminal')}";
-                        break;
-                    case 'sex_t': url = "{:url('demo/hello/addsextype')}";
-                        break;
-                    case 'age_t': url = "{:url('demo/hello/addagetype')}";
-                        break;
-                    case 'game_e':url = "{:url('demo/hello/addgamee')}";
-                        break;
-                    case 'game_y':url = "{:url('demo/hello/addgameyear')}";
-                        break;
-                }
+//                switch (flag){
+//                    case 'game_t': url = "{:url('demo/hello/addgametype')}";
+//                        break;
+//                    case 'terminal_t': url = "{:url('demo/hello/addterminal')}";
+//                        break;
+//                    case 'sex_t': url = "{:url('demo/hello/addsextype')}";
+//                        break;
+//                    case 'age_t': url = "{:url('demo/hello/addagetype')}";
+//                        break;
+//                    case 'game_e':url = "{:url('demo/hello/addgamee')}";
+//                        break;
+//                    case 'game_y':url = "{:url('demo/hello/addgameyear')}";
+//                        break;
+//                }
                if (val == ''){
                    tips.error("请输入数据(～￣▽￣)～");
                }else {
                    $.ajax({
                        type:"POST",
-                       url: url,
+                       url: "{:url('demo/hello/addattr')}",
                        data: data,
+                       dataType:"json",
                        success:function(data){
-                           tips.success(data);
-                          setTimeout(function(){
-                              window.location.reload();
-                          },3000)
+                           console.log(data.sta);    //sta的值若为1则添加成功，若为2，则数据有重复，添加失败，若为3则直接失败
+                           if (data.sta)
+//                          setTimeout(function(){
+//                              window.location.reload();
+//                          },3000)
                        },
                        error:function(){
-                           tips.error("删除失败(＞﹏＜)");
+                           tips.error("提交失败(＞﹏＜)");
                        }
                    })
                }
