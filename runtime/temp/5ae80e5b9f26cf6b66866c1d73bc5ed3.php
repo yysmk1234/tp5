@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\setattr.html";i:1486463389;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\setattr.html";i:1486628191;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,24 +135,8 @@
     (function(){
             $('.btn-primary').click(function(){
               var val =   $(this).parents('form').find('input[type="text"]').val();               //获取输入框里的值
-              var flag =  $(this).parents('form').find('input[type="text"]').attr('id');          //获取输入框的id值用以判断
-//                var url = '';
                 var data = $(this).parents('form').serialize();
-//                alert(flag);
-//                switch (flag){
-//                    case 'game_t': url = "<?php echo url('demo/hello/addgametype'); ?>";
-//                        break;
-//                    case 'terminal_t': url = "<?php echo url('demo/hello/addterminal'); ?>";
-//                        break;
-//                    case 'sex_t': url = "<?php echo url('demo/hello/addsextype'); ?>";
-//                        break;
-//                    case 'age_t': url = "<?php echo url('demo/hello/addagetype'); ?>";
-//                        break;
-//                    case 'game_e':url = "<?php echo url('demo/hello/addgamee'); ?>";
-//                        break;
-//                    case 'game_y':url = "<?php echo url('demo/hello/addgameyear'); ?>";
-//                        break;
-//                }
+
                if (val == ''){
                    tips.error("请输入数据(～￣▽￣)～");
                }else {
@@ -162,10 +146,16 @@
                        data: data,
                        dataType:"json",
                        success:function(data){
-                           console.log(data.sta);
-//                          setTimeout(function(){
-//                              window.location.reload();
-//                          },3000)
+                           console.log(data.sta);    //sta的值若为1则添加成功，若为2，则数据有重复，添加失败，若为3则直接失败
+                           if (data.sta == 1){
+                               tips.success("提交成功o(￣▽￣)d");
+                               setTimeout(function(){
+                                   window.location.reload();
+                               },3000)
+                           }else if (data.sta == 2){
+                               tips.error("数据重复(＞﹏＜)");
+                           }
+
                        },
                        error:function(){
                            tips.error("提交失败(＞﹏＜)");
@@ -204,6 +194,11 @@
             })
         })
 
+        $('.btn-info').click(function () {
+            window.location.assign("<?php echo url('demo/hello/upload'); ?>");
+        })
+
+        
     })()
 </script>
 </html>

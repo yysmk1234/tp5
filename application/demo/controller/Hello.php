@@ -14,6 +14,8 @@ class Hello extends Controller
     {
         return $this->fetch();
     }
+
+
     public function setattr(){                                                          //设置页面（这个不声明不行啊，要不页面不显示，哎……
         //给页面上添加游戏类型的变量
         $game_type = Db::query('select id,value from attr where name = "game_type"');
@@ -35,6 +37,33 @@ class Hello extends Controller
         $this->assign('game_year',$game_year);
         return $this->fetch();
     }
+
+    //文件上传页面
+    public function upload(){
+        //给页面上添加游戏类型的变量
+        $game_type = Db::query('select id,value from attr where name = "game_type"');
+        $this->assign('game_type',$game_type);
+        //终端类型
+        $terminal_type = Db::query('select id,value from attr where name = "terminal_type"');
+        $this->assign('terminal_type',$terminal_type);
+        //性别
+        $sex = Db::query('select id,value from attr where name = "sex_type"');
+        $this->assign('sex',$sex);
+        //年龄
+        $age_group = Db::query('select id,value from attr where name = "age_type"');
+        $this->assign('age_group',$age_group);
+        //游戏经历
+        $game_experience = Db::query('select id,value from attr where name = "game_experience"');
+        $this->assign('game_experience',$game_experience);
+        //游戏年限
+        $game_year = Db::query('select id,value from attr where name = "game_year"');
+        $this->assign('game_year',$game_year);
+        return $this->fetch();
+    }
+
+
+
+
     public function reload(Request $request){
             if ($request->post('name')=='set'){                                         //根据按钮的属性页面重定向
                 echo "http://localhost/tp5/public/index.php/demo/hello/setattr.html";
@@ -85,61 +114,20 @@ class Hello extends Controller
         if ($check[0]['num'] > 0){
             $res_arr['sta'] = 2;
             $data = json_encode($res_arr);
-            print_r($data);
+            echo $data;
+        }else{
+            $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
+            if ($result){
+                $res_arr['sta'] = 1;
+                $data = json_encode($res_arr);
+                echo $data;
+            }
         }
-        //$result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
 
     }
 
 
-    public function addGametype(Request $request){                     //添加游戏类型
-        $value = $request->post('game_type');
-        $name = "";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
-    public function addTerminal(Request $request){                    //添加游戏终端类型
-        $value = $request->post('terminal_type');
-        $name = "";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
-    public function addSexType(Request $request){                    //添加性别类型
-        $value = $request->post('');
-        $name = "sex_type";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
-    public function addAgeType(Request $request){                    //添加年龄范围
-        $value = $request->post('');
-        $name = "age_type";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
-    public function addGamee(Request $request){                    //添加游戏经历
-        $value = $request->post('');
-        $name = "game_experience";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
-    public function addGameYear(Request $request){                    //添加游戏年限
-        $value = $request->post('');
-        $name = "game_year";
-        $result = Db::execute("insert into attr ( name ,value ) values ('$name','$value')");
-        if($result){
-            return "提交成功o(￣▽￣)d";
-        }
-    }
+//删除字段
     public function deleteAttr(Request $request){
         $id = $request->post('id');
         $result = Db::execute("delete from attr where id = '$id'");

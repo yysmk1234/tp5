@@ -3090,3 +3090,50 @@
 [ sql ] [ SQL ] select count(name) as num from attr where value = 'IOS' [ RunTime:0.001000s ]
 
 ---------------------------------------------------------------
+[ 2017-02-07T18:41:10+08:00 ] ::1 ::1 GET /tp5/public/index.php/demo/hello/setattr.html?game_type=ios
+[ log ] localhost/tp5/public/index.php/demo/hello/setattr.html?game_type=ios [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：1,700.45kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'setattr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.89 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/public/index.php/demo/hello/setattr.html?game_type=ios',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320',
+)
+[ info ] [ PARAM ] array (
+  'game_type' => 'ios',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->setattr[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5\public/../application/demo\view\hello\setattr.html [ array (
+  0 => 'game_type',
+  1 => 'terminal_type',
+  2 => 'sex',
+  3 => 'age_group',
+  4 => 'game_experience',
+  5 => 'game_year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select id,value from attr where name = "game_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "terminal_type" [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select id,value from attr where name = "sex_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "age_type" [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_experience" [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select id,value from attr where name = "game_year" [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
