@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\setattr.html";i:1486628191;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\setattr.html";i:1487137269;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,10 +195,10 @@
         })
 
         $('.btn-info').click(function () {
-            window.location.assign("<?php echo url('demo/hello/upload'); ?>");
+            window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
         })
 
-        
+
     })()
 </script>
 </html>

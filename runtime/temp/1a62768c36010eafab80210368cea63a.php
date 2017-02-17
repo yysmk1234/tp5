@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1486549855;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487315109;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,69 +13,63 @@
 </head>
 <body>
     <div class="container">
-        <form style="padding: 50px 20px">
-            <label style="padding-top: 20px">请选择性别：</label>
-            <select name="sex">
-                <?php if(is_array($sex) || $sex instanceof \think\Collection || $sex instanceof \think\Paginator): $i = 0; $__LIST__ = $sex;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
+        <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" method="post" action="<?php echo url('demo/hello/upfile'); ?>">
+
+
+            <label style="padding-top: 20px">请选择被试：</label>
+            <select name="tester">
+                <?php if(is_array($tester) || $tester instanceof \think\Collection || $tester instanceof \think\Paginator): $i = 0; $__LIST__ = $tester;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tester): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $tester['u_id']; ?>"><?php echo $tester['u_name']; ?></option>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
-            <br />
+            <br/>
 
-            <label style="padding-top: 20px">请选择年龄：</label>
-            <select name="age_group">
-                <?php if(is_array($age_group) || $age_group instanceof \think\Collection || $age_group instanceof \think\Paginator): $i = 0; $__LIST__ = $age_group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
+            <label style="padding-top: 20px">请选择测试游戏：</label>
+            <select name="game">
+                <?php if(is_array($game) || $game instanceof \think\Collection || $game instanceof \think\Paginator): $i = 0; $__LIST__ = $game;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $game['g_id']; ?>"><?php echo $game['g_name']; ?></option>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
+            <br/>
+
+            <label style="padding-top: 20px">请选择index文件：</label>
+            <input type="file" name="index">
             <br />
 
-
-            <label style="padding-top: 20px">请选择游戏类型：</label>
-            <select name="game_type">
-                <?php if(is_array($game_type) || $game_type instanceof \think\Collection || $game_type instanceof \think\Paginator): $i = 0; $__LIST__ = $game_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                    <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
+            <label style="padding-top: 20px">请选择tags文件：</label>
+            <input type="file" name="tags">
             <br />
 
-            <label style="padding-top: 20px">请选择终端类型：</label>
-            <select name="terminal_type">
-                <?php if(is_array($terminal_type) || $terminal_type instanceof \think\Collection || $terminal_type instanceof \think\Paginator): $i = 0; $__LIST__ = $terminal_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-            <br />
-
-
-            <label style="padding-top: 20px">请选择游戏经历：</label>
-            <select name="game_experience">
-                <?php if(is_array($game_experience) || $game_experience instanceof \think\Collection || $game_experience instanceof \think\Paginator): $i = 0; $__LIST__ = $game_experience;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-            <br />
-
-            <label style="padding-top: 20px">请选择游戏年限：</label>
-            <select name="game_year">
-                <?php if(is_array($game_year) || $game_year instanceof \think\Collection || $game_year instanceof \think\Paginator): $i = 0; $__LIST__ = $game_year;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$name): $mod = ($i % 2 );++$i;?>
-                <option value="<?php echo $name['id']; ?>"><?php echo $name['value']; ?></option>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-            <br />
-
-            <button type="button">提交</button>
+            <button id="submit" class="btn btn-info" type="submit">提交</button>
+            <button id="return" class="btn btn-info" type="button">返回</button>
         </form>
 
     </div>
 
 </body>
     <script>
-        (function () {
-            $('button').click(function () {
-                var data = $('form').serialize();
-                console.log(data);
-            })
-        })()
+//        (function () {
+//            $('button').click(function () {
+//                var flag = $(this).attr('id');
+////                console.log(flag);
+//                if (flag=='return'){
+//                    window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
+//                }else if (flag == 'submit'){
+//                var data = new FormData(document.getElementById('form'));
+////                console.log(data);
+//                $.ajax({
+//                    type:"POST",
+//                    url:"<?php echo url('demo/hello/upfile'); ?>",
+//                    data:data,
+////                    dataType:"json",
+//                    processData:false,
+//                    contentType:false,
+//                    success:function (data) {
+//                        console.log(data);
+//                    }
+//                })
+//                }
+//            })
+//        })()
     </script>
 </html>

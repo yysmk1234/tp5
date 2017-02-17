@@ -64,7 +64,8 @@ CREATE TABLE attr(
 //创建游戏表
 CREATE TABLE game (
     g_id		INT(10) PRIMARY KEY AUTO_INCREMENT,
-	g_type		VARCHAR(32),
+	g_name		VARCHAR(32),
+	g_type      INT(10),
 	terminal_type_id		INT(10)
 )ENGINE=InnoDB DEFAULT CHARSET=gbk;
 

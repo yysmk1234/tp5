@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置被试和游戏属性</title>
+    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../../../public/static/layer/skin/default/layer.css">
+    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
+    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
+    <script src="../../../../public/static/layer/layer.js"></script>
+    <script src="../../../../public/static/layer/layer_m.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="tester">
+            <h3>添加被试</h3>
+
+            <label style="padding-top: 20px">请输入被试名字：</label>
+            <input class="form-control" type="text" name="tester_name">
+
+            <label style="padding-top: 20px">请选择性别：</label>
+            <select name="sex">
+                {volist name = "sex" id="sex" }
+                <option value="{$sex.id}">{$sex.value}</option>
+                {/volist}
+            </select>
+            <br />
+
+            <label style="padding-top: 20px">请选择年龄：</label>
+            <select name="age_group">
+                {volist name = "age_group" id="age" }
+                <option value="{$age.id}">{$age.value}</option>
+                {/volist}
+            </select>
+            <br />
+
+            <label style="padding-top: 20px">请选择游戏经历：</label>
+            <select name="game_experience">
+                {volist name = "game_experience" id="exp" }
+                <option value="{$exp.id}">{$exp.value}</option>
+                {/volist}
+            </select>
+            <br />
+
+            <label style="padding-top: 20px">请选择游戏年限：</label>
+            <select name="game_year">
+                {volist name = "game_year" id="year" }
+                <option value="{$year.id}">{$year.value}</option>
+                {/volist}
+            </select>
+            <br />
+
+            <button id="tester_btn" type="button" class="btn btn-primary" style="margin-top: 20px">添加</button>
+
+        </form>
+
+
+        <form id="game">
+
+            <label style="padding-top: 20px">请输入游戏名称：</label>
+            <input class="form-control" type="text" name="game_name">
+
+            <label style="padding-top: 20px">请选择游戏类型：</label>
+            <select name="game_type">
+                {volist name = "game_type" id="g_type" }
+                <option value="{$g_type.id}">{$g_type.value}</option>
+                {/volist}
+            </select>
+            <br />
+
+            <label style="padding-top: 20px">请选择终端类型：</label>
+            <select name="terminal_type">
+                {volist name = "terminal_type" id="term" }
+                <option value="{$term.id}">{$term.value}</option>
+                {/volist}
+            </select>
+            <br />
+            <button id="game_btn" type="button" class="btn btn-primary" style="margin-top: 20px">添加</button>
+
+        </form>
+
+        <button id="upload" class="btn btn-info" style="margin-top: 20px">文件上传</button>
+    </div>
+
+</body>
+    <script>
+        (function () {
+            $('button').click(function () {
+                var data,url;
+                var val =   $(this).parents('form').find('input[type="text"]').val();
+                if (val == ''){
+                    tips.error("请输入数据(～￣▽￣)～");
+                }else{
+                    if ($(this).attr('id')=='tester_btn'){
+                        data = $('#tester').serialize();
+                        console.log(data);
+                        url = "{:url('demo/hello/addtester')}";
+                        console.log(url);
+
+                    }else if($(this).attr('id')=='upload'){
+                        window.location.assign("{:url('demo/hello/upload')}");
+                    }else {
+                        data = $('#game').serialize();
+                        console.log(data);
+                        url = "{:url('demo/hello/addgame')}";
+                        console.log(url);
+                    }
+                    $.ajax({
+                        type:"POST",
+                        data:data,
+                        url:url,
+                        dataType:"json",
+                        success:function (data) {
+                            console.log(data.sta);
+                            if (data.sta ==1){
+                                tips.success("提交成功");
+                                setTimeout(function () {
+                                    window.location.reload();
+                                },3000)
+                            }
+                        }
+                    })
+
+                }
+
+
+            });
+        })()
+    </script>
+</html>

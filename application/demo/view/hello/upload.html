@@ -12,72 +12,63 @@
 </head>
 <body>
     <div class="container">
-        <form style="padding: 50px 20px">
-            <label style="padding-top: 20px">请选择性别：</label>
-            <select name="sex">
-                {volist name = "sex" id="name" }
-                <option value="{$name.id}">{$name.value}</option>
+        <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" method="post" action="{:url('demo/hello/upfile')}">
+
+
+            <label style="padding-top: 20px">请选择被试：</label>
+            <select name="tester">
+                {volist name="tester" id="tester"}
+                <option value="{$tester.u_id}">{$tester.u_name}</option>
                 {/volist}
             </select>
-            <br />
+            <br/>
 
-            <label style="padding-top: 20px">请选择年龄：</label>
-            <select name="age_group">
-                {volist name = "age_group" id="name" }
-                <option value="{$name.id}">{$name.value}</option>
+            <label style="padding-top: 20px">请选择测试游戏：</label>
+            <select name="game">
+                {volist name="game" id="game"}
+                <option value="{$game.g_id}">{$game.g_name}</option>
                 {/volist}
             </select>
+            <br/>
+
+            <label style="padding-top: 20px">请选择index文件：</label>
+            <input type="file" name="index">
             <br />
 
-
-            <label style="padding-top: 20px">请选择游戏类型：</label>
-            <select name="game_type">
-                {volist name = "game_type" id="name" }
-                    <option value="{$name.id}">{$name.value}</option>
-                {/volist}
-            </select>
+            <label style="padding-top: 20px">请选择tags文件：</label>
+            <input type="file" name="tags">
             <br />
 
-            <label style="padding-top: 20px">请选择终端类型：</label>
-            <select name="terminal_type">
-                {volist name = "terminal_type" id="name" }
-                <option value="{$name.id}">{$name.value}</option>
-                {/volist}
-            </select>
-            <br />
-
-
-            <label style="padding-top: 20px">请选择游戏经历：</label>
-            <select name="game_experience">
-                {volist name = "game_experience" id="name" }
-                <option value="{$name.id}">{$name.value}</option>
-                {/volist}
-            </select>
-            <br />
-
-            <label style="padding-top: 20px">请选择游戏年限：</label>
-            <select name="game_year">
-                {volist name = "game_year" id="name" }
-                <option value="{$name.id}">{$name.value}</option>
-                {/volist}
-            </select>
-            <br />
-
-            <label style="padding-top: 20px">请选择游戏年限：</label>
-            <input type="file" name="">
-
-            <button type="button">提交</button>
+            <button id="submit" class="btn btn-info" type="submit">提交</button>
+            <button id="return" class="btn btn-info" type="button">返回</button>
         </form>
 
     </div>
 
 </body>
     <script>
-        (function () {
-            $('button').click(function () {
-                var data = $('form').serialize();
-                console.log(data);
-            })
-        })()
+//        (function () {
+//            $('button').click(function () {
+//                var flag = $(this).attr('id');
+////                console.log(flag);
+//                if (flag=='return'){
+//                    window.location.assign("{:url('demo/hello/testerandgame')}");
+//                }else if (flag == 'submit'){
+//                var data = new FormData(document.getElementById('form'));
+////                console.log(data);
+//                $.ajax({
+//                    type:"POST",
+//                    url:"{:url('demo/hello/upfile')}",
+//                    data:data,
+////                    dataType:"json",
+//                    processData:false,
+//                    contentType:false,
+//                    success:function (data) {
+//                        console.log(data);
+//                    }
+//                })
+//                }
+//            })
+//        })()
     </script>
 </html>

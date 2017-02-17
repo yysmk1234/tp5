@@ -4,6 +4,7 @@ namespace app\demo\controller;
 use think\Controller;
 use think\Request;
 use think\Db;
+use PHPExcel_IOFactory;
 
 class Hello extends Controller
 {
@@ -40,6 +41,98 @@ class Hello extends Controller
 
     //文件上传页面
     public function upload(){
+        //选择被试
+        $tester = Db::query("select u_id,u_name from tester ");
+        $this->assign('tester',$tester);
+        //选择游戏
+        $game = Db::query("select g_id,g_name from game");
+        $this->assign('game',$game);
+        return $this->fetch();
+    }
+
+
+    //上传文件处理
+    public function upfile(Request $request){
+        $tester = $request->post('tester');
+        $game = $request->post('game');
+        $index_file = request()->file('index');
+        $info1 = $index_file->move(ROOT_PATH . 'public' . DS . 'uploads');
+        $tags_file = request()->file('tags');
+        $info2 = $tags_file->move(ROOT_PATH . 'public' . DS . 'uploads');
+        if ($info2&&$info1){
+              $path = $info1->getPath();
+            $obj_excel_index = PHPExcel_IOFactory::load($path . "\\" . $info1->getFilename());
+
+            $data1 = $obj_excel_index->getActiveSheet()->toArray(null,true,true,true);
+//            echo count($data1);
+//取的表名称
+            $table_name = $this->guid();
+
+            //创建一个table
+            $create = Db::execute("create table $table_name (emoi FLOAT(20),scl FLOAT(20),High_alpha FLOAT(20),gamma FLOAT(20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
+              $insert_table = '';
+              $flag = 0;
+              $str = "insert into $table_name (emoi,scl,High_alpha,gamma) VALUES ";
+
+              //数组长度
+              $num = count($data1);
+              //长度分组
+              $num_group  = $num/100;
+
+              $num_yu = $num%100;
+
+//              for ( $i = 0 ;i<= $num_group; $i++){
+//                  for ($j = 0 ; j <= 100; $j++){
+//                      $num_key = $i*100 +$j;
+//                      $emoi = $data1[$num_key]['A'];
+//                      $scl = $data1[$num_key]['B'];
+//                      $high_a = $data1[$num_key]['C'];
+//                      $gammar = $data1[$num_key]['D'];
+//                      if ($num_key==0){
+//                        $str .= "('$emoi','$scl','$high_a','$gammar')";
+//                      }else{
+//                        $str .=",('$emoi','$scl','$high_a','$gammar')";
+//                      }
+//                  }
+//            }
+
+            foreach ($data1 as $key=>$value){
+                    $emoi = $value['A'];
+                    $scl = $value['B'];
+                    $high_a = $value['C'];
+                    $gammar = $value['D'];
+//                    $time = $value['E'];
+                    if ($flag == 0){
+                        $str .= "('$emoi','$scl','$high_a','$gammar')";
+                        $flag ++;
+                    } else if($flag <= 99){
+                        $str .=",('$emoi','$scl','$high_a','$gammar')";
+                        $flag ++;
+                    }else{
+                        $insert_table = Db::execute($str);
+                        $flag = 0;
+                        $str = "insert into $table_name (emoi,scl,High_alpha,gamma) VALUES ";
+                    }
+
+                }
+
+              if ($insert_table){
+                  $res_arr['sta'] = 1;
+                  $data = json_encode($res_arr);
+                  echo $data;
+              }
+
+
+
+        }
+    }
+
+
+
+
+
+//用户和游戏设置
+    public function testerandgame(){
         //给页面上添加游戏类型的变量
         $game_type = Db::query('select id,value from attr where name = "game_type"');
         $this->assign('game_type',$game_type);
@@ -60,7 +153,6 @@ class Hello extends Controller
         $this->assign('game_year',$game_year);
         return $this->fetch();
     }
-
 
 
 
@@ -136,7 +228,34 @@ class Hello extends Controller
         }
     }
 
+//添加被试信息
+    public function addTester(Request $request){
+        $tester_name = $request->post('tester_name');
+        $sex_id = $request->post('sex');
+        $age_group = $request->post('age_group');
+        $game_experience = $request->post('game_experience');
+        $game_year = $request->post('game_year');
+        $result = Db::execute("insert into tester (u_name,u_sex_id,u_age_id,u_year_id,u_experience_id) values
+                              ('$tester_name','$sex_id','$age_group','$game_year','$game_experience')");
+        if ($result){
+            $res_arr['sta'] = 1;
+                print_r(json_encode($res_arr));
+        }
 
+
+    }
+
+    //添加游戏信息
+    public function addGame(Request $request){
+        $game_name = $request->post('game_name');
+        $game_type = $request->post('game_type');
+        $terminal_type = $request->post('terminal_type');
+        $result = Db::execute("insert into game(g_name,g_type,terminal_type_id) values('$game_name','$game_type','$terminal_type')");
+        if($result){
+            $res_arr['sta'] = 1;
+            print_r(json_encode($res_arr));
+        }
+    }
 
 
 
