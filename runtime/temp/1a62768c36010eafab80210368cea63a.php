@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487315109;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487671100;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +14,11 @@
 <body>
     <div class="container">
         <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" method="post" action="<?php echo url('demo/hello/upfile'); ?>">
+            <label style="padding-top: 20px">请输入测试名称：</label>
+            <input type="text" class="form-control" name="test_name">
 
+            <label style="padding-top: 20px">请输入测试次序：</label>
+            <input type="text" class="form-control" name="status">
 
             <label style="padding-top: 20px">请选择被试：</label>
             <select name="tester">

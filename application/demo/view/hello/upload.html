@@ -13,7 +13,11 @@
 <body>
     <div class="container">
         <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" method="post" action="{:url('demo/hello/upfile')}">
+            <label style="padding-top: 20px">请输入测试名称：</label>
+            <input type="text" class="form-control" name="test_name">
 
+            <label style="padding-top: 20px">请输入测试次序：</label>
+            <input type="text" class="form-control" name="status">
 
             <label style="padding-top: 20px">请选择被试：</label>
             <select name="tester">

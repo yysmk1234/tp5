@@ -53,68 +53,92 @@ class Hello extends Controller
 
     //上传文件处理
     public function upfile(Request $request){
+        $test_name = $request->post('test_name');
+        $status = $request->post('status');
         $tester = $request->post('tester');
         $game = $request->post('game');
         $index_file = request()->file('index');
+        //index文件
         $info1 = $index_file->move(ROOT_PATH . 'public' . DS . 'uploads');
+
+
         $tags_file = request()->file('tags');
+        //tags文件
         $info2 = $tags_file->move(ROOT_PATH . 'public' . DS . 'uploads');
         if ($info2&&$info1){
               $path = $info1->getPath();
+              $path_tag = $info2->getPath();
             $obj_excel_index = PHPExcel_IOFactory::load($path . "\\" . $info1->getFilename());
-
+            $obj_excel_tag = PHPExcel_IOFactory::load($path_tag. "\\" . $info2->getFilename());
+            //index文件数组集合
             $data1 = $obj_excel_index->getActiveSheet()->toArray(null,true,true,true);
+            //tags文件数组集合
+            $data2 = $obj_excel_tag->getActiveSheet()->toArray(null,true,true,true);
 //            echo count($data1);
-//取的表名称
-            $table_name = $this->guid();
+            //获取index文件的表名称
+            $table_name_index = $this->guid();
+            //获取tags表名称
+            $table_name_tags = $this->guid();
 
-            //创建一个table
-            $create = Db::execute("create table $table_name (emoi FLOAT(20),scl FLOAT(20),High_alpha FLOAT(20),gamma FLOAT(20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
-              $insert_table = '';
-              $flag = 0;
-              $str = "insert into $table_name (emoi,scl,High_alpha,gamma) VALUES ";
+            //创建一个存放index数据的table
+            $create_index = Db::execute("create table $table_name_index (emoi FLOAT(20),scl FLOAT(20),High_alpha FLOAT(20),gamma FLOAT(20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
+            $create_tags = Db::execute("create table $table_name_tags (studioeventdata VARCHAR(20), tags_t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
+            //将数据存入测试表中
+            $insert_test = Db::execute("insert into test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
 
-              //数组长度
-              $num = count($data1);
+
+            $insert_table = '';
+            $str = "insert into $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
+            $str_ = "insert into $table_name_tags(studioeventdata,tags_t) VALUES ";
+
+              //index文件数组长度
+            $num = count($data1);
               //长度分组
-              $num_group  = $num/100;
+            $num_group  = floor($num/100);
+              //获取余下的数组个数
+            $num_yu = $num%100;
+              //100的倍数循环插入
+              for ( $i = 0 ;$i< $num_group; $i++){
+                  for ($j = 1 ; $j <= 100; $j++){
+                      $num_key = $i*100 +$j;
+                      $emoi = $data1[$num_key]['A'];
+                      $scl = $data1[$num_key]['B'];
+                      $high_a = $data1[$num_key]['C'];
+                      $gamma = $data1[$num_key]['D'];
+                      $t = $num_key-1;
+                      $str .="('$emoi','$scl','$high_a','$gamma','$t'),";
+                  }
 
-              $num_yu = $num%100;
+                  $str = substr($str,0,strlen($str)-1);
+                  $insert_table = Db::execute($str);
+                  $str = "insert into $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
+            }
 
-//              for ( $i = 0 ;i<= $num_group; $i++){
-//                  for ($j = 0 ; j <= 100; $j++){
-//                      $num_key = $i*100 +$j;
-//                      $emoi = $data1[$num_key]['A'];
-//                      $scl = $data1[$num_key]['B'];
-//                      $high_a = $data1[$num_key]['C'];
-//                      $gammar = $data1[$num_key]['D'];
-//                      if ($num_key==0){
-//                        $str .= "('$emoi','$scl','$high_a','$gammar')";
-//                      }else{
-//                        $str .=",('$emoi','$scl','$high_a','$gammar')";
-//                      }
-//                  }
-//            }
+            //余下的插入
+              for ($i = 1 ; $i <=$num_yu ; $i ++){
+                  $num_key  = $num_group*100+$i;
+                  $emoi = $data1[$num_key]['A'];
+                  $scl = $data1[$num_key]['B'];
+                  $high_a = $data1[$num_key]['C'];
+                  $gamma = $data1[$num_key]['D'];
+                  $t = $num_key-1;
+                  $str .="('$emoi','$scl','$high_a','$gamma','$t'),";
+              }
+            $str = substr($str,0,strlen($str)-1);
+            $insert_table = Db::execute($str);
 
-            foreach ($data1 as $key=>$value){
-                    $emoi = $value['A'];
-                    $scl = $value['B'];
-                    $high_a = $value['C'];
-                    $gammar = $value['D'];
-//                    $time = $value['E'];
-                    if ($flag == 0){
-                        $str .= "('$emoi','$scl','$high_a','$gammar')";
-                        $flag ++;
-                    } else if($flag <= 99){
-                        $str .=",('$emoi','$scl','$high_a','$gammar')";
-                        $flag ++;
+            //写入tags数据
+            foreach ($data2 as $key=>$value){
+                    $tags = $value['H'];
+                    $t = $value['D'];
+                    if ($key==1){
+                        $str_ = "insert into $table_name_tags(studioeventdata,tags_t) VALUES ";
                     }else{
-                        $insert_table = Db::execute($str);
-                        $flag = 0;
-                        $str = "insert into $table_name (emoi,scl,High_alpha,gamma) VALUES ";
+                        $str_ .="('$tags','$t'),";
                     }
-
                 }
+            $str_ = substr($str_,0,strlen($str_)-1);
+            $insert_table = Db::execute($str_);
 
               if ($insert_table){
                   $res_arr['sta'] = 1;
@@ -125,11 +149,86 @@ class Hello extends Controller
 
 
         }
+
+        $select = Db::query("select studioeventdata,tags_t from $table_name_tags");
+        $tag_name = array();
+        //遍历数组获取事件名称，去除名字重复的
+        foreach ($select as $key=>$value){
+            $re = array("-s","-e");
+            $tag_tip = str_replace($re,"",$value['studioeventdata']);
+            array_push($tag_name,$tag_tip);
+        }
+        $tag_n = array_unique($tag_name);
+        $arr_result =array();
+        //在数据库中查找对应数据进行归类
+        foreach ($tag_n as $key=>$value){
+            $arr_res= Db::query("select tags_t from $table_name_tags WHERE studioeventdata LIKE '$value%'");
+//            print_r($arr_res);
+            $arr_re = array();
+            if ($arr_res[0]['tags_t']>$arr_res[1]['tags_t']){
+                $arr_re[$value] = array(
+                        $arr_res[1]['tags_t'],
+                        $arr_res[0]['tags_t']
+                );
+            }else{
+                $arr_re[$value] = array(
+                        $arr_res[0]['tags_t'],
+                        $arr_res[1]['tags_t']
+                );
+            }
+            array_push($arr_result,$arr_re);
+        }
+        //根据分类后的数据进行计算
+        foreach ($arr_result as $key=>$value){
+//            print_r(array_values($value)[0][1]);
+//            print_r(array_keys($value)[0]);
+            $tag = array_keys($value)[0];
+            $t1 = round(array_values($value)[0][0]/400);
+            $t2 = round(array_values($value)[0][1]/400);
+
+//            echo $t1;
+//            echo "<br / >";
+//            echo $t2;
+            $arr_select = Db::query("select emoi , scl , High_alpha , gamma from $table_name_index WHERE t>='$t1'AND t<=$t2");
+            $arr_emoi = array();
+            $arr_scl = array();
+            $arr_high_a = array();
+            $arr_gamma = array();
+            foreach ($arr_select as $key=>$value){
+                array_push($arr_emoi,$value['emoi']);
+                array_push($arr_scl,$value['scl']);
+                array_push($arr_high_a,$value['High_alpha']);
+                array_push($arr_gamma,$value['gamma']);
+            }
+            $emoi = array_sum($arr_emoi)/($t2-$t1);
+            $scl = array_sum($arr_scl)/($t2-$t1);
+            $high_a = array_sum($arr_high_a)/($t2-$t1);
+            $gamma = array_sum($arr_gamma)/($t2-$t1);
+
+//            print_r($arr_emoi);
+            echo $emoi;
+            echo '<br / >';
+            echo $scl;
+            echo '<br / >';
+            echo $high_a;
+            echo '<br / >';
+            echo $gamma;
+            echo '<br / >';
+            echo $tag;
+            echo '<br / >';
+        }
+
+
+
+//        print_r($arr_result);
+
+//        foreach ($tag_name as $key=>$value){
+//            $re = array("-s","-e");
+//            $tag_tip = str_replace($re,"",$value);
+//            array_push($tag_n,$tag_tip);
+//        }
+//        print_r(array_unique($tag_n));
     }
-
-
-
-
 
 //用户和游戏设置
     public function testerandgame(){

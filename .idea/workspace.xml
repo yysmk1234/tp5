@@ -29,8 +29,8 @@
       <file leaf-file-name="setattr.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/demo/view/hello/setattr.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4704">
-              <caret line="196" column="71" lean-forward="false" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="71" />
+            <state relative-caret-position="216">
+              <caret line="69" column="66" lean-forward="false" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -39,14 +39,16 @@
       <file leaf-file-name="upload.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/demo/view/hello/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="71" column="14" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="71" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="64" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +57,7 @@
       <file leaf-file-name="testerAndGame.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/demo/view/hello/testerAndGame.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2304">
+            <state relative-caret-position="24">
               <caret line="96" column="61" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,8 +79,8 @@
       <file leaf-file-name="layer_m.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/static/layer/layer_m.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -87,55 +89,50 @@
       <file leaf-file-name="Hello.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/demo/controller/Hello.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="111" column="58" lean-forward="true" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
+            <state relative-caret-position="476">
+              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
-                <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-                <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-                <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-                <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-                <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-                <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-                <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-                <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-                <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-                <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-                <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-                <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-                <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+                <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+                <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+                <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+                <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+                <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+                <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+                <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+                <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+                <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+                <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+                <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+                <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+                <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+                <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+                <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+                <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+                <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+                <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+                <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+                <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+                <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+                <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+                <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+                <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+                <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+                <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+                <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+                <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3552">
-              <caret line="156" column="37" lean-forward="false" selection-start-line="156" selection-start-column="37" selection-end-line="156" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createTable" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/create_table/createTable">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -149,6 +146,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gamma</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -160,6 +162,7 @@
         <option value="$PROJECT_DIR$/application/demo/view/hello/setattr.html" />
         <option value="$PROJECT_DIR$/application/demo/view/hello/testerAndGame.html" />
         <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/public/static/layer/layer_m.js" />
         <option value="$PROJECT_DIR$/application/demo/view/hello/upload.html" />
         <option value="$PROJECT_DIR$/application/demo/controller/Hello.php" />
       </list>
@@ -298,6 +301,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20170221" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,11 +569,13 @@
       <workItem from="1487213201561" duration="14876000" />
       <workItem from="1487297122489" duration="2642000" />
       <workItem from="1487311064107" duration="12943000" />
+      <workItem from="1487556904355" duration="15987000" />
+      <workItem from="1487645433796" duration="14380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90503000" />
+    <option name="totallyTimeSpent" value="120870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,10 +587,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.246875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.246875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -638,6 +647,8 @@
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -676,30 +687,45 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>
@@ -729,6 +755,8 @@
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -767,30 +795,45 @@
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>
@@ -820,6 +863,8 @@
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -838,30 +883,45 @@
           <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="18" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>
@@ -891,6 +951,8 @@
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -909,30 +971,45 @@
           <caret line="58" column="18" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="18" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>
@@ -962,6 +1039,8 @@
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,30 +1059,45 @@
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>
@@ -1038,14 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/layer/layer_m.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/PHPExcel_1.8.0_doc/Examples/01simple.php" />
     <entry file="file://$USER_HOME$/Desktop/PHPExcel_1.8.0_doc/Examples/01simple-download-xls.php" />
     <entry file="file://$USER_HOME$/Desktop/PHPExcel_1.8.0_doc/Examples/07reader.php" />
@@ -1066,38 +1152,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/demo/view/hello/setattr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4704">
-          <caret line="196" column="71" lean-forward="false" selection-start-line="196" selection-start-column="35" selection-end-line="196" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/PHPExcel/Documentation/Examples/Reader/exampleReader02.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/demo/view/hello/testerAndGame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="96" column="61" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="61" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#2;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1132,64 +1190,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/create_table/createTable">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3552">
+        <state relative-caret-position="836">
           <caret line="156" column="37" lean-forward="false" selection-start-line="156" selection-start-column="37" selection-end-line="156" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/layer/layer_m.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/demo/view/hello/setattr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="69" column="66" lean-forward="false" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/demo/view/hello/testerAndGame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="96" column="61" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/demo/view/hello/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="71" column="14" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="150">
+          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="64" />
           <folding>
             <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#4;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/demo/controller/Hello.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="111" column="58" lean-forward="true" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
+        <state relative-caret-position="476">
+          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <marker date="1487327979548" expanded="true" signature="514:564" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="666:720" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="818:867" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="951:1000" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1104:1160" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1270:1320" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
-            <marker date="1487327979548" expanded="true" signature="1614:1642" ph="select g_id,... game" />
-            <marker date="1487327979548" expanded="true" signature="2504:2639" ph="create table... ${$table_name}" />
-            <marker date="1487327979548" expanded="true" signature="2725:2783" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="2725:2784" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4302:4360" ph="insert into ${$table_name}... " />
-            <marker date="1487327979548" expanded="true" signature="4701:4751" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="4853:4907" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5005:5054" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5138:5187" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5291:5347" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="5457:5507" ph="select id,va... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7302" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7252:7310" ph="select count... attr" />
-            <marker date="1487327979548" expanded="true" signature="7536:7594" ph="insert into attr... " />
-            <marker date="1487327979548" expanded="true" signature="7893:7926" ph="delete from " />
-            <marker date="1487327979548" expanded="true" signature="8348:8528" ph="insert into tester... " />
-            <marker date="1487327979548" expanded="true" signature="8903:9002" ph="insert into game... " />
+            <marker date="1487672148828" expanded="true" signature="514:564" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="666:720" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="818:867" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="951:1000" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1104:1160" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1270:1320" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="1496:1526" ph="select u_id,... tester" />
+            <marker date="1487672148828" expanded="true" signature="1614:1642" ph="select g_id,... game" />
+            <marker date="1487672148828" expanded="true" signature="3023:3164" ph="create table... ${$table_name}" />
+            <marker date="1487672148828" expanded="true" signature="3209:3317" ph="create table... ${$table_name_index}" />
+            <marker date="1487672148828" expanded="true" signature="3386:3456" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3465" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3386:3545" ph="insert into test... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3669" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3603:3670" ph="insert into ${$table_name}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3706" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3707" ph="insert into $... " />
+            <marker date="1487672148828" expanded="true" signature="3694:3753" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="4598:4664" ph="insert into ${$table_name_index}... " />
+            <marker date="1487672148828" expanded="true" signature="5435:5494" ph="insert into ${$table_name_tags}... " />
+            <marker date="1487672148828" expanded="true" signature="5929:5964" ph="select studi... e41134720a99c1f1436edfe8e7d6e31a" />
+            <marker date="1487672148828" expanded="true" signature="5929:5965" ph="select studi... $" />
+            <marker date="1487672148828" expanded="true" signature="6418:6481" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="6418:6490" ph="select tags_... ff4bf193ce8129d9843167e6372ba1f0" />
+            <marker date="1487672148828" expanded="true" signature="7453:7529" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="7453:7536" ph="select emoi $" />
+            <marker date="1487672148828" expanded="true" signature="7453:7537" ph="select emoi 97ec25227e6968dd79989987ecf2681e" />
+            <marker date="1487672148828" expanded="true" signature="8864:8914" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9016:9070" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9168:9217" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9301:9350" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9454:9510" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="9620:9670" ph="select id,va... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11465" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11415:11473" ph="select count... attr" />
+            <marker date="1487672148828" expanded="true" signature="11699:11757" ph="insert into attr... " />
+            <marker date="1487672148828" expanded="true" signature="12056:12089" ph="delete from " />
+            <marker date="1487672148828" expanded="true" signature="12511:12691" ph="insert into tester... " />
+            <marker date="1487672148828" expanded="true" signature="13066:13165" ph="insert into game... " />
           </folding>
         </state>
       </provider>

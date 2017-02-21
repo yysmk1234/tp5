@@ -1,3 +1,5 @@
 RecordingName,RecordingTimestamp,StudioEvent,StudioEventData,,,,
 p31-ch-1107,122572,Default,684000,684000,,,cr-s
 p31-ch-1107,122572,Default,1700000,1700000,,,cr-e
+,,,30000,,,,hs-s
+,,,60000,,,,hs-e
