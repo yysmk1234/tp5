@@ -69,4 +69,13 @@ CREATE TABLE game (
 	terminal_type_id		INT(10)
 )ENGINE=InnoDB DEFAULT CHARSET=gbk;
 
-//
+//数据表
+CREATE TABLE data(
+    id INT(10) PRIMARY KEY AUTO_INCREMENT,
+    test_id INT(10),
+    emoi FLOAT(20),
+    scl FLOAT(20),
+    High_alpha FLOAT(20),
+    gamma FLOAT(20),
+    tag  VARCHAR(10)
+)ENGINE=InnoDB DEFAULT CHARSET=gbk;

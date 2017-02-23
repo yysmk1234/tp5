@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487671100;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487746304;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" method="post" action="<?php echo url('demo/hello/upfile'); ?>">
+        <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" >
             <label style="padding-top: 20px">请输入测试名称：</label>
             <input type="text" class="form-control" name="test_name">
 
@@ -44,7 +44,7 @@
             <input type="file" name="tags">
             <br />
 
-            <button id="submit" class="btn btn-info" type="submit">提交</button>
+            <button id="submit" class="btn btn-info" type="button">提交</button>
             <button id="return" class="btn btn-info" type="button">返回</button>
         </form>
 
@@ -52,28 +52,28 @@
 
 </body>
     <script>
-//        (function () {
-//            $('button').click(function () {
-//                var flag = $(this).attr('id');
-////                console.log(flag);
-//                if (flag=='return'){
-//                    window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
-//                }else if (flag == 'submit'){
-//                var data = new FormData(document.getElementById('form'));
-////                console.log(data);
-//                $.ajax({
-//                    type:"POST",
-//                    url:"<?php echo url('demo/hello/upfile'); ?>",
-//                    data:data,
-////                    dataType:"json",
-//                    processData:false,
-//                    contentType:false,
-//                    success:function (data) {
-//                        console.log(data);
-//                    }
-//                })
-//                }
-//            })
-//        })()
+        (function () {
+            $('button').click(function () {
+                var flag = $(this).attr('id');
+//                console.log(flag);
+                if (flag=='return'){
+                    window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
+                }else if (flag == 'submit'){
+                var data = new FormData(document.getElementById('form'));
+//                console.log(data);
+                $.ajax({
+                    type:"POST",
+                    url:"<?php echo url('demo/hello/upfile'); ?>",
+                    data:data,
+//                    dataType:"json",
+                    processData:false,
+                    contentType:false,
+                    success:function (data) {
+                        console.log(data);
+                    }
+                })
+                }
+            })
+        })()
     </script>
 </html>

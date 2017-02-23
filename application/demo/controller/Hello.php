@@ -2,6 +2,7 @@
 namespace app\demo\controller;
 
 use think\Controller;
+use think\Cookie;
 use think\Request;
 use think\Db;
 use PHPExcel_IOFactory;
@@ -53,11 +54,13 @@ class Hello extends Controller
 
     //上传文件处理
     public function upfile(Request $request){
+        $insert_table = '';
         $test_name = $request->post('test_name');
         $status = $request->post('status');
         $tester = $request->post('tester');
         $game = $request->post('game');
         $index_file = request()->file('index');
+
         //index文件
         $info1 = $index_file->move(ROOT_PATH . 'public' . DS . 'uploads');
 
@@ -65,16 +68,23 @@ class Hello extends Controller
         $tags_file = request()->file('tags');
         //tags文件
         $info2 = $tags_file->move(ROOT_PATH . 'public' . DS . 'uploads');
+
         if ($info2&&$info1){
               $path = $info1->getPath();
               $path_tag = $info2->getPath();
             $obj_excel_index = PHPExcel_IOFactory::load($path . "\\" . $info1->getFilename());
             $obj_excel_tag = PHPExcel_IOFactory::load($path_tag. "\\" . $info2->getFilename());
+            //设置文件权限
+//            chmod($path . "\\" . $info1->getFilename(),0777);
+//            chmod($path_tag. "\\" . $info2->getFilename(),0777);
             //index文件数组集合
             $data1 = $obj_excel_index->getActiveSheet()->toArray(null,true,true,true);
             //tags文件数组集合
             $data2 = $obj_excel_tag->getActiveSheet()->toArray(null,true,true,true);
 //            echo count($data1);
+            //文件删除
+//            unlink($path . "\\" . $info1->getFilename());
+//            unlink($path_tag. "\\" . $info2->getFilename());
             //获取index文件的表名称
             $table_name_index = $this->guid();
             //获取tags表名称
@@ -87,7 +97,6 @@ class Hello extends Controller
             $insert_test = Db::execute("insert into test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
 
 
-            $insert_table = '';
             $str = "insert into $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
             $str_ = "insert into $table_name_tags(studioeventdata,tags_t) VALUES ";
 
@@ -139,13 +148,6 @@ class Hello extends Controller
                 }
             $str_ = substr($str_,0,strlen($str_)-1);
             $insert_table = Db::execute($str_);
-
-              if ($insert_table){
-                  $res_arr['sta'] = 1;
-                  $data = json_encode($res_arr);
-                  echo $data;
-              }
-
 
 
         }
@@ -200,34 +202,40 @@ class Hello extends Controller
                 array_push($arr_high_a,$value['High_alpha']);
                 array_push($arr_gamma,$value['gamma']);
             }
+
             $emoi = array_sum($arr_emoi)/($t2-$t1);
             $scl = array_sum($arr_scl)/($t2-$t1);
             $high_a = array_sum($arr_high_a)/($t2-$t1);
             $gamma = array_sum($arr_gamma)/($t2-$t1);
+            $test_num = Db::query("SELECT test_id FROM `test` WHERE data_name='$table_name_index'AND tag_name='$table_name_tags'");
+            $test_id = $test_num[0]['test_id'];
+            //把数据插入到表中
+            $insert_table = Db::execute("insert into data (test_id,emoi,scl,High_alpha,gamma,tag) VALUES ('$test_id','$emoi','$scl','$high_a','$gamma','$tag')");
 
+
+//              print_r($test_num[0]['test_id']);
 //            print_r($arr_emoi);
-            echo $emoi;
-            echo '<br / >';
-            echo $scl;
-            echo '<br / >';
-            echo $high_a;
-            echo '<br / >';
-            echo $gamma;
-            echo '<br / >';
-            echo $tag;
-            echo '<br / >';
+//            echo $emoi;
+//            echo '<br / >';
+//            echo $scl;
+//            echo '<br / >';
+//            echo $high_a;
+//            echo '<br / >';
+//            echo $gamma;
+//            echo '<br / >';
+//            echo $tag;
+//            echo '<br / >';
+        }
+
+        if ($insert_table){
+            $res_arr['sta'] = 1;
+            $data = json_encode($res_arr);
+            echo $data;
         }
 
 
 
-//        print_r($arr_result);
 
-//        foreach ($tag_name as $key=>$value){
-//            $re = array("-s","-e");
-//            $tag_tip = str_replace($re,"",$value);
-//            array_push($tag_n,$tag_tip);
-//        }
-//        print_r(array_unique($tag_n));
     }
 
 //用户和游戏设置
@@ -356,10 +364,148 @@ class Hello extends Controller
         }
     }
 
+//项目页面
+    public function project(){
+        $project_name = Db::query("select project_name from project");
+        $this->assign("project_name",$project_name);
+        return $this->fetch();
+    }
+//添加项目
+    public function addProject(Request $request){
+        $project_name = $request->post('project_name');
+        $insert = Db::execute("insert into project (project_name) VALUE ('$project_name')");
+        if ($insert){
+            $res_arr['sta'] = 1;
+            $data = json_encode($res_arr);
+            echo $data;
+        }
+    }
+//分组页面
+    public function group(){
+        //从cookie获取项目的名称并发送到前端（其实可以前端直接获取）
+        $project_n = Cookie::get('project_name');
+        $this->assign("project_n",$project_n);
+        //获取项目的ID值发送到页面，便于以后的操作
+        $project = Db::query("select project_id from project WHERE project_name = '$project_n'");
+        $project_id = $project[0]['project_id'];
+        $this->assign("project_id",$project_id);
+        $group_name = Db::query("select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '$project_id')");
+        $this->assign("group_name",$group_name);
 
+        return $this->fetch();
+    }
+//添加分组
+    public function addGroup(Request $request){
+        $insert = '';
+        //把分组名称写入group_ 表
+        $group_name = $request->post('project_name');
+        $insert = Db::execute("insert into group_ (group_name) VALUE ('$group_name')");
+        //分别获取分组的ID和项目的ID写入project_group 表
+        $project_n =  Cookie::get('project_name');
+        $project = Db::query("select project_id from project WHERE project_name = '$project_n'");
+        $group = Db::query("select group_id from group_ WHERE group_name ='$group_name'");
+        $group_id = $group[0]['group_id'];
+        $project_id = $project[0]['project_id'];
+        $insert = Db::execute("insert into project_group (project_id,group_id) VALUES ('$project_id','$group_id')");
+        if ($insert){
+            $res_arr['sta'] = 1;
+            $data = json_encode($res_arr);
+            echo $data;
+        }
+    }
 
+//排序页面
+    public function sort(){
+        //选择被试
+        $tester = Db::query("select u_id,u_name from tester ");
+        $this->assign('tester',$tester);
+        //选择游戏
+        $game = Db::query("select g_id,g_name from game");
+        $this->assign('game',$game);
 
+        //给页面上添加游戏类型的变量
+        $game_type = Db::query('select id,value from attr where name = "game_type"');
+        $this->assign('game_type',$game_type);
+        //终端类型
+        $terminal_type = Db::query('select id,value from attr where name = "terminal_type"');
+        $this->assign('terminal_type',$terminal_type);
+        //性别
+        $sex = Db::query('select id,value from attr where name = "sex_type"');
+        $this->assign('sex',$sex);
+        //年龄
+        $age_group = Db::query('select id,value from attr where name = "age_type"');
+        $this->assign('age_group',$age_group);
+        //游戏经历
+        $game_experience = Db::query('select id,value from attr where name = "game_experience"');
+        $this->assign('game_experience',$game_experience);
+        //游戏年限
+        $game_year = Db::query('select id,value from attr where name = "game_year"');
+        $this->assign('game_year',$game_year);
+        //测试顺序
+        $status = Db::query("select DISTINCT status_ from test");
+        $this->assign('status',$status);
 
+        $data = Db::query("select emoi,scl,High_alpha,gamma,tag from data WHERE test_id = '3'");
+        $this->assign("data",$data);
+
+        $group_name = Cookie::get("group_name");
+        $this->assign("group_n",$group_name);
+        return $this->fetch();
+
+    }
+    public function sortData(Request $request){
+        //选择数据
+
+        $sex = $request->post('sex');
+        $age = $request->post('age_group');
+        $game_e = $request->post('game_experience');
+        $game_y = $request->post('game_year');
+        $status = $request->post('status');
+        $data_choose = Db::query("select id,emoi,scl,High_alpha,gamma,tag from data WHERE test_id IN (SELECT test_id FROM test WHERE status_ = '$status' AND u_id IN (SELECT u_id FROM tester WHERE u_sex_id = '$sex'AND u_age_id = '$age'AND u_year_id='$game_y' AND u_experience_id = '$game_e'))");
+        $this->assign("data_c",$data_choose);
+
+        echo json_encode($data_choose);
+    }
+    //数据筛选
+    public function datachoose(Request $request){
+        //选择被试
+        $tester = Db::query("select u_id,u_name from tester ");
+        $this->assign('tester',$tester);
+        //选择游戏
+        $game = Db::query("select g_id,g_name from game");
+        $this->assign('game',$game);
+
+        //给页面上添加游戏类型的变量
+        $game_type = Db::query('select id,value from attr where name = "game_type"');
+        $this->assign('game_type',$game_type);
+        //终端类型
+        $terminal_type = Db::query('select id,value from attr where name = "terminal_type"');
+        $this->assign('terminal_type',$terminal_type);
+        //性别
+        $sex = Db::query('select id,value from attr where name = "sex_type"');
+        $this->assign('sex',$sex);
+        //年龄
+        $age_group = Db::query('select id,value from attr where name = "age_type"');
+        $this->assign('age_group',$age_group);
+        //游戏经历
+        $game_experience = Db::query('select id,value from attr where name = "game_experience"');
+        $this->assign('game_experience',$game_experience);
+        //游戏年限
+        $game_year = Db::query('select id,value from attr where name = "game_year"');
+        $this->assign('game_year',$game_year);
+        //测试顺序
+        $status = Db::query("select DISTINCT status_ from test");
+        $this->assign('status',$status);
+
+        print_r($request->post());
+        return $this->fetch();
+    }
+
+    //添加测试数据到组中
+    public function addData(Request $request){
+        $data = $request->post();
+        print_r($data);
+    }
 
 
 }

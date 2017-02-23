@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目</title>
+    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../../../public/static/layer/skin/default/layer.css">
+    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
+    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
+    <script src="../../../../public/static/layer/layer.js"></script>
+    <script src="../../../../public/static/layer/layer_m.js"></script>
+    <script src="../../../../public/static/cookie/jquery.cookie.js"></script>
+</head>
+<body>
+      <div class="container">
+          <form style="padding-top: 50px">
+              <label>请输入项目名称：</label>
+              <input type="text" name="project_name" class="form-control" style="margin-bottom: 20px">
+
+              <button class="btn btn-info" type="button">添加</button>
+              <button class="btn btn-danger" type="button">删除</button>
+
+          </form>
+
+       <ul class="list-group" style="margin-top: 50px">
+           {if condition= "count($project_name)==0"}
+           <li class="list-group-item">暂时没有项目</li>
+           {else /}
+           {volist name="project_name" id="pname"}
+           <li class="list-group-item">{$pname.project_name}</li>
+           {/volist}
+           {/if}
+
+       </ul>
+
+
+      </div>
+
+</body>
+<script>
+    (function () {
+        $('.btn-info').click(function () {
+            var data = $('form').serialize();
+            $.ajax({
+                url: "{:url('demo/hello/addproject')}",
+                type:"POST",
+                data:data,
+                dataType:"json",
+                success:function (data) {
+                    console.log(data.sta);
+                }
+            });
+        });
+        $('li').click(function () {
+            var project_name = $(this).text();
+            $.cookie("project_name",project_name);
+            window.location.assign("{:url('demo/hello/group')}");
+//            alert($.cookie("project_name"));
+        });
+    })()
+</script>
+</html>
