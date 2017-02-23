@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\group.html";i:1487817001;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\group.html";i:1487843391;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +15,11 @@
 <body>
 <div class="container">
     <label style="margin-top: 50px">项目:<?php echo $project_n; ?></label>
-    <form style="padding-top: 50px" method="post" action="<?php echo url('demo/hello/addgroup'); ?>">
+    <form style="padding-top: 50px" >
         <label>请输入组别名称：</label>
         <input type="text" name="project_name" class="form-control" style="margin-bottom: 20px">
 
-        <button class="btn btn-info" type="submit">添加</button>
+        <button class="btn btn-info" type="button">添加</button>
         <button class="btn btn-danger" type="button">删除</button>
     </form>
     <ul class="list-group" style="margin-top: 50px">
@@ -47,6 +47,12 @@
                 dataType:"json",
                 success:function (data) {
                     console.log(data.sta);
+                    if (data.sta == 1){
+                        tips.success("添加成功");
+                        setTimeout(function () {
+                            window.location.reload();
+                        },3000)
+                    }
                 }
             });
         });

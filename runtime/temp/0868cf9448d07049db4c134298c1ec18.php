@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1487835061;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1487844658;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +17,7 @@
         <label style="margin-top: 20px">组名:<?php echo $group_n; ?></label>
         <br />
 
-        <button class="btn btn-info add">添加数据</button>
+        <button class="btn btn-info add" type="button">添加数据</button>
         <table class="table table-condensed" style="margin-top: 20px">
             <tr>
                 <td>emoi</td>
@@ -129,7 +129,7 @@
                 success:function (data) {
 //                    console.log(data);
                     for(var x in data){
-                        console.log(data[x]);
+//                        console.log(data[x]);
                         var str = "<tr>"+
                             "<td>"+"<input type='checkbox' name='test_id' value="+data[x].id+">"+"</td>"+
                             "<td>"+data[x].emoi+"</td>"+
@@ -148,24 +148,21 @@
             var i = 0;
             $('#c_data').find("input[type='checkbox']:checked").each(function () {
                 var test_id = $(this).val();
-                arr_data['name'+i] = test_id;
-//                console.log(test_id);
-                i++;
-//               alert($.cookie("group_name"));
+                arr_data.push(test_id);
             });
-            console.log(arr_data);
-//            var re_data = JSON.stringify(arr_data);
+            data_ = {
+                id:JSON.stringify(arr_data)
+            };
             $.ajax({
                 url:"<?php echo url('demo/hello/adddata'); ?>",
                 type:"POST",
-                data: arr_data,
+                data: data_,
 //                dataType:"json",
                 success:function (data) {
                     console.log(data);
                 }
             });
-//            alert(arr_data);
-//            alert(data);
+            window.location.reload();
         });
     })()
 </script>
