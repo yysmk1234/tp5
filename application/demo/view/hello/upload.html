@@ -58,17 +58,23 @@
                 if (flag=='return'){
                     window.location.assign("{:url('demo/hello/testerandgame')}");
                 }else if (flag == 'submit'){
-                var data = new FormData(document.getElementById('form'));
+                    var load =  tips.wait("文件上传中……");        //打开加载层
+                    var data = new FormData(document.getElementById('form'));
 //                console.log(data);
                 $.ajax({
                     type:"POST",
                     url:"{:url('demo/hello/upfile')}",
                     data:data,
-//                    dataType:"json",
+                    dataType:"json",
                     processData:false,
                     contentType:false,
                     success:function (data) {
                         console.log(data);
+                        if (data.sta == 1 ){
+                            layer.close(load);    //如果服务器返回值，关闭加载层
+                            tips.success("文件上传成功！");
+                            window.location.reload();
+                        }
                     }
                 })
                 }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487746304;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487925240;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,6 +54,7 @@
     <script>
         (function () {
             $('button').click(function () {
+               var load =  tips.wait("文件上传中……");
                 var flag = $(this).attr('id');
 //                console.log(flag);
                 if (flag=='return'){
@@ -65,11 +66,16 @@
                     type:"POST",
                     url:"<?php echo url('demo/hello/upfile'); ?>",
                     data:data,
-//                    dataType:"json",
+                    dataType:"json",
                     processData:false,
                     contentType:false,
                     success:function (data) {
                         console.log(data);
+                        if (data.sta == 1 ){
+                            layer.close(load);
+                            tips.success("文件上传成功！");
+                            window.location.reload();
+                        }
                     }
                 })
                 }

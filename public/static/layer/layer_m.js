@@ -16,7 +16,7 @@ var tips = {
     },
     wait:function (content) {
         layer.msg(
-            content,{icon:16}
+            content,{icon:16,time:10*1000}
         )
     }
 }
