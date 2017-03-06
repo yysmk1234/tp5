@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1487925240;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1488449400;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +12,25 @@
     <script src="../../../../public/static/layer/layer_m.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
+                    </ul>
+                </li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
     <div class="container">
         <form id="form" style="padding: 50px 20px" enctype="multipart/form-data" >
             <label style="padding-top: 20px">请输入测试名称：</label>
@@ -54,30 +73,39 @@
     <script>
         (function () {
             $('button').click(function () {
-               var load =  tips.wait("文件上传中……");
                 var flag = $(this).attr('id');
 //                console.log(flag);
                 if (flag=='return'){
                     window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
                 }else if (flag == 'submit'){
-                var data = new FormData(document.getElementById('form'));
+                    if ($("input[name='test_name']").val()==''){
+                        tips.error("请输入测试名称");
+                    }else if ($("input[name='status']").val()==''){
+                        tips.error("请输入测试顺序");
+                    }else if (($("input[name='index']").val()!='') && ($("input[name='tags']").val()!='')){
+                        alert("success");
+                        var load =  tips.wait("文件上传中……");        //打开加载层
+                        var data = new FormData(document.getElementById('form'));
 //                console.log(data);
-                $.ajax({
-                    type:"POST",
-                    url:"<?php echo url('demo/hello/upfile'); ?>",
-                    data:data,
-                    dataType:"json",
-                    processData:false,
-                    contentType:false,
-                    success:function (data) {
-                        console.log(data);
-                        if (data.sta == 1 ){
-                            layer.close(load);
-                            tips.success("文件上传成功！");
-                            window.location.reload();
-                        }
+                        $.ajax({
+                            type:"POST",
+                            url:"<?php echo url('demo/hello/upfile'); ?>",
+                            data:data,
+                            dataType:"json",
+                            processData:false,
+                            contentType:false,
+                            success:function (data) {
+                                console.log(data);
+                                if (data.sta == 1 ){
+                                    layer.close(load);    //如果服务器返回值，关闭加载层
+                                    tips.success("文件上传成功！");
+                                    window.location.reload();
+                                }
+                            }
+                        })
+                    }else {
+                        tips.error("请添加文件");
                     }
-                })
                 }
             })
         })()

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\testerandgame.html";i:1487137997;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\testerandgame.html";i:1488443156;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +12,25 @@
     <script src="../../../../public/static/layer/layer_m.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
+                    </ul>
+                </li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
     <div class="container">
         <form id="tester">
             <h3>添加被试</h3>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1487844658;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1488532181;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +12,26 @@
     <script src="../../../../public/static/layer/layer_m.js"></script>
     <script src="../../../../public/static/cookie/jquery.cookie.js"></script>
 </head>
-<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
+                    </ul>
+                </li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<body style="padding-bottom: 50px">
     <div class="container" style="margin-top: 50px;padding-top: 40px">
         <label style="margin-top: 20px">组名:<?php echo $group_n; ?></label>
         <br />
@@ -38,9 +57,31 @@
             </tr>
             <?php endforeach; endif; else: echo "" ;endif; endif; ?>
         </table>
+
+
+        <form id="result_data">
+            <label>请输入百分位数：</label>
+            <input type="text" class="" name="count_n">
+            <button type="button" class="btn btn-info count">计算</button>
+            <table class="table table-condensed" style="margin-top: 20px" >
+                <tr>
+                    <td>emoi</td>
+                    <td>scl</td>
+                    <td>High alpha</td>
+                    <td>gamma</td>
+                </tr>
+                <tr>
+                    <td class="emoi"></td>
+                    <td class="scl"></td>
+                    <td class="High_alpha"></td>
+                    <td class="gamma"></td>
+                </tr>
+
+            </table>
+        </form>
     </div>
 
-    <div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px">
+    <div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;">
 
         <form>
             <label>选择筛选条件</label>
@@ -101,12 +142,13 @@
             </tr>
 
         </table>
+
     </div>
 
 </body>
 <script>
     (function () {
-        $('.btn-info,.add').click(function () {
+        $('.add').click(function () {
             $('.show_data').show();
         });
         $('.choose').click(function () {
@@ -153,6 +195,7 @@
             data_ = {
                 id:JSON.stringify(arr_data)
             };
+            console.log(data_);
             $.ajax({
                 url:"<?php echo url('demo/hello/adddata'); ?>",
                 type:"POST",
@@ -164,6 +207,21 @@
             });
             window.location.reload();
         });
+        $('.count').click(function () {
+            var data =  $('#result_data').serialize();
+            $.ajax({
+                url:"<?php echo url('demo/hello/data_get'); ?>",
+                type:"POST",
+                data:data,
+                dataType:"json",
+                success:function (data) {
+                    $('.emoi').text(data.emoi);
+                    $('.scl').text(data.scl);
+                    $('.High_alpha').text(data.high_alpha);
+                    $('.gamma').text(data.gamma);
+                }
+            })
+        })
     })()
 </script>
 </html>

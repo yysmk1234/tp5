@@ -458,12 +458,7 @@ class Hello extends Controller
         $data = Db::query("select emoi,scl,High_alpha,gamma,tag from data WHERE id in (SELECT test_id FROM group_test WHERE group_id = '$group_id') ");
         $this->assign("data",$data);
 
-//        $emoi_sort_arr = array();
-        foreach ($data as $key=>$value){
-            array_push($emoi_sort,$value['emoi']);
-        }
-        asort($emoi_sort);
-//        print_r($emoi_sort_arr);
+
         return $this->fetch();
 
     }
@@ -522,10 +517,78 @@ class Hello extends Controller
         $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
         $group_id = $res[0]['group_id'];
         $data = json_decode($request->post('id'));
+//        print_r($data);
         foreach ($data as $key=>$value){
-            $insert = Db::execute("insert into group_test (group_id,test_id) VALUES ('$group_id','$value')");  //此处的test_id是表中的ID
+            $res = Db::query("select count(id) AS id from group_test WHERE group_id = '$group_id'AND test_id = '$value'");
+//            print_r($res);
+            if ($res[0]['id'] == 0){
+                $insert = Db::execute("insert into group_test (group_id,test_id) VALUES ('$group_id','$value')");  //此处的test_id是表中的ID
+            }
         }
 
+    }
+
+
+    //数据计算
+    public function data_get(Request $request){
+        $group_name = Cookie::get("group_name");
+        $this->assign("group_n",$group_name);
+        $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
+        $group_id = $res[0]['group_id'];
+        $data = Db::query("select emoi,scl,High_alpha,gamma from data WHERE id in (SELECT test_id FROM group_test WHERE group_id = '$group_id') ");
+        //        $emoi_sort = array();
+        $count_n = $request->post('count_n');
+        $emoi_sort = array();
+        $scl_sort = array();
+        $high_a_sort = array();
+        $gamma_sort = array();
+        $res_arr = array(
+            'emoi'=>'',
+            'scl'=>'',
+            'high_alpha'=>'',
+            'gamma'=>''
+        );
+        //把数据分类添加到数组中
+        foreach ($data as $key=>$value){
+            array_push($emoi_sort,$value['emoi']);
+            array_push($scl_sort,$value['scl']);
+            array_push($high_a_sort,$value['High_alpha']);
+            array_push($gamma_sort,$value['gamma']);
+
+        }
+
+        //对数组进行排序
+        sort($emoi_sort);
+        sort($scl_sort);
+        sort($high_a_sort);
+        sort($gamma_sort);
+//        print_r($emoi_sort);
+
+        $i = count($emoi_sort)*$count_n/100;
+//        echo "--" . $i . "--";
+        if (is_int($i)){
+            $emoi_k = ($emoi_sort[$i]*pow(10,8) + $emoi_sort[$i-1]*pow(10,8))/(2*pow(10,8));
+            $scl_k = ($scl_sort[$i]*pow(10,13) + $scl_sort[$i-1]*pow(10,13))/(2*pow(10,13));
+            $high_a_k = ($high_a_sort[$i]*pow(10,4) + $high_a_sort[$i-1]*pow(10,4))/(2*pow(10,4));
+            $gamma_k = ($gamma_sort[$i]*pow(10,4) + $gamma_sort[$i-1]*pow(10,4))/(2*pow(10,4));
+            $res_arr = array(
+                'emoi'=>$emoi_k,
+                'scl'=>$scl_k,
+                'high_alpha'=>$high_a_k,
+                'gamma'=>$gamma_k
+            );
+
+            echo json_encode($res_arr);
+        }else{
+            $j = ceil($i);
+            $res_arr = array(
+                'emoi'=>$emoi_sort[$j],
+                'scl'=>$scl_sort[$j],
+                'high_alpha'=>$high_a_sort[$j],
+                'gamma'=>$gamma_sort[$j]
+            );
+            echo json_encode($res_arr);
+        }
     }
 
 

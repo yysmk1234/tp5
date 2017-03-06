@@ -60,9 +60,9 @@ return [
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'Delete',
+    'default_controller'     => 'Hello',
     // 默认操作名
-    'default_action'         => 'index',
+    'default_action'         => 'hello',
     // 默认验证器
     'default_validate'       => '',
     // 默认的空控制器名
