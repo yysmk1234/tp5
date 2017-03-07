@@ -206,7 +206,9 @@
                     console.log(data);
                 }
             });
-            window.location.reload();
+            setTimeout(function () {
+                window.location.reload();
+            },3000)
         });
         $('.count').click(function () {
             var data =  $('#result_data').serialize();

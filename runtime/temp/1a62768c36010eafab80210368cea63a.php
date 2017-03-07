@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1488449400;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1488872057;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +83,7 @@
                     }else if ($("input[name='status']").val()==''){
                         tips.error("请输入测试顺序");
                     }else if (($("input[name='index']").val()!='') && ($("input[name='tags']").val()!='')){
-                        alert("success");
+//                        alert("success");
                         var load =  tips.wait("文件上传中……");        //打开加载层
                         var data = new FormData(document.getElementById('form'));
 //                console.log(data);
@@ -95,7 +95,7 @@
                             processData:false,
                             contentType:false,
                             success:function (data) {
-                                console.log(data);
+//                                console.log(data);
                                 if (data.sta == 1 ){
                                     layer.close(load);    //如果服务器返回值，关闭加载层
                                     tips.success("文件上传成功！");

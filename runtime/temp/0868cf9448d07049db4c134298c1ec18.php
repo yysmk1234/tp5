@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1488532181;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sort.html";i:1488872272;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -205,7 +205,9 @@
                     console.log(data);
                 }
             });
-            window.location.reload();
+            setTimeout(function () {
+                window.location.reload();
+            },3000)
         });
         $('.count').click(function () {
             var data =  $('#result_data').serialize();

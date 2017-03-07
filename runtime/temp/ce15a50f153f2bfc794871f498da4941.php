@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\project.html";i:1488443156;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\project.html";i:1488872192;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +67,10 @@
                 success:function (data) {
                     console.log(data.sta);
                     if (data.sta == 1){
-                        tips.success("添加成功！！")
+                        tips.success("添加成功！！");
+                        setTimeout(function () {
+                            window.location.reload();
+                        },3000)
                     }
                 }
             });

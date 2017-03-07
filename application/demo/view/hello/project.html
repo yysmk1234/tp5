@@ -68,7 +68,10 @@
                 success:function (data) {
                     console.log(data.sta);
                     if (data.sta == 1){
-                        tips.success("添加成功！！")
+                        tips.success("添加成功！！");
+                        setTimeout(function () {
+                            window.location.reload();
+                        },3000)
                     }
                 }
             });
