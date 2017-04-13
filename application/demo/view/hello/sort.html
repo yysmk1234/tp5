@@ -38,6 +38,7 @@
         <button class="btn btn-info add" type="button">添加数据</button>
         <table class="table table-condensed" style="margin-top: 20px">
             <tr>
+                <td>game</td>
                 <td>emoi</td>
                 <td>scl</td>
                 <td>High alpha</td>
@@ -49,6 +50,7 @@
             {else /}
             {volist name="data" id="data"}
             <tr>
+                <td>{$data.g_name}</td>
                 <td>{$data.emoi}</td>
                 <td>{$data.scl}</td>
                 <td>{$data.High_alpha}</td>
@@ -89,6 +91,7 @@
             <br />
             <label style="padding-top: 20px">请选择性别：</label>
             <select name="sex">
+                <option value="0">所有</option>
                 {volist name = "sex" id="sex" }
                 <option value="{$sex.id}">{$sex.value}</option>
                 {/volist}
@@ -97,6 +100,7 @@
 
             <label style="padding-top: 20px">请选择年龄：</label>
             <select name="age_group">
+                <option value="0">所有</option>
                 {volist name = "age_group" id="age" }
                 <option value="{$age.id}">{$age.value}</option>
                 {/volist}
@@ -105,6 +109,7 @@
 
             <label style="padding-top: 20px">请选择游戏经历：</label>
             <select name="game_experience">
+                <option value="0">所有</option>
                 {volist name = "game_experience" id="exp" }
                 <option value="{$exp.id}">{$exp.value}</option>
                 {/volist}
@@ -113,6 +118,7 @@
 
             <label style="padding-top: 20px">请选择游戏年限：</label>
             <select name="game_year">
+                <option value="0">所有</option>
                 {volist name = "game_year" id="year" }
                 <option value="{$year.id}">{$year.value}</option>
                 {/volist}
@@ -121,6 +127,7 @@
 
             <label style="padding-top: 20px;padding-bottom: 20px">请选择测试顺序：</label>
             <select name="status">
+                <option value="0">所有</option>
                 {volist name = "status" id="statu" }
                 <option value="{$statu.status_}">{$statu.status_}</option>
                 {/volist}
@@ -135,6 +142,7 @@
         <table class="table table-condensed" style="margin-top: 20px" id="c_data">
             <tr>
                 <td>#</td>
+                <td>game</td>
                 <td>emoi</td>
                 <td>scl</td>
                 <td>High alpha</td>
@@ -157,6 +165,7 @@
             $('#c_data').empty();
             var df_str ="<tr>"+
                 "<td>"+"#"+"</td>"+
+                "<td>"+"game"+"</td>"+
                 "<td>"+"emoi"+"</td>"+
                 "<td>"+"scl"+"</td>"+
                 "<td>"+"High alpha"+"</td>"+
@@ -175,6 +184,7 @@
 //                        console.log(data[x]);
                         var str = "<tr>"+
                             "<td>"+"<input type='checkbox' name='test_id' value="+data[x].id+">"+"</td>"+
+                            "<td>"+data[x].g_name+"</td>"+
                             "<td>"+data[x].emoi+"</td>"+
                             "<td>"+data[x].scl+"</td>"+
                             "<td>"+data[x].High_alpha+"</td>"+
@@ -206,9 +216,9 @@
                     console.log(data);
                 }
             });
-            setTimeout(function () {
-                window.location.reload();
-            },3000)
+//            setTimeout(function () {
+//                window.location.reload();
+//            },3000)
         });
         $('.count').click(function () {
             var data =  $('#result_data').serialize();

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1488872057;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\upload.html";i:1490861839;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +99,9 @@
                                 if (data.sta == 1 ){
                                     layer.close(load);    //如果服务器返回值，关闭加载层
                                     tips.success("文件上传成功！");
-                                    window.location.reload();
+                                    setTimeout(function () {
+                                        window.location.reload();
+                                    },3000)
                                 }
                             }
                         })

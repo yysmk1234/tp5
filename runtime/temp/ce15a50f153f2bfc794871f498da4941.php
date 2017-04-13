@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\project.html";i:1488872192;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\project.html";i:1492065192;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +46,10 @@
            <?php if(count($project_name)==0): ?>
            <li class="list-group-item">暂时没有项目</li>
            <?php else: if(is_array($project_name) || $project_name instanceof \think\Collection || $project_name instanceof \think\Paginator): $i = 0; $__LIST__ = $project_name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pname): $mod = ($i % 2 );++$i;?>
-           <li class="list-group-item"><?php echo $pname['project_name']; ?></li>
+           <li class="list-group-item" data="<?php echo $pname['project_name']; ?>">
+               <label style="width: 93%"><?php echo $pname['project_name']; ?></label>
+               <button type="button" class="btn btn-danger project_delete">删除</button>
+           </li>
            <?php endforeach; endif; else: echo "" ;endif; endif; ?>
 
        </ul>
@@ -76,10 +79,37 @@
             });
         });
         $('.list-group-item').click(function () {
-            var project_name = $(this).text();
+            var project_name = $.trim($(this).attr('data'));
             $.cookie("project_name",project_name);
             window.location.assign("<?php echo url('demo/hello/group'); ?>");
 //            alert($.cookie("project_name"));
+        });
+        $('.project_delete').click(function (e) {
+            var that = $(this);
+            layer.confirm('确定要删除项目？'+'<br />'+'删除项目后项目内的所有数据都会被删除！！',{
+                btn:['确定','取消']},function () {
+                var project_name  = {
+                    p_n:that.parent().attr('data')
+                };
+                $.ajax({
+                    url:"<?php echo url('demo/hello/del_project'); ?>",
+                    type:"POST",
+                    data:project_name,
+//                datatype:"JSON",
+                    success:function (data) {
+//                        console.log(data);
+                        if (data == 1){
+                            tips.success('删除成功')
+                        }
+                    }
+                })
+            });
+//            alert($(this).parent().attr('data'));
+
+
+//            console.log(JSON.stringify(project_name));
+
+            e.stopPropagation();
         });
     })()
 </script>

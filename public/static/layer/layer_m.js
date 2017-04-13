@@ -18,5 +18,6 @@ var tips = {
         layer.msg(
             content,{icon:16,time:10*1000}
         )
-    }
+    },
+
 }

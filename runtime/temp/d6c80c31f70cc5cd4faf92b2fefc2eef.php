@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\group.html";i:1488443156;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\group.html";i:1492074669;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +45,10 @@
         <?php if(count($group_name)==0): ?>
         <li class="list-group-item">暂时没有分组</li>
         <?php else: if(is_array($group_name) || $group_name instanceof \think\Collection || $group_name instanceof \think\Paginator): $i = 0; $__LIST__ = $group_name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gname): $mod = ($i % 2 );++$i;?>
-        <li class="list-group-item"><?php echo $gname['group_name']; ?></li>
+        <li class="list-group-item" data="<?php echo $gname['group_name']; ?>">
+            <label style="width: 93%"><?php echo $gname['group_name']; ?></label>
+            <button type="button" class="btn btn-danger project_delete">删除</button>
+        </li>
         <?php endforeach; endif; else: echo "" ;endif; endif; ?>
 
     </ul>
@@ -76,13 +79,32 @@
             });
         });
         $('.list-group-item').click(function () {
-            var group_name = $(this).text();
+            var group_name = $(this).attr('data');
             $.cookie("group_name",group_name);
             $.cookie("project_id",<?php echo $project_id; ?>);
-            window.location.assign("<?php echo url('demo/hello/sort'); ?>");
-//            alert($.cookie("project_name"));
-//            alert($.cookie("group_name"));
-
+            window.location.assign("<?php echo url('demo/hello/sortnew'); ?>");
+        });
+        $('.project_delete').click(function (e) {
+            var that = $(this);
+            layer.confirm('确定要删除组？'+'<br />'+'删除组后组内的所有数据都会被删除！！',{
+                btn:['确定','取消']},function () {
+                var project_name  = {
+                    p_n:that.parent().attr('data')
+                };
+                $.ajax({
+                    url:"<?php echo url('demo/hello/del_project'); ?>",
+                    type:"POST",
+                    data:project_name,
+//                datatype:"JSON",
+                    success:function (data) {
+//                        console.log(data);
+                        if (data == 1){
+                            tips.success('删除成功')
+                        }
+                    }
+                })
+            });
+            e.stopPropagation();
         });
     })()
 </script>

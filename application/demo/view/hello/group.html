@@ -45,7 +45,10 @@
         <li class="list-group-item">暂时没有分组</li>
         {else /}
         {volist name="group_name" id="gname"}
-        <li class="list-group-item">{$gname.group_name}</li>
+        <li class="list-group-item" data="{$gname.group_name}">
+            <label style="width: 93%">{$gname.group_name}</label>
+            <button type="button" class="btn btn-danger project_delete">删除</button>
+        </li>
         {/volist}
         {/if}
 
@@ -77,13 +80,32 @@
             });
         });
         $('.list-group-item').click(function () {
-            var group_name = $(this).text();
+            var group_name = $(this).attr('data');
             $.cookie("group_name",group_name);
             $.cookie("project_id",{$project_id});
-            window.location.assign("{:url('demo/hello/sort')}");
-//            alert($.cookie("project_name"));
-//            alert($.cookie("group_name"));
-
+            window.location.assign("{:url('demo/hello/sortnew')}");
+        });
+        $('.project_delete').click(function (e) {
+            var that = $(this);
+            layer.confirm('确定要删除组？'+'<br />'+'删除组后组内的所有数据都会被删除！！',{
+                btn:['确定','取消']},function () {
+                var project_name  = {
+                    p_n:that.parent().attr('data')
+                };
+                $.ajax({
+                    url:"{:url('demo/hello/del_project')}",
+                    type:"POST",
+                    data:project_name,
+//                datatype:"JSON",
+                    success:function (data) {
+//                        console.log(data);
+                        if (data == 1){
+                            tips.success('删除成功')
+                        }
+                    }
+                })
+            });
+            e.stopPropagation();
         });
     })()
 </script>

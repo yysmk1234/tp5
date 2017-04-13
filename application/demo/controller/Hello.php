@@ -95,7 +95,7 @@ class Hello extends Controller
 
             //创建一个存放index数据的table
             $create_index = Db::execute("create table $table_name_index (emoi FLOAT(20),scl FLOAT(20),High_alpha FLOAT(20),gamma FLOAT(20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
-            $create_tags = Db::execute("create table $table_name_tags (studioeventdata VARCHAR(20), tags_t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
+            $create_tags = Db::execute("create table $table_name_tags (studioeventdata VARCHAR(200), tags_t INT(10))ENGINE=InnoDB DEFAULT CHARSET=UTF8;");
             //将数据存入测试表中
             $insert_test = Db::execute("insert into test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
 
@@ -194,7 +194,7 @@ class Hello extends Controller
 //            echo $t1;
 //            echo "<br / >";
 //            echo $t2;
-            $arr_select = Db::query("select emoi , scl , High_alpha , gamma from $table_name_index WHERE t>='$t1'AND t<=$t2");
+            $arr_select = Db::query("select emoi , scl , High_alpha , gamma from $table_name_index WHERE t>='$t1'AND t<='$t2'");
             $arr_emoi = array();
             $arr_scl = array();
             $arr_high_a = array();
@@ -205,29 +205,25 @@ class Hello extends Controller
                 array_push($arr_high_a,$value['High_alpha']);
                 array_push($arr_gamma,$value['gamma']);
             }
+            if (($t2-$t1) != 0){
+                $emoi = array_sum($arr_emoi)/($t2-$t1);
+                $scl = array_sum($arr_scl)/($t2-$t1);
+                $high_a = array_sum($arr_high_a)/($t2-$t1);
+                $gamma = array_sum($arr_gamma)/($t2-$t1);
+            }else{
+                $emoi = array_sum($arr_emoi);
+                $scl = array_sum($arr_scl);
+                $high_a = array_sum($arr_high_a);
+                $gamma = array_sum($arr_gamma);
+            }
 
-            $emoi = array_sum($arr_emoi)/($t2-$t1);
-            $scl = array_sum($arr_scl)/($t2-$t1);
-            $high_a = array_sum($arr_high_a)/($t2-$t1);
-            $gamma = array_sum($arr_gamma)/($t2-$t1);
+
+            //获取test_id
             $test_num = Db::query("SELECT test_id FROM `test` WHERE data_name='$table_name_index'AND tag_name='$table_name_tags'");
             $test_id = $test_num[0]['test_id'];
             //把数据插入到表中
-            $insert_table = Db::execute("insert into data (test_id,emoi,scl,High_alpha,gamma,tag) VALUES ('$test_id','$emoi','$scl','$high_a','$gamma','$tag')");
+            $insert_table = Db::execute("insert into data_ (test_id,emoi,scl,High_alpha,gamma,tag) VALUES ('$test_id','$emoi','$scl','$high_a','$gamma','$tag')");
 
-
-//              print_r($test_num[0]['test_id']);
-//            print_r($arr_emoi);
-//            echo $emoi;
-//            echo '<br / >';
-//            echo $scl;
-//            echo '<br / >';
-//            echo $high_a;
-//            echo '<br / >';
-//            echo $gamma;
-//            echo '<br / >';
-//            echo $tag;
-//            echo '<br / >';
         }
 
         if ($insert_table){
@@ -455,13 +451,20 @@ class Hello extends Controller
         $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
         $group_id = $res[0]['group_id'];
 
-        $data = Db::query("select emoi,scl,High_alpha,gamma,tag from data WHERE id in (SELECT test_id FROM group_test WHERE group_id = '$group_id') ");
+        $data = Db::query("select game.g_name,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                     FROM data_ LEFT JOIN test ON(data_.test_id = test.test_id) 
+                     LEFT JOIN game ON (test.g_id = game.g_id) WHERE data_.id IN 
+                     (SELECT test_id FROM group_test WHERE group_id = '$group_id')");
         $this->assign("data",$data);
 
 
         return $this->fetch();
 
     }
+
+
+
+    //这个函数有bug，需要修改
     public function sortData(Request $request){
         //选择数据
 
@@ -470,7 +473,34 @@ class Hello extends Controller
         $game_e = $request->post('game_experience');
         $game_y = $request->post('game_year');
         $status = $request->post('status');
-        $data_choose = Db::query("select id,emoi,scl,High_alpha,gamma,tag from data WHERE test_id IN (SELECT test_id FROM test WHERE status_ = '$status' AND u_id IN (SELECT u_id FROM tester WHERE u_sex_id = '$sex'AND u_age_id = '$age'AND u_year_id='$game_y' AND u_experience_id = '$game_e'))");
+        //无条件筛选
+        $str1 = "";
+        $str2 = "";
+        if($sex == 0){
+            $str1 .= "u_age_id = '$age' AND u_experience_id = '$game_e' AND u_year_id='$game_y' AND";
+        }elseif($age == 0 && $sex == 0){
+            $str1 .="u_experience_id = '$game_e' AND u_year_id='$game_y' AND";
+        }elseif ($game_e ==0 && $age == 0 && $sex == 0){
+            $str1 .="u_year_id='$game_y' AND";
+        }elseif ($game_y ==0 && $game_e ==0 && $age == 0 && $sex == 0){
+            $str1 .="";
+        }else{
+            $str1 .= "u_sex_id = '$sex' AND u_age_id = '$age' AND u_experience_id = '$game_e' AND u_year_id='$game_y' AND";
+        }
+
+        $str1 = substr($str1,0,strlen($str1)-3);
+        $str_select = "WHERE " . $str1;
+        //status判断
+        if($status == 0 ){
+            $str2 .= "";
+        }else{
+            $str2 .= "status_ = '$status' AND";
+        }
+
+        $data_choose = Db::query("select game.g_name,data_.id,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                                          from game,data_ 
+                                WHERE game.g_id IN (SELECT g_id FROM test WHERE test_id = data_.test_id) AND data_.test_id IN 
+                                (SELECT test_id FROM test WHERE ".$str2." u_id IN (SELECT u_id FROM tester "." $str_select))");
         $this->assign("data_c",$data_choose);
 
         echo json_encode($data_choose);
@@ -512,17 +542,19 @@ class Hello extends Controller
 
     //添加测试数据到组中
     public function addData(Request $request){
-        $insert = '';
+//        print_r($request->post());
         $group_name = Cookie::get("group_name");
         $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
         $group_id = $res[0]['group_id'];
+//        print_r($group_id);
         $data = json_decode($request->post('id'));
-//        print_r($data);
+        print_r($data);
         foreach ($data as $key=>$value){
             $res = Db::query("select count(id) AS id from group_test WHERE group_id = '$group_id'AND test_id = '$value'");
 //            print_r($res);
             if ($res[0]['id'] == 0){
-                $insert = Db::execute("insert into group_test (group_id,test_id) VALUES ('$group_id','$value')");  //此处的test_id是表中的ID
+                $insert = Db::execute("insert into group_test (group_id,test_id) VALUES ('$group_id','$value')");
+                //此处的test_id是表中的ID
             }
         }
 
@@ -535,42 +567,36 @@ class Hello extends Controller
         $this->assign("group_n",$group_name);
         $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
         $group_id = $res[0]['group_id'];
-        $data = Db::query("select emoi,scl,High_alpha,gamma from data WHERE id in (SELECT test_id FROM group_test WHERE group_id = '$group_id') ");
+        $data = Db::query("select emoi,scl,High_alpha,gamma from data_ WHERE id in (SELECT test_id FROM group_test WHERE group_id = '$group_id') ");
         //        $emoi_sort = array();
         $count_n = $request->post('count_n');
         $emoi_sort = array();
         $scl_sort = array();
         $high_a_sort = array();
         $gamma_sort = array();
-        $res_arr = array(
-            'emoi'=>'',
-            'scl'=>'',
-            'high_alpha'=>'',
-            'gamma'=>''
-        );
+
         //把数据分类添加到数组中
         foreach ($data as $key=>$value){
             array_push($emoi_sort,$value['emoi']);
             array_push($scl_sort,$value['scl']);
             array_push($high_a_sort,$value['High_alpha']);
             array_push($gamma_sort,$value['gamma']);
-
         }
-
         //对数组进行排序
         sort($emoi_sort);
         sort($scl_sort);
         sort($high_a_sort);
         sort($gamma_sort);
-//        print_r($emoi_sort);
+
+//        print_r($high_a_sort);
 
         $i = count($emoi_sort)*$count_n/100;
 //        echo "--" . $i . "--";
         if (is_int($i)){
-            $emoi_k = ($emoi_sort[$i]*pow(10,8) + $emoi_sort[$i-1]*pow(10,8))/(2*pow(10,8));
-            $scl_k = ($scl_sort[$i]*pow(10,13) + $scl_sort[$i-1]*pow(10,13))/(2*pow(10,13));
-            $high_a_k = ($high_a_sort[$i]*pow(10,4) + $high_a_sort[$i-1]*pow(10,4))/(2*pow(10,4));
-            $gamma_k = ($gamma_sort[$i]*pow(10,4) + $gamma_sort[$i-1]*pow(10,4))/(2*pow(10,4));
+            $emoi_k = ($emoi_sort[$i-2]*pow(10,8) + $emoi_sort[$i-1]*pow(10,8))/(2*pow(10,8));
+            $scl_k = ($scl_sort[$i-2]*pow(10,13) + $scl_sort[$i-1]*pow(10,13))/(2*pow(10,13));
+            $high_a_k = ($high_a_sort[$i-2]*pow(10,4) + $high_a_sort[$i-1]*pow(10,4))/(2*pow(10,4));
+            $gamma_k = ($gamma_sort[$i-2]*pow(10,4) + $gamma_sort[$i-1]*pow(10,4))/(2*pow(10,4));
             $res_arr = array(
                 'emoi'=>$emoi_k,
                 'scl'=>$scl_k,
@@ -582,13 +608,45 @@ class Hello extends Controller
         }else{
             $j = ceil($i);
             $res_arr = array(
-                'emoi'=>$emoi_sort[$j],
-                'scl'=>$scl_sort[$j],
-                'high_alpha'=>$high_a_sort[$j],
-                'gamma'=>$gamma_sort[$j]
+                'emoi'=>$emoi_sort[$j-1],
+                'scl'=>$scl_sort[$j-1],
+                'high_alpha'=>$high_a_sort[$j-1],
+                'gamma'=>$gamma_sort[$j-1]
             );
             echo json_encode($res_arr);
         }
+    }
+
+    //删除项目
+    function del_project(Request $request){
+        $project_name = $request->post('p_n');
+//        print_r($project_name) ;
+        $str = "SELECT * FROM project WHERE project_name = '$project_name'";
+        $del_project = Db::query($str);
+//        print_r($del_project);
+        return 1;
+    }
+
+
+    //sort_new
+    function sortNew(){
+        $game = Db::query("select g_id,g_name from game");
+        $this->assign('game',$game);
+        $group_name = Cookie::get("group_name");
+        $this->assign("group_n",$group_name);
+        $res = Db::query("select group_id from group_ WHERE group_name = '$group_name'");
+        $group_id = $res[0]['group_id'];
+
+        $data = Db::query("select game.g_name,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                     FROM data_ LEFT JOIN test ON(data_.test_id = test.test_id) 
+                     LEFT JOIN game ON (test.g_id = game.g_id) WHERE data_.id IN 
+                     (SELECT test_id FROM group_test WHERE group_id = '$group_id')");
+        $this->assign("data",$data);
+       return $this->fetch();
+    }
+
+    function sortDataNew(Request $request){
+        return 1;
     }
 
 
