@@ -76,15 +76,20 @@ class Hello extends Controller
               $path = $info1->getPath();
               $path_tag = $info2->getPath();
             $obj_excel_index = PHPExcel_IOFactory::load($path . "\\" . $info1->getFilename());
-            $obj_excel_tag = PHPExcel_IOFactory::load($path_tag. "\\" . $info2->getFilename());
+
+//            $obj_excel_tag = PHPExcel_IOFactory::load($path_tag. "\\" . $info2->getFilename());
+            $obj_excel_tag = PHPExcel_IOFactory::createReader('CSV')->setInputEncoding('GBK');
+            $obj_excel_tag_ = $obj_excel_tag->load($path_tag. "\\" . $info2->getFilename());
             //设置文件权限
 //            chmod($path . "\\" . $info1->getFilename(),0777);
 //            chmod($path_tag. "\\" . $info2->getFilename(),0777);
             //index文件数组集合
             $data1 = $obj_excel_index->getActiveSheet()->toArray(null,true,true,true);
             //tags文件数组集合
-            $data2 = $obj_excel_tag->getActiveSheet()->toArray(null,true,true,true);
+            $data2 = $obj_excel_tag_->getActiveSheet()->toArray(null,true,true,true);
 //            echo count($data1);
+//            var_dump($data1);
+//            return false;
             //文件删除
 //            unlink($path . "\\" . $info1->getFilename());
 //            unlink($path_tag. "\\" . $info2->getFilename());
@@ -94,7 +99,7 @@ class Hello extends Controller
             $table_name_tags = $this->guid();
 
             //创建一个存放index数据的table
-            $create_index = Db::execute("create table $table_name_index (emoi FLOAT(20),scl FLOAT(20),High_alpha FLOAT(20),gamma FLOAT(20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
+            $create_index = Db::execute("create table $table_name_index (emoi DECIMAL (25,20),scl DECIMAL (25,20),High_alpha DECIMAL (25,20),gamma DECIMAL (25,20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
             $create_tags = Db::execute("create table $table_name_tags (studioeventdata VARCHAR(200), tags_t INT(10))ENGINE=InnoDB DEFAULT CHARSET=UTF8;");
             //将数据存入测试表中
             $insert_test = Db::execute("insert into test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
@@ -200,16 +205,16 @@ class Hello extends Controller
             $arr_high_a = array();
             $arr_gamma = array();
             foreach ($arr_select as $key=>$value){
-                array_push($arr_emoi,$value['emoi']);
-                array_push($arr_scl,$value['scl']);
-                array_push($arr_high_a,$value['High_alpha']);
-                array_push($arr_gamma,$value['gamma']);
+                array_push($arr_emoi,$value['emoi']*pow(10,20));
+                array_push($arr_scl,$value['scl']*pow(10,20));
+                array_push($arr_high_a,$value['High_alpha']*pow(10,20));
+                array_push($arr_gamma,$value['gamma']*pow(10,20));
             }
             if (($t2-$t1) != 0){
-                $emoi = array_sum($arr_emoi)/($t2-$t1);
-                $scl = array_sum($arr_scl)/($t2-$t1);
-                $high_a = array_sum($arr_high_a)/($t2-$t1);
-                $gamma = array_sum($arr_gamma)/($t2-$t1);
+                $emoi = array_sum($arr_emoi)/(($t2-$t1+1)*pow(10,20));             //点出问题，是包含两个点，不是单纯的相减！！
+                $scl = array_sum($arr_scl)/(($t2-$t1+1)*pow(10,20));
+                $high_a = array_sum($arr_high_a)/(($t2-$t1+1)*pow(10,20));
+                $gamma = array_sum($arr_gamma)/(($t2-$t1+1)*pow(10,20));
             }else{
                 $emoi = array_sum($arr_emoi);
                 $scl = array_sum($arr_scl);
@@ -646,7 +651,63 @@ class Hello extends Controller
     }
 
     function sortDataNew(Request $request){
-        return 1;
+        $game_id = $request->post('game');
+        $g_str = "SELECT id,emoi,scl,High_alpha,gamma,tag FROM 
+                  data_ INNER JOIN test ON (data_.test_id = test.test_id)
+                  WHERE test.g_id = '$game_id'";
+        $g_res = Db::query($g_str);
+        echo json_encode($g_res);
+    }
+
+    function sortDataAve(){
+        $game = '';
+        $group_name = Cookie::get('group_name');
+        $str = "SELECT emoi,scl,High_alpha,gamma,tag FROM data_ 
+                INNER JOIN group_test ON (data_.id = group_test.test_id)
+                INNER JOIN group_ ON (group_test.group_id = group_.group_id)
+                WHERE group_.group_name = '$group_name'";
+        $sort_res = Db::query($str);
+//        echo $group_name;
+//        var_dump($sort_res);
+        $emoi = array();
+        $scl = array();
+        $high = array();
+        $gamma = array();
+        $len = count($sort_res);
+//        echo $len;
+        foreach ($sort_res as $key=>$value){
+             array_push($emoi,$value['emoi']);
+             array_push($scl,$value['scl']);
+             array_push($high,$value['High_alpha']);
+             array_push($gamma,$value['gamma']);
+             $game = $value['tag'];
+        }
+        $emoi_ave = array_sum($emoi)/$len;
+        $scl_ave = array_sum($scl)/$len;
+        $high_ave = array_sum($high)/$len;
+        $gamma_ave = array_sum($gamma)/$len;
+        $data = [
+            'emoi'=>$emoi_ave,
+            'scl'=>$scl_ave,
+            'high_a'=>$high_ave,
+            'gamma'=>$gamma_ave
+        ];
+
+
+        //把均值写入data表
+        $str_w = "INSERT INTO data (emoi,scl,High_alpha,gamma,game)
+                   VALUES ('$emoi_ave','$scl_ave','$high_ave','$gamma_ave','$game')";
+        $str_check = "SELECT COUNT(game) AS count FROM data WHERE game = '$game'";
+        $str_del = "DELETE FROM data WHERE game = '$game'";
+        $count = Db::query($str_check);
+//        var_dump($count);
+        if($count[0]['count'] != 0){
+            $r = Db::execute($str_del);
+        }else{
+            $r = Db::execute($str_w);
+        }
+
+        echo json_encode($data);
     }
 
 

@@ -38,19 +38,17 @@
     <button class="btn btn-info add" type="button">添加数据</button>
     <table class="table table-condensed" style="margin-top: 20px">
         <tr>
-            <td>game</td>
             <td>emoi</td>
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>tag</td>
+            <td>game</td>
         </tr>
         {if condition= "count($data)==0"}
         <tr><td style="border: none ;width: 200px">暂时没有数据</td></tr>
         {else /}
         {volist name="data" id="data"}
         <tr>
-            <td>{$data.g_name}</td>
             <td>{$data.emoi}</td>
             <td>{$data.scl}</td>
             <td>{$data.High_alpha}</td>
@@ -62,36 +60,34 @@
     </table>
 
 
-    <!--<form id="result_data">-->
-        <!--<label>请输入百分位数：</label>-->
-        <!--<input type="text" class="" name="count_n">-->
-        <!--<button type="button" class="btn btn-info count">计算</button>-->
-        <!--<table class="table table-condensed" style="margin-top: 20px" >-->
-            <!--<tr>-->
-                <!--<td>emoi</td>-->
-                <!--<td>scl</td>-->
-                <!--<td>High alpha</td>-->
-                <!--<td>gamma</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td class="emoi"></td>-->
-                <!--<td class="scl"></td>-->
-                <!--<td class="High_alpha"></td>-->
-                <!--<td class="gamma"></td>-->
-            <!--</tr>-->
+    <form id="result_data">
+        <button type="button" class="btn btn-info count">计算</button>
+        <table class="table table-condensed" style="margin-top: 20px" >
+            <tr>
+                <td>emoi</td>
+                <td>scl</td>
+                <td>High alpha</td>
+                <td>gamma</td>
+            </tr>
+            <tr>
+                <td class="emoi"></td>
+                <td class="scl"></td>
+                <td class="High_alpha"></td>
+                <td class="gamma"></td>
+            </tr>
 
-        <!--</table>-->
-    <!--</form>-->
+        </table>
+    </form>
 </div>
 
 <div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;">
 
-    <form>
+    <form id="choose">
         <label>选择筛选条件</label>
         <br />
         <label style="padding-top: 20px">请选择游戏：</label>
         <select name="game">
-            <option value="0">所有</option>
+            <!--<option value="0">所有</option>-->
             {volist name = "game" id="game" }
             <option value="{$game.g_id}">{$game.g_name}</option>
             {/volist}
@@ -107,12 +103,11 @@
     <table class="table table-condensed" style="margin-top: 20px" id="c_data">
         <tr>
             <td>#</td>
-            <td>game</td>
             <td>emoi</td>
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>tag</td>
+            <td>game</td>
         </tr>
 
     </table>
@@ -126,30 +121,28 @@
             $('.show_data').show();
         });
         $('.choose').click(function () {
-            var data = $('form').serialize();
+            var data = $('#choose').serialize();
             $('#c_data').empty();
             var df_str ="<tr>"+
                 "<td>"+"#"+"</td>"+
-                "<td>"+"game"+"</td>"+
                 "<td>"+"emoi"+"</td>"+
                 "<td>"+"scl"+"</td>"+
                 "<td>"+"High alpha"+"</td>"+
                 "<td>"+"gamma"+"</td>"+
-                "<td>"+"tag"+"</td>"+
+                "<td>"+"game"+"</td>"+
                 "</tr>" ;
             $('#c_data').append(df_str);
             $.ajax({
                 url:"{:url('demo/hello/sortdatanew')}",
                 type:"POST",
                 data:data,
-                dataType:"json",
+                dataType:"JSON",
                 success:function (data) {
 //                    console.log(data);
                     for(var x in data){
-//                        console.log(data[x]);
+                        console.log(data[x]);
                         var str = "<tr>"+
                             "<td>"+"<input type='checkbox' name='test_id' value="+data[x].id+">"+"</td>"+
-                            "<td>"+data[x].g_name+"</td>"+
                             "<td>"+data[x].emoi+"</td>"+
                             "<td>"+data[x].scl+"</td>"+
                             "<td>"+data[x].High_alpha+"</td>"+
@@ -181,25 +174,26 @@
                     console.log(data);
                 }
             });
-//            setTimeout(function () {
-//                window.location.reload();
-//            },3000)
+            setTimeout(function () {
+                window.location.reload();
+            },3000)
         });
         $('.count').click(function () {
             var data =  $('#result_data').serialize();
             $.ajax({
-                url:"{:url('demo/hello/data_get')}",
+                url:"{:url('demo/hello/sortdataave')}",
                 type:"POST",
-                data:data,
                 dataType:"json",
                 success:function (data) {
+                    console.log(data);
                     $('.emoi').text(data.emoi);
                     $('.scl').text(data.scl);
-                    $('.High_alpha').text(data.high_alpha);
+                    $('.High_alpha').text(data.high_a);
                     $('.gamma').text(data.gamma);
                 }
             })
         })
+        console.log($.cookie('group_name'));
     })()
 </script>
 </html>

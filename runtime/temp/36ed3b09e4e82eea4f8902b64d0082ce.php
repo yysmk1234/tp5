@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sortnew.html";i:1492075275;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"C:\xampp\htdocs\tp5\public/../application/demo\view\hello\sortnew.html";i:1492160655;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,18 +39,16 @@
     <button class="btn btn-info add" type="button">添加数据</button>
     <table class="table table-condensed" style="margin-top: 20px">
         <tr>
-            <td>game</td>
             <td>emoi</td>
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>tag</td>
+            <td>game</td>
         </tr>
         <?php if(count($data)==0): ?>
         <tr><td style="border: none ;width: 200px">暂时没有数据</td></tr>
         <?php else: if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>
         <tr>
-            <td><?php echo $data['g_name']; ?></td>
             <td><?php echo $data['emoi']; ?></td>
             <td><?php echo $data['scl']; ?></td>
             <td><?php echo $data['High_alpha']; ?></td>
@@ -61,36 +59,34 @@
     </table>
 
 
-    <!--<form id="result_data">-->
-        <!--<label>请输入百分位数：</label>-->
-        <!--<input type="text" class="" name="count_n">-->
-        <!--<button type="button" class="btn btn-info count">计算</button>-->
-        <!--<table class="table table-condensed" style="margin-top: 20px" >-->
-            <!--<tr>-->
-                <!--<td>emoi</td>-->
-                <!--<td>scl</td>-->
-                <!--<td>High alpha</td>-->
-                <!--<td>gamma</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<td class="emoi"></td>-->
-                <!--<td class="scl"></td>-->
-                <!--<td class="High_alpha"></td>-->
-                <!--<td class="gamma"></td>-->
-            <!--</tr>-->
+    <form id="result_data">
+        <button type="button" class="btn btn-info count">计算</button>
+        <table class="table table-condensed" style="margin-top: 20px" >
+            <tr>
+                <td>emoi</td>
+                <td>scl</td>
+                <td>High alpha</td>
+                <td>gamma</td>
+            </tr>
+            <tr>
+                <td class="emoi"></td>
+                <td class="scl"></td>
+                <td class="High_alpha"></td>
+                <td class="gamma"></td>
+            </tr>
 
-        <!--</table>-->
-    <!--</form>-->
+        </table>
+    </form>
 </div>
 
 <div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;">
 
-    <form>
+    <form id="choose">
         <label>选择筛选条件</label>
         <br />
         <label style="padding-top: 20px">请选择游戏：</label>
         <select name="game">
-            <option value="0">所有</option>
+            <!--<option value="0">所有</option>-->
             <?php if(is_array($game) || $game instanceof \think\Collection || $game instanceof \think\Paginator): $i = 0; $__LIST__ = $game;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?>
             <option value="<?php echo $game['g_id']; ?>"><?php echo $game['g_name']; ?></option>
             <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -106,12 +102,11 @@
     <table class="table table-condensed" style="margin-top: 20px" id="c_data">
         <tr>
             <td>#</td>
-            <td>game</td>
             <td>emoi</td>
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>tag</td>
+            <td>game</td>
         </tr>
 
     </table>
@@ -125,30 +120,28 @@
             $('.show_data').show();
         });
         $('.choose').click(function () {
-            var data = $('form').serialize();
+            var data = $('#choose').serialize();
             $('#c_data').empty();
             var df_str ="<tr>"+
                 "<td>"+"#"+"</td>"+
-                "<td>"+"game"+"</td>"+
                 "<td>"+"emoi"+"</td>"+
                 "<td>"+"scl"+"</td>"+
                 "<td>"+"High alpha"+"</td>"+
                 "<td>"+"gamma"+"</td>"+
-                "<td>"+"tag"+"</td>"+
+                "<td>"+"game"+"</td>"+
                 "</tr>" ;
             $('#c_data').append(df_str);
             $.ajax({
                 url:"<?php echo url('demo/hello/sortdatanew'); ?>",
                 type:"POST",
                 data:data,
-                dataType:"json",
+                dataType:"JSON",
                 success:function (data) {
 //                    console.log(data);
                     for(var x in data){
-//                        console.log(data[x]);
+                        console.log(data[x]);
                         var str = "<tr>"+
                             "<td>"+"<input type='checkbox' name='test_id' value="+data[x].id+">"+"</td>"+
-                            "<td>"+data[x].g_name+"</td>"+
                             "<td>"+data[x].emoi+"</td>"+
                             "<td>"+data[x].scl+"</td>"+
                             "<td>"+data[x].High_alpha+"</td>"+
@@ -180,25 +173,26 @@
                     console.log(data);
                 }
             });
-//            setTimeout(function () {
-//                window.location.reload();
-//            },3000)
+            setTimeout(function () {
+                window.location.reload();
+            },3000)
         });
         $('.count').click(function () {
             var data =  $('#result_data').serialize();
             $.ajax({
-                url:"<?php echo url('demo/hello/data_get'); ?>",
+                url:"<?php echo url('demo/hello/sortdataave'); ?>",
                 type:"POST",
-                data:data,
                 dataType:"json",
                 success:function (data) {
+                    console.log(data);
                     $('.emoi').text(data.emoi);
                     $('.scl').text(data.scl);
-                    $('.High_alpha').text(data.high_alpha);
+                    $('.High_alpha').text(data.high_a);
                     $('.gamma').text(data.gamma);
                 }
             })
         })
+        console.log($.cookie('group_name'));
     })()
 </script>
 </html>
