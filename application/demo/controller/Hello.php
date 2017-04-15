@@ -6,6 +6,7 @@ use think\Cookie;
 use think\Request;
 use think\Db;
 use PHPExcel_IOFactory;
+use think\Url;
 
 class Hello extends Controller
 {
@@ -269,9 +270,9 @@ class Hello extends Controller
 
     public function reload(Request $request){
             if ($request->post('name')=='set'){                                         //根据按钮的属性页面重定向
-                echo "http://localhost/tp5/public/index.php/demo/hello/setattr.html";
+                echo Url::build('demo/hello/setattr');
             }else{
-                echo "http://localhost/tp5/public/index.php/demo/hello/project.html";
+                echo Url::build('demo/hello/project');
             }
             //else
 
@@ -709,6 +710,9 @@ class Hello extends Controller
 
         echo json_encode($data);
     }
+
+    //数据排序页面   （每次加载页面时候都重新新建表，储存排序数据，每次加载页面前，先删除临时表。）
+    //取出数据存放在数组里，排序，然后转置key和value的值，读取位置信息
 
 
 }

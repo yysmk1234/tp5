@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>欢迎使用</title>
-    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
-    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
-    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
+    <link href="/tp5/public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="/tp5/public/static/dist/js/jquery.min.js"></script>
+    <script src="/tp5/public/static/dist/js/bootstrap.js"></script>
 
 </head>
 <body>
@@ -51,10 +51,11 @@
                //这还用注释的么？为了保险还是注释吧，ajax发送属性
                $.ajax({
                    type:"POST",
-                   url: "http://localhost/tp5/public/index.php/demo/hello/reload",
+                   url: "{:url('demo/hello/reload')}",
                    data: type,
                    success:function(data){
                        window.location.href=data;
+                       console.log(data);
                    }
                })
            });

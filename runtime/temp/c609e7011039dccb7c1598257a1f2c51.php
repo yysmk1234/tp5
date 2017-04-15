@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>设置必要的选择字段</title>
-    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../../../../public/static/layer/skin/default/layer.css">
-    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
-    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
-    <script src="../../../../public/static/layer/layer.js"></script>
-    <script src="../../../../public/static/layer/layer_m.js"></script>
+    <link href="/tp5/public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/tp5/public/static/layer/skin/default/layer.css">
+    <script src="/tp5/public/static/dist/js/jquery.min.js"></script>
+    <script src="/tp5/public/static/dist/js/bootstrap.js"></script>
+    <script src="/tp5/public/static/layer/layer.js"></script>
+    <script src="/tp5/public/static/layer/layer_m.js"></script>
 </head>
 <body>
         <div class="container" style="margin-top: 100px">

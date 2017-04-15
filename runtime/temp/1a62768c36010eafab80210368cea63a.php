@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>文件上传</title>
-    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../../../../public/static/layer/skin/default/layer.css">
-    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
-    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
-    <script src="../../../../public/static/layer/layer.js"></script>
-    <script src="../../../../public/static/layer/layer_m.js"></script>
+    <link href="/tp5/public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/tp5/public/static/layer/skin/default/layer.css">
+    <script src="/tp5/public/static/dist/js/jquery.min.js"></script>
+    <script src="/tp5/public/static/dist/js/bootstrap.js"></script>
+    <script src="/tp5/public/static/layer/layer.js"></script>
+    <script src="/tp5/public/static/layer/layer_m.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">

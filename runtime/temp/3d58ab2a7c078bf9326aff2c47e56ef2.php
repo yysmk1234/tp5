@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>欢迎使用</title>
-    <link href="../../../../public/static/dist/css/bootstrap.css" rel="stylesheet">
-    <script src="../../../../public/static/dist/js/jquery.min.js"></script>
-    <script src="../../../../public/static/dist/js/bootstrap.js"></script>
+    <link href="/tp5/public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <script src="/tp5/public/static/dist/js/jquery.min.js"></script>
+    <script src="/tp5/public/static/dist/js/bootstrap.js"></script>
 
 </head>
 <body>
