@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\group.html";i:1492327212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,20 +20,20 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
             </ul>
         </div>
 
     </div>
 </nav>
 <div class="container">
-    <label style="margin-top: 50px">项目:{$project_n}</label>
+    <label style="margin-top: 50px">项目:<?php echo $project_n; ?></label>
     <form style="padding-top: 50px" >
         <label>请输入组别名称：</label>
         <input type="text" name="project_name" class="form-control" style="margin-bottom: 20px">
@@ -41,16 +42,14 @@
         <button class="btn btn-danger" type="button">删除</button>
     </form>
     <ul class="list-group" style="margin-top: 50px">
-        {if condition= "count($group_name)==0"}
+        <?php if(count($group_name)==0): ?>
         <li class="list-group-item">暂时没有分组</li>
-        {else /}
-        {volist name="group_name" id="gname"}
-        <li class="list-group-item" data="{$gname.group_name}">
-            <label style="width: 93%">{$gname.group_name}</label>
+        <?php else: if(is_array($group_name) || $group_name instanceof \think\Collection || $group_name instanceof \think\Paginator): $i = 0; $__LIST__ = $group_name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gname): $mod = ($i % 2 );++$i;?>
+        <li class="list-group-item" data="<?php echo $gname['group_name']; ?>">
+            <label style="width: 93%"><?php echo $gname['group_name']; ?></label>
             <button type="button" class="btn btn-danger project_delete">删除</button>
         </li>
-        {/volist}
-        {/if}
+        <?php endforeach; endif; else: echo "" ;endif; endif; ?>
 
     </ul>
 
@@ -64,7 +63,7 @@
         $('.btn-info').click(function () {
             var data = $('form').serialize();
             $.ajax({
-                url: "{:url('demo/hello/addgroup')}",
+                url: "<?php echo url('demo/hello/addgroup'); ?>",
                 type:"POST",
                 data:data,
                 dataType:"json",
@@ -82,8 +81,8 @@
         $('.list-group-item').click(function () {
             var group_name = $(this).attr('data');
             $.cookie("group_name",group_name);
-            $.cookie("project_id",{$project_id});
-            window.location.assign("{:url('demo/hello/sortnew')}");
+            $.cookie("project_id",<?php echo $project_id; ?>);
+            window.location.assign("<?php echo url('demo/hello/sortnew'); ?>");
         });
         $('.project_delete').click(function (e) {
             var that = $(this);
@@ -93,7 +92,7 @@
                     p_n:that.parent().attr('data')
                 };
                 $.ajax({
-                    url:"{:url('demo/hello/del_project')}",
+                    url:"<?php echo url('demo/hello/del_project'); ?>",
                     type:"POST",
                     data:project_name,
 //                datatype:"JSON",

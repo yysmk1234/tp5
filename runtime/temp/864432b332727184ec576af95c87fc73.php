@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1492327212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +19,20 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
         </div>
 
     </div>
 </nav>
 <body style="padding-bottom: 50px">
 <div class="container" style="margin-top: 50px;padding-top: 40px">
-    <label style="margin-top: 20px">组名:{$group_n}</label>
+    <label style="margin-top: 20px">组名:<?php echo $group_n; ?></label>
     <br />
 
     <button class="btn btn-info add" type="button">添加数据</button>
@@ -43,19 +44,17 @@
             <td>gamma</td>
             <td>game</td>
         </tr>
-        {if condition= "count($data)==0"}
+        <?php if(count($data)==0): ?>
         <tr><td style="border: none ;width: 200px">暂时没有数据</td></tr>
-        {else /}
-        {volist name="data" id="data"}
+        <?php else: if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>
         <tr>
-            <td>{$data.emoi}</td>
-            <td>{$data.scl}</td>
-            <td>{$data.High_alpha}</td>
-            <td>{$data.gamma}</td>
-            <td>{$data.tag}</td>
+            <td><?php echo $data['emoi']; ?></td>
+            <td><?php echo $data['scl']; ?></td>
+            <td><?php echo $data['High_alpha']; ?></td>
+            <td><?php echo $data['gamma']; ?></td>
+            <td><?php echo $data['tag']; ?></td>
         </tr>
-        {/volist}
-        {/if}
+        <?php endforeach; endif; else: echo "" ;endif; endif; ?>
     </table>
 
 
@@ -87,9 +86,9 @@
         <label style="padding-top: 20px">请选择游戏：</label>
         <select name="game">
             <!--<option value="0">所有</option>-->
-            {volist name = "game" id="game" }
-            <option value="{$game.g_id}">{$game.g_name}</option>
-            {/volist}
+            <?php if(is_array($game) || $game instanceof \think\Collection || $game instanceof \think\Paginator): $i = 0; $__LIST__ = $game;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?>
+            <option value="<?php echo $game['g_id']; ?>"><?php echo $game['g_name']; ?></option>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
         </select>
         <br />
 
@@ -132,7 +131,7 @@
                 "</tr>" ;
             $('#c_data').append(df_str);
             $.ajax({
-                url:"{:url('demo/hello/sortdatanew')}",
+                url:"<?php echo url('demo/hello/sortdatanew'); ?>",
                 type:"POST",
                 data:data,
                 dataType:"JSON",
@@ -165,7 +164,7 @@
             };
             console.log(data_);
             $.ajax({
-                url:"{:url('demo/hello/adddata')}",
+                url:"<?php echo url('demo/hello/adddata'); ?>",
                 type:"POST",
                 data: data_,
 //                dataType:"json",
@@ -180,7 +179,7 @@
         $('.count').click(function () {
             var data =  $('#result_data').serialize();
             $.ajax({
-                url:"{:url('demo/hello/sortdataave')}",
+                url:"<?php echo url('demo/hello/sortdataave'); ?>",
                 type:"POST",
                 dataType:"json",
                 success:function (data) {

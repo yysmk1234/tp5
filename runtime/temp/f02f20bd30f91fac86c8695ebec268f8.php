@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"C:\xampp\htdocs\tp5/application/demo\view\hello\testerandgame.html";i:1492308363;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +19,12 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
 
             </ul>
         </div>
@@ -40,33 +40,33 @@
 
             <label style="padding-top: 20px">请选择性别：</label>
             <select name="sex">
-                {volist name = "sex" id="sex" }
-                <option value="{$sex.id}">{$sex.value}</option>
-                {/volist}
+                <?php if(is_array($sex) || $sex instanceof \think\Collection || $sex instanceof \think\Paginator): $i = 0; $__LIST__ = $sex;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sex): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $sex['id']; ?>"><?php echo $sex['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
 
             <label style="padding-top: 20px">请选择年龄：</label>
             <select name="age_group">
-                {volist name = "age_group" id="age" }
-                <option value="{$age.id}">{$age.value}</option>
-                {/volist}
+                <?php if(is_array($age_group) || $age_group instanceof \think\Collection || $age_group instanceof \think\Paginator): $i = 0; $__LIST__ = $age_group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$age): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $age['id']; ?>"><?php echo $age['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
 
             <label style="padding-top: 20px">请选择游戏经历：</label>
             <select name="game_experience">
-                {volist name = "game_experience" id="exp" }
-                <option value="{$exp.id}">{$exp.value}</option>
-                {/volist}
+                <?php if(is_array($game_experience) || $game_experience instanceof \think\Collection || $game_experience instanceof \think\Paginator): $i = 0; $__LIST__ = $game_experience;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$exp): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $exp['id']; ?>"><?php echo $exp['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
 
             <label style="padding-top: 20px">请选择游戏年限：</label>
             <select name="game_year">
-                {volist name = "game_year" id="year" }
-                <option value="{$year.id}">{$year.value}</option>
-                {/volist}
+                <?php if(is_array($game_year) || $game_year instanceof \think\Collection || $game_year instanceof \think\Paginator): $i = 0; $__LIST__ = $game_year;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$year): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $year['id']; ?>"><?php echo $year['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
 
@@ -82,17 +82,17 @@
 
             <label style="padding-top: 20px">请选择游戏类型：</label>
             <select name="game_type">
-                {volist name = "game_type" id="g_type" }
-                <option value="{$g_type.id}">{$g_type.value}</option>
-                {/volist}
+                <?php if(is_array($game_type) || $game_type instanceof \think\Collection || $game_type instanceof \think\Paginator): $i = 0; $__LIST__ = $game_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$g_type): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $g_type['id']; ?>"><?php echo $g_type['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
 
             <label style="padding-top: 20px">请选择终端类型：</label>
             <select name="terminal_type">
-                {volist name = "terminal_type" id="term" }
-                <option value="{$term.id}">{$term.value}</option>
-                {/volist}
+                <?php if(is_array($terminal_type) || $terminal_type instanceof \think\Collection || $terminal_type instanceof \think\Paginator): $i = 0; $__LIST__ = $terminal_type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$term): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $term['id']; ?>"><?php echo $term['value']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br />
             <button id="game_btn" type="button" class="btn btn-primary" style="margin-top: 20px">添加</button>
@@ -114,15 +114,15 @@
                     if ($(this).attr('id')=='tester_btn'){
                         data = $('#tester').serialize();
                         console.log(data);
-                        url = "{:url('demo/hello/addtester')}";
+                        url = "<?php echo url('demo/hello/addtester'); ?>";
                         console.log(url);
 
                     }else if($(this).attr('id')=='upload'){
-                        window.location.assign("{:url('demo/hello/upload')}");
+                        window.location.assign("<?php echo url('demo/hello/upload'); ?>");
                     }else {
                         data = $('#game').serialize();
                         console.log(data);
-                        url = "{:url('demo/hello/addgame')}";
+                        url = "<?php echo url('demo/hello/addgame'); ?>";
                         console.log(url);
                     }
                     $.ajax({

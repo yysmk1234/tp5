@@ -89,7 +89,7 @@ class Hello extends Controller
             //tags文件数组集合
             $data2 = $obj_excel_tag_->getActiveSheet()->toArray(null,true,true,true);
 //            echo count($data1);
-//            var_dump($data1);
+//            var_dump($data2);
 //            return false;
             //文件删除
 //            unlink($path . "\\" . $info1->getFilename());
@@ -103,11 +103,11 @@ class Hello extends Controller
             $create_index = Db::execute("create table $table_name_index (emoi DECIMAL (25,20),scl DECIMAL (25,20),High_alpha DECIMAL (25,20),gamma DECIMAL (25,20),t INT(10))ENGINE=InnoDB DEFAULT CHARSET=gbk;");
             $create_tags = Db::execute("create table $table_name_tags (studioeventdata VARCHAR(200), tags_t INT(10))ENGINE=InnoDB DEFAULT CHARSET=UTF8;");
             //将数据存入测试表中
-            $insert_test = Db::execute("insert into test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
+            $insert_test = Db::execute("INSERT INTO test (u_id , g_id , status_ ,test_name,data_name,tag_name) VALUES ('$tester','$game','$status','$test_name','$table_name_index','$table_name_tags')");
 
 
-            $str = "insert into $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
-            $str_ = "insert into $table_name_tags(studioeventdata,tags_t) VALUES ";
+            $str = "INSERT INTO $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
+            $str_ = "INSERT INTO $table_name_tags(studioeventdata,tags_t) VALUES ";
 
               //index文件数组长度
             $num = count($data1);
@@ -129,19 +129,21 @@ class Hello extends Controller
 
                   $str = substr($str,0,strlen($str)-1);
                   $insert_table = Db::execute($str);
-                  $str = "insert into $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
+                  $str ="INSERT INTO $table_name_index (emoi,scl,High_alpha,gamma,t) VALUES ";
             }
 
-            //余下的插入
-              for ($i = 1 ; $i <=$num_yu ; $i ++){
-                  $num_key  = $num_group*100+$i;
-                  $emoi = $data1[$num_key]['A'];
-                  $scl = $data1[$num_key]['B'];
-                  $high_a = $data1[$num_key]['C'];
-                  $gamma = $data1[$num_key]['D'];
-                  $t = $num_key-1;
-                  $str .="('$emoi','$scl','$high_a','$gamma','$t'),";
-              }
+            if($num_yu!=0){
+                //余下的插入
+                for ($i = 1 ; $i <=$num_yu ; $i ++){
+                    $num_key  = $num_group*100+$i;
+                    $emoi = $data1[$num_key]['A'];
+                    $scl = $data1[$num_key]['B'];
+                    $high_a = $data1[$num_key]['C'];
+                    $gamma = $data1[$num_key]['D'];
+                    $t = $num_key-1;
+                    $str .="('$emoi','$scl','$high_a','$gamma','$t'),";
+                }
+            }
             $str = substr($str,0,strlen($str)-1);
             $insert_table = Db::execute($str);
 
@@ -150,7 +152,7 @@ class Hello extends Controller
                     $tags = $value['H'];
                     $t = $value['D'];
                     if ($key==1){
-                        $str_ = "insert into $table_name_tags(studioeventdata,tags_t) VALUES ";
+                        $str_ = "INSERT INTO $table_name_tags(studioeventdata,tags_t) VALUES ";
                     }else{
                         $str_ .="('$tags','$t'),";
                     }
@@ -469,8 +471,11 @@ class Hello extends Controller
     }
 
 
-
-    //这个函数有bug，需要修改
+    //
+    //
+    //这个函数有bug，需要修改*******************************************************************************************
+    //
+    //
     public function sortData(Request $request){
         //选择数据
 
@@ -712,7 +717,89 @@ class Hello extends Controller
     }
 
     //数据排序页面   （每次加载页面时候都重新新建表，储存排序数据，每次加载页面前，先删除临时表。）
-    //取出数据存放在数组里，排序，然后转置key和value的值，读取位置信息
+    //取出数据存放在数组里，排序，然后转置key和value的值，读取位置
+    function Count(){
+        //创建临时表(改成永久表)
+        $str_Ctable = "CREATE TABLE data_ls (
+                            emoi DECIMAL(25,20),
+                            scl DECIMAL(25,20),
+                            High_alpha DECIMAL(25,20),
+                            gamma DECIMAL(25,20),
+                            game  VARCHAR(20),
+                            emoi_ INT(4),
+                            scl_   INT(4),
+                            Higt_a_   INT(4),
+                            gamma_   INT(4)
+                           )ENGINE=InnoDB DEFAULT CHARSET=gbk";
+        //获取data的数据
+        $str_select = "SELECT game,emoi,scl,High_alpha,gamma FROM data";
+        //清空数据表
+//        $ls_tab = Db::execute($str_Ctable);
+        $str_del = "DELETE FROM data_ls WHERE 1=1";
+        $res_del = Db::execute($str_del);
+
+
+        $data_select = Db::query($str_select);
+//        var_dump($data_select);
+        //
+        //创建数组分开存放emoi、scl、high alpha、gamma数据
+        //
+        $emoi_data = array();
+        $scl_data = array();
+        $high_a_data = array();
+        $gamma_data = array();
+        foreach ($data_select as $key=>$value){
+            array_push($emoi_data,$value['emoi']);
+            array_push($scl_data,$value['scl']);
+            array_push($high_a_data,$value['High_alpha']);
+            array_push($gamma_data,$value['gamma']);
+        }
+//        print_r($emoi_data) ;
+        //复制数组
+        $emoi_data_copy = $emoi_data;
+        $scl_data_copy = $scl_data;
+        $high_a_data_copy = $high_a_data;
+        $gamma_data_copy = $gamma_data;
+
+        rsort($emoi_data_copy);
+        rsort($scl_data_copy);
+        rsort($high_a_data_copy);
+        rsort($gamma_data_copy);
+
+//        print_r($emoi_data_copy);
+        $flip_emoi = array_flip($emoi_data_copy);
+        $flip_scl = array_flip($scl_data_copy);
+        $flip_high = array_flip($high_a_data_copy);
+        $flip_gamma = array_flip($gamma_data_copy);
+
+
+//        print_r($emoi_data);
+//        print_r($flip_emoi);
+//        echo $flip_gamma[$data_select[0]['gamma']];
+        foreach ($data_select as $value){
+            $game = $value['game'];
+            $emoi = $value['emoi'];
+            $scl = $value['scl'];
+            $high_a = $value['High_alpha'];
+            $gamma = $value['gamma'];
+
+            $emoi_ = $flip_emoi[$emoi]+1;
+            $scl_ = $flip_scl[$scl]+1;
+            $high_ = $flip_high[$high_a]+1;
+            $gamma_ = $flip_gamma[$gamma]+1;
+
+            $str_in = "INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('$game','$emoi','$scl','$high_a','$gamma','$emoi_','$scl_','$high_','$gamma_')";
+            $insert = Db::execute($str_in);
+
+        }
+        $str_sel = "SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls";
+        $data = Db::query($str_sel);
+        $this->assign("data",$data);
+//        print_r($str_del);
+        return $this->fetch();
+    }
 
 
 }

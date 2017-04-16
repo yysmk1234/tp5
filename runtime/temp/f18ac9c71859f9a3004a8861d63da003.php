@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1492327212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +20,13 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
             </ul>
         </div>
 
@@ -45,19 +46,19 @@
             <td>high_alpha_</td>
             <td>gamma_</td>
         </tr>
-        {volist name="data" id="data"}
+        <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>
         <tr>
-            <td>{$data.game}</td>
-            <td>{$data.emoi}</td>
-            <td>{$data.scl}</td>
-            <td>{$data.High_alpha}</td>
-            <td>{$data.gamma}</td>
-            <td>{$data.emoi_}</td>
-            <td>{$data.scl_}</td>
-            <td>{$data.Higt_a_}</td>
-            <td>{$data.gamma_}</td>
+            <td><?php echo $data['game']; ?></td>
+            <td><?php echo $data['emoi']; ?></td>
+            <td><?php echo $data['scl']; ?></td>
+            <td><?php echo $data['High_alpha']; ?></td>
+            <td><?php echo $data['gamma']; ?></td>
+            <td><?php echo $data['emoi_']; ?></td>
+            <td><?php echo $data['scl_']; ?></td>
+            <td><?php echo $data['Higt_a_']; ?></td>
+            <td><?php echo $data['gamma_']; ?></td>
         </tr>
-        {/volist}
+        <?php endforeach; endif; else: echo "" ;endif; ?>
     </table>
 
 </div>

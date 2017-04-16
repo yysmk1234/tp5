@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:59:"C:\xampp\htdocs\tp5/application/demo\view\hello\upload.html";i:1492327212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +19,13 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
 
             </ul>
         </div>
@@ -41,17 +42,17 @@
 
             <label style="padding-top: 20px">请选择被试：</label>
             <select name="tester">
-                {volist name="tester" id="tester"}
-                <option value="{$tester.u_id}">{$tester.u_name}</option>
-                {/volist}
+                <?php if(is_array($tester) || $tester instanceof \think\Collection || $tester instanceof \think\Paginator): $i = 0; $__LIST__ = $tester;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tester): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $tester['u_id']; ?>"><?php echo $tester['u_name']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br/>
 
             <label style="padding-top: 20px">请选择测试游戏：</label>
             <select name="game">
-                {volist name="game" id="game"}
-                <option value="{$game.g_id}">{$game.g_name}</option>
-                {/volist}
+                <?php if(is_array($game) || $game instanceof \think\Collection || $game instanceof \think\Paginator): $i = 0; $__LIST__ = $game;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?>
+                <option value="<?php echo $game['g_id']; ?>"><?php echo $game['g_name']; ?></option>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
             </select>
             <br/>
 
@@ -76,7 +77,7 @@
                 var flag = $(this).attr('id');
 //                console.log(flag);
                 if (flag=='return'){
-                    window.location.assign("{:url('demo/hello/testerandgame')}");
+                    window.location.assign("<?php echo url('demo/hello/testerandgame'); ?>");
                 }else if (flag == 'submit'){
                     if ($("input[name='test_name']").val()==''){
                         tips.error("请输入测试名称");
@@ -89,7 +90,7 @@
 //                console.log(data);
                         $.ajax({
                             type:"POST",
-                            url:"{:url('demo/hello/upfile')}",
+                            url:"<?php echo url('demo/hello/upfile'); ?>",
                             data:data,
                             dataType:"json",
                             processData:false,

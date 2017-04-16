@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\project.html";i:1492327212;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +20,13 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
-                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
-                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                        <li><a href="<?php echo url('demo/hello/setattr'); ?>">添加关键字段</a></li>
+                        <li><a href="<?php echo url('demo/hello/testerandgame'); ?>">添加被试</a></li>
+                        <li><a href="<?php echo url('demo/hello/upload'); ?>">文件上传</a></li>
                     </ul>
                 </li>
-                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
-                <li><a href="{:url('demo/hello/count')}">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
 
             </ul>
         </div>
@@ -43,16 +44,14 @@
           </form>
 
        <ul class="list-group" style="margin-top: 50px">
-           {if condition= "count($project_name)==0"}
+           <?php if(count($project_name)==0): ?>
            <li class="list-group-item">暂时没有项目</li>
-           {else /}
-           {volist name="project_name" id="pname"}
-           <li class="list-group-item" data="{$pname.project_name}">
-               <label style="width: 93%">{$pname.project_name}</label>
+           <?php else: if(is_array($project_name) || $project_name instanceof \think\Collection || $project_name instanceof \think\Paginator): $i = 0; $__LIST__ = $project_name;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$pname): $mod = ($i % 2 );++$i;?>
+           <li class="list-group-item" data="<?php echo $pname['project_name']; ?>">
+               <label style="width: 93%"><?php echo $pname['project_name']; ?></label>
                <button type="button" class="btn btn-danger project_delete">删除</button>
            </li>
-           {/volist}
-           {/if}
+           <?php endforeach; endif; else: echo "" ;endif; endif; ?>
 
        </ul>
 
@@ -65,7 +64,7 @@
         $('.btn-info').click(function () {
             var data = $('form').serialize();
             $.ajax({
-                url: "{:url('demo/hello/addproject')}",
+                url: "<?php echo url('demo/hello/addproject'); ?>",
                 type:"POST",
                 data:data,
                 dataType:"json",
@@ -83,7 +82,7 @@
         $('.list-group-item').click(function () {
             var project_name = $.trim($(this).attr('data'));
             $.cookie("project_name",project_name);
-            window.location.assign("{:url('demo/hello/group')}");
+            window.location.assign("<?php echo url('demo/hello/group'); ?>");
 //            alert($.cookie("project_name"));
         });
         $('.project_delete').click(function (e) {
@@ -94,7 +93,7 @@
                     p_n:that.parent().attr('data')
                 };
                 $.ajax({
-                    url:"{:url('demo/hello/del_project')}",
+                    url:"<?php echo url('demo/hello/del_project'); ?>",
                     type:"POST",
                     data:project_name,
 //                datatype:"JSON",
