@@ -1,0 +1,1830 @@
+[ 2017-04-25T11:05:57+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/hello.html
+[ log ] localhost/tp5/index.php/demo/hello/hello.html [运行时间：0.048002s][吞吐率：20.83req/s] [内存消耗：1,447.53kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T11:05:59+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.843048s][吞吐率：1.19req/s] [内存消耗：1,842.03kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.080004s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.043003s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.030001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.038002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.094006s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.132007s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:05:59+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：1,220.91kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:06:10+08:00 ] ::1 ::1 GET /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,220.41kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:06:51+08:00 ] ::1 ::1 GET /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,220.68kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ASC' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:06:56+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.664038s][吞吐率：1.51req/s] [内存消耗：1,842.30kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.072004s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.124007s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.036002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.045003s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:00+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,188.04kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:01+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.037003s][吞吐率：27.02req/s] [内存消耗：1,188.04kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:03+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,220.56kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"high_a"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'high_a' in 'order clause'[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:32+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.898052s][吞吐率：1.11req/s] [内存消耗：1,842.30kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.201011s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.249015s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.032001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.030001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.041003s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:34+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.020002s][吞吐率：49.99req/s] [内存消耗：1,220.56kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"high_a"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'high_a' in 'order clause'[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:39+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.533031s][吞吐率：1.88req/s] [内存消耗：1,690.71kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.069004s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.041002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.030001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.038002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:43+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,220.59kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"high_a"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'high_a' in 'order clause'[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:43+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.802046s][吞吐率：1.25req/s] [内存消耗：1,690.71kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.041002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.091006s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.033001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.021002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.123007s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.166009s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.036002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.028002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.045002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:07:46+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,220.56kb] [文件加载：39]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"high_a"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'high_a' in 'order clause'[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:08:26+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.590034s][吞吐率：1.69req/s] [内存消耗：1,690.71kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.091006s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.021002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.062003s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.033002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.037002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.033002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.028001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:08:30+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,188.04kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:07+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/count.html
+[ log ] localhost/tp5/index.php/demo/hello/count.html [运行时间：0.573032s][吞吐率：1.75req/s] [内存消耗：1,842.30kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->Count[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\count.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] DELETE FROM data_ls WHERE 1=1 [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma FROM data [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('n++','-0.01454199857492300000','0.00000040180988625613','-50.83117839410800000000','40.88382015903300000000','12','2','8','12') [ RunTime:0.118007s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('超级食肉男孩','-0.01308014164001500000','0.00000091255844586713','29.17822482074800000000','187.34657447883000000000','10','1','4','3') [ RunTime:0.046002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('地堡','0.01724508383300000000','0.00000005343648760219','-262.18013174374000000000','78.41271652736100000000','6','5','13','9') [ RunTime:0.030002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('返校','0.04214769682113600000','-0.00000013910248322046','32.28735161549600000000','103.43390591454000000000','3','11','3','6') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('弗吉尼亚','-0.02056627191763500000','-0.00000039161580950960','43.54655667053600000000','31.91133317634500000000','13','13','1','13') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('光之子','0.04983902218883100000','0.00000009462410853597','23.24476519217500000000','246.95813292230000000000','2','4','5','2') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('看火人','0.01827749605038100000','-0.00000072931810590470','-88.24544343032700000000','139.84554865296000000000','4','14','11','4') [ RunTime:0.020002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('逃生','0.00491973200942220000','0.00000003012528398202','-628.85536735652000000000','45.44797715064200000000','7','6','14','11') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('文明6','0.05685564100056600000','0.00000001632186168180','-32.59619332842500000000','321.63608023672000000000','1','7','7','1') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('巫师3','-0.00344803137150530000','0.00000001360193338618','-80.32691254390800000000','-0.64783815955159000000','8','8','10','14') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('无人深空','0.01765253381338300000','-0.00000018993527271029','33.33541578230100000000','84.20550922936300000000','5','12','2','8') [ RunTime:0.021001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('失落城堡','-0.01409776822006600000','-0.00000000372700451468','7.73277662207880000000','101.88401595048000000000','11','9','6','7') [ RunTime:0.029002s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('生化危机7','-0.04026432167178900000','-0.00000005034724985252','-78.76324947118500000000','52.37927461356000000000','14','10','9','10') [ RunTime:0.020001s ]
+[ sql ] [ SQL ] INSERT INTO data_ls (
+                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_
+) VALUES ('小镇惊魂','-0.01290230421816400000','0.00000010322489377761','-198.73745247344000000000','124.98955416821000000000','9','3','12','5') [ RunTime:0.029001s ]
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:08+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,188.04kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:10+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:12+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:14+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"gamma_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY gamma_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:15+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.030001s][吞吐率：33.33req/s] [内存消耗：1,188.05kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:17+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:19+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:20+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"gamma_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY gamma_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:22+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,188.05kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:25+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:26+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:27+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"gamma_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY gamma_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:28+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:29+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:29+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：1,188.05kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:30+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:31+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T11:09:31+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"gamma_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY gamma_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T13:53:18+08:00 ] ::1 ::1 GET /tp5/index.php/count/ufunction/test
+[ log ] localhost/tp5/index.php/count/ufunction/test [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,247.04kb] [文件加载：36]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'ufunction',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\count\controller\Ufunction->test[ C:\xampp\htdocs\tp5\application\count\controller\Ufunction.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-25T15:02:52+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,188.05kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T15:02:53+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T15:02:54+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"Higt_a_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY Higt_a_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T15:02:54+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,188.10kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"gamma_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY gamma_ ASC [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T15:03:00+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,188.05kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '16',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"emoi_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY emoi_ ASC [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-04-25T15:03:04+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/count.html
+[ log ] localhost/tp5/index.php/count/index/count.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,188.08kb] [文件加载：34]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'count',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/count.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'type' => '"scl_"',
+)
+[ info ] [ RUN ] app\count\controller\Index->count[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_ FROM data_ls ORDER BY scl_ ASC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1492327212;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1493369149;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +59,8 @@
 
 
     <form id="result_data">
-        <button type="button" class="btn btn-info count">计算</button>
+        <button type="button" class="btn btn-info count">计算均值</button>
+        <button type="button" class="btn btn-info count1">计算标准差</button>
         <table class="table table-condensed" style="margin-top: 20px" >
             <tr>
                 <td>emoi</td>
@@ -176,6 +177,7 @@
                 window.location.reload();
             },3000)
         });
+        //计算均值
         $('.count').click(function () {
             var data =  $('#result_data').serialize();
             $.ajax({
@@ -190,7 +192,23 @@
                     $('.gamma').text(data.gamma);
                 }
             })
-        })
+        });
+        //计算标准差
+        $('.count1').click(function () {
+            var cookie = {
+                cookie:JSON.stringify($.cookie('group_name'))
+            }
+            $.ajax({
+                url:"<?php echo url('count/index/data_SD'); ?>",
+                type:"POST",
+                data:cookie,
+//                dataType:"json",
+                success:function (data) {
+                    console.log(data);
+
+                }
+            })
+        });
         console.log($.cookie('group_name'));
     })()
 </script>
