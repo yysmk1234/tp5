@@ -1,0 +1,246 @@
+[ 2017-05-08T15:19:25+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/hello.html
+[ log ] localhost/tp5/index.php/demo/hello/hello.html [运行时间：0.164010s][吞吐率：6.10req/s] [内存消耗：1,447.71kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:19:27+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：1,659.55kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.010001s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:19:28+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.109006s][吞吐率：9.17req/s] [内存消耗：1,691.77kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '排序' [ RunTime:0.011000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '1') [ RunTime:0.003001s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:19:29+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/sortnew.html
+[ log ] localhost/tp5/index.php/demo/hello/sortnew.html [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：1,700.27kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'sortnew',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->sortNew[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html [ array (
+  0 => 'game',
+  1 => 'group_n',
+  2 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select g_id,g_name from game [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name = 'n++' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select game.g_name,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                     FROM data_ LEFT JOIN test ON(data_.test_id = test.test_id) 
+                     LEFT JOIN game ON (test.g_id = game.g_id) WHERE data_.id IN 
+                     (SELECT test_id FROM group_test WHERE group_id = '1') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:53:59+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/sortnew.html
+[ log ] localhost/tp5/index.php/demo/hello/sortnew.html [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,700.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'sortnew',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->sortNew[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html [ array (
+  0 => 'game',
+  1 => 'group_n',
+  2 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select g_id,g_name from game [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name = 'n++' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select game.g_name,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                     FROM data_ LEFT JOIN test ON(data_.test_id = test.test_id) 
+                     LEFT JOIN game ON (test.g_id = game.g_id) WHERE data_.id IN 
+                     (SELECT test_id FROM group_test WHERE group_id = '1') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:54:01+08:00 ] ::1 ::1 POST /tp5/index.php/count/index/data_sd.html
+[ log ] localhost/tp5/index.php/count/index/data_sd.html [运行时间：0.401023s][吞吐率：2.49req/s] [内存消耗：1,484.84kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'count',
+    1 => 'index',
+    2 => 'data_sd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/sortnew.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'cookie' => '"n++"',
+)
+[ info ] [ RUN ] app\count\controller\Index->data_SD[ C:\xampp\htdocs\tp5\application\count\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT data_name FROM test
+                INNER JOIN data_ ON (data_.test_id = test.test_id)
+                INNER JOIN group_test ON (data_.id = group_test.test_id)
+                INNER JOIN group_ ON (group_test.group_id = group_.group_id)
+                WHERE group_.group_name = 'n++' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT emoi FROM 34C15241ECA6A01AD7496F16C945A793 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT scl FROM 34C15241ECA6A01AD7496F16C945A793 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT High_alpha FROM 34C15241ECA6A01AD7496F16C945A793 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT gamma FROM 34C15241ECA6A01AD7496F16C945A793 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT emoi FROM C2786AF39130EBDE51AEC75F75E3C555 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT scl FROM C2786AF39130EBDE51AEC75F75E3C555 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT High_alpha FROM C2786AF39130EBDE51AEC75F75E3C555 [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT gamma FROM C2786AF39130EBDE51AEC75F75E3C555 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT emoi FROM 35B55E15343C5DD627198AA4EE07B451 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT scl FROM 35B55E15343C5DD627198AA4EE07B451 [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT High_alpha FROM 35B55E15343C5DD627198AA4EE07B451 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT gamma FROM 35B55E15343C5DD627198AA4EE07B451 [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT emoi FROM C755896DC3710AC5CAB3BC2007501EBD [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT scl FROM C755896DC3710AC5CAB3BC2007501EBD [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT High_alpha FROM C755896DC3710AC5CAB3BC2007501EBD [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT gamma FROM C755896DC3710AC5CAB3BC2007501EBD [ RunTime:0.005000s ]
+[ sql ] [ SQL ] UPDATE data SET emoi_sd = '0.17424536466187',scl_sd = '5.0441529809682E-7',high_sd = '211.00133397183',gamma_sd = '258.2340587229' 
+                WHERE game = 'n++' [ RunTime:0.067003s ]
+
+---------------------------------------------------------------

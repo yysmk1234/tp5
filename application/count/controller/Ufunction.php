@@ -3,6 +3,7 @@
 namespace app\count\controller;
 
 use think\Controller;
+use think\Db;
 use think\Request;
 
 class Ufunction extends Controller
@@ -83,16 +84,65 @@ class Ufunction extends Controller
         //
     }
 
-
+    /**
+     * 均值函数
+    **/
     public function average($arr){
         $len = count($arr);
         $ave = array_sum($arr)/$len;
         return $ave;
     }
-
-    public function test(){
-        $arr = [1,1,1];
-        $res = $this->average($arr);
-        echo $res;
+    /**
+     * 标准差函数
+    **/
+    public function Standard_Deviation($arr){
+        $len = count($arr);
+        $ave = array_sum($arr)/$len;
+        $arr_sum = array();
+        foreach ($arr as $key=>$value){
+            $num1 = array_values($value)[0]-$ave;
+            array_push($arr_sum,pow($num1,2));
+        }
+        return sqrt((array_sum($arr_sum)/$len));
     }
+    /**
+     * get data
+    **/
+    public function get_data($type,$table_name){
+        switch ($type){
+            case 'emoi' : $str = "SELECT emoi FROM $table_name";
+                break;
+            case 'scl'  : $str = "SELECT scl FROM $table_name";
+                break;
+            case 'high' : $str = "SELECT High_alpha FROM $table_name";
+                break;
+            case 'gamma' : $str = "SELECT gamma FROM $table_name";
+                break;
+        }
+        $res = Db::query($str);
+        array_splice($res,0,1);
+        return $res;
+    }
+    /**
+     *
+     * */
+    public function set_sdData($emoi_sd,$scl_sd,$high_sd,$gamma_sd,$game){
+        $str = "UPDATE data SET emoi_sd = '$emoi_sd',scl_sd = '$scl_sd',high_sd = '$high_sd',gamma_sd = '$gamma_sd' 
+                WHERE game = '$game'";
+        $res = Db::execute($str);
+    }
+
+   /**
+     *min-max标准化
+     * */
+   public function min_max($arr){
+       $max = max($arr);
+       $min = min($arr);
+       $arr_ = array();
+       foreach ($arr as $key=>$value){
+           array_push($arr_,($value-$min)/($max-$min));
+       }
+       return $arr_;
+       
+   }
 }

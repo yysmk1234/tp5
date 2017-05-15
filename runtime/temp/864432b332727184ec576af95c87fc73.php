@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1493369149;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1493888687;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -202,9 +202,12 @@
                 url:"<?php echo url('count/index/data_SD'); ?>",
                 type:"POST",
                 data:cookie,
-//                dataType:"json",
+                dataType:"json",
                 success:function (data) {
-                    console.log(data);
+                    $('.emoi').text(data.emoi);
+                    $('.scl').text(data.scl);
+                    $('.High_alpha').text(data.high_a);
+                    $('.gamma').text(data.gamma);
 
                 }
             })
