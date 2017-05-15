@@ -56,7 +56,7 @@ class Index extends Ufunction
 //        var_dump($res);
 
     }
-    public function xielv(Request $request){
+    public function xie_lv(Request $request){
         $group_name = json_decode($request->post('cookie'));
         $str = "SELECT data_name FROM test
                 INNER JOIN data_ ON (data_.test_id = test.test_id)
@@ -69,8 +69,9 @@ class Index extends Ufunction
         $high_arr = array();
         $gamma_arr = array();
 
-        foreach ($res as $key=>$value){
 
-        }
+        $arr = [1,2,3,4,5];
+        $this->move_ave($arr,2);
+
     }
 }

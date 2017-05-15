@@ -145,4 +145,10 @@ class Ufunction extends Controller
        return $arr_;
        
    }
+   public function move_ave($arr,$length){
+       $len = count($arr) - $length + 1;
+       for($i= 0;$i < $len ;$i++){
+           var_dump(array_slice($arr,$i,$length));
+       }
+   }
 }

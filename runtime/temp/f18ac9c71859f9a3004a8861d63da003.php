@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1494398609;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1494841427;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +14,10 @@
     <style>
         .count{
             cursor: pointer;
+            width: 100px;
+        }
+        .count:hover{
+            background: #C4C9DF;
         }
         .clomn_w{
             width: 50px;
@@ -58,26 +62,26 @@
             <td>scl_sd</td>
             <td>high_alpha_sd</td>
             <td>gamma_sd</td>
-            <td class="count" data="emoi_sd">emoi_sd_</td>
-            <td class="count" data="scl_sd">scl_sd_</td>
-            <td class="count" data="high_sd">high_alpha_sd_</td>
-            <td class="count" data="gamma_sd">gamma_sd_</td>
+            <td class="count" data="emoi_sd_">emoi_sd_</td>
+            <td class="count" data="scl_sd_">scl_sd_</td>
+            <td class="count" data="high_sd_">high_alpha_sd_</td>
+            <td class="count" data="gamma_sd_">gamma_sd_</td>
         </tr>
         <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>
         <tr>
             <td><?php echo $data['game']; ?></td>
-            <td><?php echo $data['emoi']; ?></td>
-            <td><?php echo $data['scl']; ?></td>
-            <td><?php echo $data['High_alpha']; ?></td>
-            <td><?php echo $data['gamma']; ?></td>
+            <td title="<?php echo $data['emoi']; ?>"><?php echo round($data['emoi'],4) ?></td>
+            <td title="<?php echo $data['scl']; ?>"><?php printf("%.4e\n", $data['scl']) ?></td>
+            <td title="<?php echo $data['High_alpha']; ?>"><?php echo round($data['High_alpha'],4) ?></td>
+            <td title="<?php echo $data['gamma']; ?>"><?php echo round($data['gamma'],4) ?></td>
             <td><?php echo $data['emoi_']; ?></td>
             <td><?php echo $data['scl_']; ?></td>
             <td><?php echo $data['Higt_a_']; ?></td>
             <td><?php echo $data['gamma_']; ?></td>
-            <td><?php echo $data['emoi_sd']; ?></td>
-            <td><?php echo $data['scl_sd']; ?></td>
-            <td><?php echo $data['high_sd']; ?></td>
-            <td><?php echo $data['gamma_sd']; ?></td>
+            <td title="<?php echo $data['emoi_sd']; ?>"><?php echo round($data['emoi_sd'],4) ?></td>
+            <td title="<?php echo $data['scl_sd']; ?>"><?php printf("%.4e\n", $data['scl_sd']) ?></td>
+            <td title="<?php echo $data['high_sd']; ?>"><?php echo round($data['high_sd'],4) ?></td>
+            <td title="<?php echo $data['gamma_sd']; ?>"><?php echo round($data['gamma_sd'],4) ?></td>
             <td><?php echo $data['emoi_sd_']; ?></td>
             <td><?php echo $data['scl_sd_']; ?></td>
             <td><?php echo $data['high_sd_']; ?></td>
@@ -123,21 +127,21 @@
 //                    console.log(data);
                 for(var x in data){
 //                        console.log(data[x]);
+//                    var data_emoi = Number(data[x].emoi);
                     var str = "<tr>"+
                         "<td>"+data[x].game+"</td>"+
-                        "<td>"+data[x].emoi+"</td>"+
-                        "<td>"+data[x].scl+"</td>"+
-                        "<td>"+data[x].High_alpha+"</td>"+
-                        "<td>"+data[x].gamma+"</td>"+
+                        "<td title="+data[x].emoi+">"+Number(data[x].emoi).toFixed(4)+"</td>"+
+                        "<td title="+data[x].scl+">"+Number(data[x].scl).toExponential(4)+"</td>"+
+                        "<td title="+data[x].High_alpha+">"+Number(data[x].High_alpha).toFixed(4)+"</td>"+
+                        "<td title="+data[x].gamma+">"+Number(data[x].gamma).toFixed(4)+"</td>"+
                         "<td>"+data[x].emoi_+"</td>"+
                         "<td>"+data[x].scl_+"</td>"+
                         "<td>"+data[x].Higt_a_+"</td>"+
                         "<td>"+data[x].gamma_+"</td>"+
-
-                        "<td>"+data[x].emoi_sd+"</td>"+
-                        "<td>"+data[x].scl_sd+"</td>"+
-                        "<td>"+data[x].high_sd+"</td>"+
-                        "<td>"+data[x].gamma_sd+"</td>"+
+                        "<td title="+data[x].emoi_sd+">"+Number(data[x].emoi_sd).toFixed(4)+"</td>"+
+                        "<td title="+data[x].scl_sd+">"+Number(data[x].scl_sd).toExponential(4)+"</td>"+
+                        "<td title="+data[x].high_sd+">"+Number(data[x].high_sd).toFixed(4)+"</td>"+
+                        "<td title="+data[x].gamma_sd+">"+Number(data[x].gamma_sd).toFixed(4)+"</td>"+
                         "<td>"+data[x].emoi_sd_+"</td>"+
                         "<td>"+data[x].scl_sd_+"</td>"+
                         "<td>"+data[x].high_sd_+"</td>"+

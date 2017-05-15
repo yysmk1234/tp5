@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1493888687;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1494843711;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +61,8 @@
     <form id="result_data">
         <button type="button" class="btn btn-info count">计算均值</button>
         <button type="button" class="btn btn-info count1">计算标准差</button>
+        <button type="button" class="btn btn-info count2">计算斜率</button>
+
         <table class="table table-condensed" style="margin-top: 20px" >
             <tr>
                 <td>emoi</td>
@@ -212,7 +214,23 @@
                 }
             })
         });
-        console.log($.cookie('group_name'));
+        //计算斜率
+        $('.count2').click(function () {
+            var cookie = {
+                cookie:JSON.stringify($.cookie('group_name'))
+            }
+            $.ajax({
+                url:"<?php echo url('count/index/xie_lv'); ?>",
+                type:"POST",
+                data:cookie,
+//                dataType:"json",
+                success:function (data) {
+                  console.log(data);
+
+                }
+            })
+        });
+//        console.log($.cookie('group_name'));
     })()
 </script>
 </html>
