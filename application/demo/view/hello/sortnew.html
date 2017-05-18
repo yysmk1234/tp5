@@ -224,10 +224,13 @@
                 url:"{:url('count/index/xie_lv')}",
                 type:"POST",
                 data:cookie,
-//                dataType:"json",
+                dataType:"json",
                 success:function (data) {
                   console.log(data);
-
+                    $('.emoi').text(data.emoi);
+                    $('.scl').text(data.scl);
+                    $('.High_alpha').text(data.high_a);
+                    $('.gamma').text(data.gamma);
                 }
             })
         });

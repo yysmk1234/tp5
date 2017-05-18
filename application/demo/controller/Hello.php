@@ -733,7 +733,10 @@ class Hello extends Controller
                             gamma_   INT(4)
                            )ENGINE=InnoDB DEFAULT CHARSET=gbk";
         //获取data的数据
-        $str_select = "SELECT game,emoi,scl,High_alpha,gamma,emoi_sd,scl_sd,high_sd,gamma_sd FROM data";
+        $str_select = "SELECT game,emoi,scl,High_alpha,gamma,
+                              emoi_sd,scl_sd,high_sd,gamma_sd,
+                              emoi_y,scl_y,high_y,gamma_y
+                              FROM data";
         //清空数据表
 //        $ls_tab = Db::execute($str_Ctable);
         $str_del = "DELETE FROM data_ls WHERE 1=1";
@@ -749,10 +752,16 @@ class Hello extends Controller
         $scl_data = array();
         $high_a_data = array();
         $gamma_data = array();
+
         $emoi_sd_data = array();
         $scl_sd_data = array();
         $high_sd_data = array();
         $gamma_sd_data = array();
+
+        $emoi_y_data = array();
+        $scl_y_data = array();
+        $high_y_data = array();
+        $gamma_y_data = array();
 
         foreach ($data_select as $key=>$value){
             array_push($emoi_data,$value['emoi']);
@@ -763,7 +772,10 @@ class Hello extends Controller
             array_push($scl_sd_data,$value['scl_sd']);
             array_push($high_sd_data,$value['high_sd']);
             array_push($gamma_sd_data,$value['gamma_sd']);
-
+            array_push($emoi_y_data,$value['emoi_y']);
+            array_push($scl_y_data,$value['scl_y']);
+            array_push($high_y_data,$value['high_y']);
+            array_push($gamma_y_data,$value['gamma_y']);
         }
 //        print_r($emoi_data) ;
         //复制数组
@@ -776,27 +788,44 @@ class Hello extends Controller
         $high_sd_copy = $high_sd_data;
         $gamma_sd_copy = $gamma_sd_data;
 
+        $emoi_y_copy = $emoi_y_data;
+        $scl_y_copy = $scl_y_data;
+        $high_y_copy = $high_y_data;
+        $gamma_y_copy = $gamma_y_data;
+
+
 //数组排序
 
         rsort($emoi_data_copy);
         rsort($scl_data_copy);
         rsort($high_a_data_copy);
         rsort($gamma_data_copy);
+
         rsort($emoi_sd_copy);
         rsort($scl_sd_copy);
         rsort($high_sd_copy);
         rsort($gamma_sd_copy);
+
+        rsort($emoi_y_copy);
+        rsort($scl_y_copy);
+        rsort($high_y_copy);
+        rsort($gamma_y_copy);
 
 
         $flip_emoi = array_flip($emoi_data_copy);
         $flip_scl = array_flip($scl_data_copy);
         $flip_high = array_flip($high_a_data_copy);
         $flip_gamma = array_flip($gamma_data_copy);
+
         $flip_emoi_sd = array_flip($emoi_sd_copy);
         $flip_scl_sd = array_flip($scl_sd_copy);
         $flip_high_sd = array_flip($high_sd_copy);
         $flip_gamma_sd = array_flip($gamma_sd_copy);
 
+        $flip_emoi_y = array_flip($emoi_y_copy);
+        $flip_scl_y = array_flip($scl_y_copy);
+        $flip_high_y = array_flip($high_y_copy);
+        $flip_gamma_y = array_flip($gamma_y_copy);
 
 
         foreach ($data_select as $value){
@@ -805,10 +834,16 @@ class Hello extends Controller
             $scl = $value['scl'];
             $high_a = $value['High_alpha'];
             $gamma = $value['gamma'];
+
             $emoi_sd = $value['emoi_sd'];
             $scl_sd = $value['scl_sd'];
             $high_sd = $value['high_sd'];
             $gamma_sd = $value['gamma_sd'];
+
+            $emoi_y = $value['emoi_y'];
+            $scl_y = $value['scl_y'];
+            $high_y = $value['high_y'];
+            $gamma_y = $value['gamma_y'];
 
             $emoi_ = $flip_emoi[$emoi]+1;
             $scl_ = $flip_scl[$scl]+1;
@@ -820,18 +855,34 @@ class Hello extends Controller
             $high_sd_ = $flip_high_sd[$high_sd]+1;
             $gamma_sd_ = $flip_gamma_sd[$gamma_sd]+1;
 
+            $emoi_y_ = $flip_emoi_y[$emoi_y]+1;
+            $scl_y_ = $flip_scl_y[$scl_y]+1;
+            $high_y_ = $flip_high_y[$high_y]+1;
+            $gamma_y_ = $flip_gamma_y[$gamma_y]+1;
 
             $str_in = "INSERT INTO data_ls (
-                        game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_,
-                        emoi_sd,scl_sd,high_sd,gamma_sd,emoi_sd_,scl_sd_,high_sd_,gamma_sd_
-) VALUES ('$game','$emoi','$scl','$high_a','$gamma','$emoi_','$scl_','$high_','$gamma_',
-          '$emoi_sd','$scl_sd','$high_sd','$gamma_sd','$emoi_sd_','$scl_sd_','$high_sd_','$gamma_sd_'
+                        game,emoi,scl,High_alpha,gamma,
+                            emoi_,scl_,Higt_a_,gamma_,
+                            emoi_sd,scl_sd,high_sd,gamma_sd,
+                            emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
+                            emoi_y,scl_y,high_y,gamma_y,
+                            emoi_y_,scl_y_,high_y_,gamma_y_
+) VALUES ('$game','$emoi','$scl','$high_a','$gamma',
+          '$emoi_','$scl_','$high_','$gamma_',
+          '$emoi_sd','$scl_sd','$high_sd','$gamma_sd',
+          '$emoi_sd_','$scl_sd_','$high_sd_','$gamma_sd_',
+          '$emoi_y','$scl_y','$high_y','$gamma_y',
+          '$emoi_y_','$scl_y_','$high_y_','$gamma_y_'
 )";
             $insert = Db::execute($str_in);
 
         }
-        $str_sel = "SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_,
-                    emoi_sd,scl_sd,high_sd,gamma_sd,emoi_sd_,scl_sd_,high_sd_,gamma_sd_
+        $str_sel = "SELECT game,emoi,scl,High_alpha,gamma,
+                            emoi_,scl_,Higt_a_,gamma_,
+                            emoi_sd,scl_sd,high_sd,gamma_sd,
+                            emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
+                            emoi_y,scl_y,high_y,gamma_y,
+                            emoi_y_,scl_y_,high_y_,gamma_y_
                     FROM data_ls";
         $data = Db::query($str_sel);
         $this->assign("data",$data);

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1494841427;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1495005832;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,6 +66,14 @@
             <td class="count" data="scl_sd_">scl_sd_</td>
             <td class="count" data="high_sd_">high_alpha_sd_</td>
             <td class="count" data="gamma_sd_">gamma_sd_</td>
+            <td>emoi_y</td>
+            <td>scl_y</td>
+            <td>high_y</td>
+            <td>gamma_y</td>
+            <td class="count" data="emoi_y_">emoi_y_</td>
+            <td class="count" data="scl_y_">scl_y_</td>
+            <td class="count" data="high_y_">high_y_</td>
+            <td class="count" data="gamma_y_">gamma_y_</td>
         </tr>
         <?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?>
         <tr>
@@ -86,6 +94,14 @@
             <td><?php echo $data['scl_sd_']; ?></td>
             <td><?php echo $data['high_sd_']; ?></td>
             <td><?php echo $data['gamma_sd_']; ?></td>
+            <td title="<?php echo $data['emoi_y']; ?>"><?php echo round($data['emoi_y'],4) ?></td>
+            <td title="<?php echo $data['scl_y']; ?>"><?php echo round($data['scl_y'],4) ?></td>
+            <td title="<?php echo $data['high_y']; ?>"><?php echo round($data['high_y'],4) ?></td>
+            <td title="<?php echo $data['gamma_y']; ?>"><?php echo round($data['gamma_y'],4) ?></td>
+            <td><?php echo $data['emoi_y_']; ?></td>
+            <td><?php echo $data['scl_y_']; ?></td>
+            <td><?php echo $data['high_y_']; ?></td>
+            <td><?php echo $data['gamma_y_']; ?></td>
         </tr>
         <?php endforeach; endif; else: echo "" ;endif; ?>
     </table>
@@ -115,7 +131,15 @@
             "<td class='count' data='emoi_sd_'>"+"emoi_sd_"+"</td>"+
             "<td class='count' data='scl_sd_'>"+"scl_sd_"+"</td>"+
             "<td class='count' data='high_sd_'>"+"high_alpha_sd_"+"</td>"+
-            "<td class='count' data='gamma_sd_'>"+"gamma_sd_"+"</td>"
+            "<td class='count' data='gamma_sd_'>"+"gamma_sd_"+"</td>"+
+            "<td>"+"emoi_y"+"</td>"+
+            "<td>"+"scl_y"+"</td>"+
+            "<td>"+"high_alpha_y"+"</td>"+
+            "<td>"+"gamma_y"+"</td>"+
+            "<td class='count' data='emoi_y_'>"+"emoi_y_"+"</td>"+
+            "<td class='count' data='scl_y_'>"+"scl_y_"+"</td>"+
+            "<td class='count' data='high_y_'>"+"high_alpha_y_"+"</td>"+
+            "<td class='count' data='gamma_y_'>"+"gamma_y_"+"</td>"+
             "</tr>" ;
         $('#c_data').append(df_str);
         $.ajax({
@@ -146,21 +170,24 @@
                         "<td>"+data[x].scl_sd_+"</td>"+
                         "<td>"+data[x].high_sd_+"</td>"+
                         "<td>"+data[x].gamma_sd_+"</td>"+
+                        "<td title="+data[x].emoi_y+">"+Number(data[x].emoi_y).toFixed(4)+"</td>"+
+                        "<td title="+data[x].scl_y+">"+Number(data[x].scl_y).toFixed(4)+"</td>"+
+                        "<td title="+data[x].high_y+">"+Number(data[x].high_y).toFixed(4)+"</td>"+
+                        "<td title="+data[x].gamma_y+">"+Number(data[x].gamma_y).toFixed(4)+"</td>"+
+                        "<td>"+data[x].emoi_y_+"</td>"+
+                        "<td>"+data[x].scl_y_+"</td>"+
+                        "<td>"+data[x].high_y_+"</td>"+
+                        "<td>"+data[x].gamma_y_+"</td>"+
+
                         "</tr>";
                     $('#c_data').append(str);
                 }
             }
         });
     });
-    function count() {
-
-    }
 
 
-//    (function () {
-//
-//
-//
-//    })()
+
+
 </script>
 </html>

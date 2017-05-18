@@ -124,14 +124,21 @@ class Ufunction extends Controller
         return $res;
     }
     /**
-     *
+     * 写入标准差到data表
      * */
     public function set_sdData($emoi_sd,$scl_sd,$high_sd,$gamma_sd,$game){
         $str = "UPDATE data SET emoi_sd = '$emoi_sd',scl_sd = '$scl_sd',high_sd = '$high_sd',gamma_sd = '$gamma_sd' 
                 WHERE game = '$game'";
         $res = Db::execute($str);
     }
-
+    /**
+     * 写入斜率到data表
+     * */
+    public function set_xlData($emoi_y,$scl_y,$high_y,$gamma_y,$game){
+        $str = "UPDATE data SET emoi_y = '$emoi_y',scl_y = '$scl_y',high_y = '$high_y',gamma_y = '$gamma_y'
+                WHERE game = '$game'";
+        $res = Db::execute($str);
+    }
    /**
      *min-max标准化
      * */
@@ -145,10 +152,35 @@ class Ufunction extends Controller
        return $arr_;
        
    }
+   /**
+    * 移动平均
+    **/
    public function move_ave($arr,$length){
+       $arr_ = array();
        $len = count($arr) - $length + 1;
        for($i= 0;$i < $len ;$i++){
-           var_dump(array_slice($arr,$i,$length));
+           array_push($arr_,$this->average(array_slice($arr,$i,$length)));
        }
+       return $arr_;
+   }
+    /**
+     * 计算结果y
+     * */
+   public function get_Y($arr){
+       $arr_ = array();
+       for ($i = 0 ; $i < count($arr)-1 ; $i++){
+           array_push($arr_,abs($arr[$i+1]-$arr[$i]));
+       }
+       return $this->average($arr_);
+   }
+   /**
+    * 处理查询的数组变成常规数组
+    * */
+   public function array_cook($arr){
+       $arr_  = array();
+       foreach ($arr as $key=>$value){
+           array_push($arr_,array_values($value)[0]);
+       }
+       return $arr_;
    }
 }

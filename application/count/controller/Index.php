@@ -12,8 +12,13 @@ class Index extends Ufunction
     public function count(Request $request){
         $type = json_decode($request->post('type'));
 //        echo $type;
-        $str = "SELECT game,emoi,scl,High_alpha,gamma,emoi_,scl_,Higt_a_,gamma_,
-                emoi_sd,scl_sd,high_sd,gamma_sd,emoi_sd_,scl_sd_,high_sd_,gamma_sd_ FROM data_ls ORDER BY ".$type." "."ASC";
+        $str = "SELECT game,emoi,scl,High_alpha,gamma,
+                            emoi_,scl_,Higt_a_,gamma_,
+                            emoi_sd,scl_sd,high_sd,gamma_sd,
+                            emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
+                            emoi_y,scl_y,high_y,gamma_y,
+                            emoi_y_,scl_y_,high_y_,gamma_y_ 
+                      FROM data_ls ORDER BY ".$type." "."ASC";
         $res = Db::query($str);
         echo json_encode($res);
     }
@@ -69,9 +74,25 @@ class Index extends Ufunction
         $high_arr = array();
         $gamma_arr = array();
 
+        foreach ($res as $key=>$value){
+            $data_emoi = $this->get_Y($this->min_max($this->move_ave($this->array_cook($this->get_data("emoi",$value['data_name'])),50)));
+            $data_scl = $this->get_Y($this->min_max($this->move_ave($this->array_cook($this->get_data("scl",$value['data_name'])),50)));
+            $data_high = $this->get_Y($this->min_max($this->move_ave($this->array_cook($this->get_data("high",$value['data_name'])),50)));
+            $data_gamma = $this->get_Y($this->min_max($this->move_ave($this->array_cook($this->get_data("gamma",$value['data_name'])),50)));
 
-        $arr = [1,2,3,4,5];
-        $this->move_ave($arr,2);
+            array_push($emoi_arr,$data_emoi);
+            array_push($scl_arr,$data_scl);
+            array_push($high_arr,$data_high);
+            array_push($gamma_arr,$data_gamma);
+        }
+        $data = [
+            'emoi'=>$this->average($emoi_arr),
+            'scl'=>$this->average($scl_arr),
+            'high_a'=>$this->average($high_arr),
+            'gamma'=>$this->average($gamma_arr)
+        ];
+        $this->set_xlData($data['emoi'],$data['scl'],$data['high_a'],$data['gamma'],$group_name);
+        echo json_encode($data);
 
     }
 }
