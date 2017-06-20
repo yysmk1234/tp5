@@ -1,0 +1,2855 @@
+[ 2017-06-20T10:06:49+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/hello.html
+[ log ] localhost/tp5/index.php/demo/hello/hello.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,462.34kb] [文件加载：38]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'hello',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->hello[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\hello.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-20T10:07:27+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.143607s][吞吐率：6.96req/s] [内存消耗：1,675.17kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/hello.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040003s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.024001s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:07:32+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.067603s][吞吐率：14.79req/s] [内存消耗：1,675.08kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:07:43+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.110606s][吞吐率：9.04req/s] [内存消耗：1,701.82kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.037002s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:15:20+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.069801s][吞吐率：14.33req/s] [内存消耗：1,622.08kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:15:23+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.072202s][吞吐率：13.85req/s] [内存消耗：1,706.49kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '4') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:16:41+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.064202s][吞吐率：15.58req/s] [内存消耗：1,701.82kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:46:51+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,822.71kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:02+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.056603s][吞吐率：17.67req/s] [内存消耗：1,613.70kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:03+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.070801s][吞吐率：14.12req/s] [内存消耗：1,613.70kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:12+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.060603s][吞吐率：16.50req/s] [内存消耗：1,702.02kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:16+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.058603s][吞吐率：17.06req/s] [内存消耗：1,702.41kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '伊利' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '2') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:28+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.063603s][吞吐率：15.72req/s] [内存消耗：1,822.66kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:47:33+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.054201s][吞吐率：18.45req/s] [内存消耗：1,613.72kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:49:22+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,675.95kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T10:49:25+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.070203s][吞吐率：14.24req/s] [内存消耗：1,614.20kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:33:46+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：1,703.30kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:33:51+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.140008s][吞吐率：7.14req/s] [内存消耗：1,641.06kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => 'jjjj',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('jjjj') [ RunTime:0.057003s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='jjjj' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('3','31') [ RunTime:0.028001s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:33:54+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,703.77kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:35:37+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,703.34kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:44:29+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,676.67kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:44:30+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,707.97kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '排序' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '1') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T13:44:31+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/sortnew.html
+[ log ] localhost/tp5/index.php/demo/hello/sortnew.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,717.04kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'sortnew',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->sortNew[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html [ array (
+  0 => 'game',
+  1 => 'group_n',
+  2 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select g_id,g_name from game [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name = 'n++' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select game.g_name,data_.emoi,data_.scl,data_.High_alpha,data_.gamma,data_.tag 
+                     FROM data_ LEFT JOIN test ON(data_.test_id = test.test_id) 
+                     LEFT JOIN game ON (test.g_id = game.g_id) WHERE data_.id IN 
+                     (SELECT test_id FROM group_test WHERE group_id = '1') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T14:59:24+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.068003s][吞吐率：14.71req/s] [内存消耗：1,677.10kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.023001s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T14:59:26+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.250015s][吞吐率：4.00req/s] [内存消耗：1,659.17kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.001000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN project_group ON (project.project_id = project_group.projcet_id)
+   ' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:01:28+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,659.17kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.001000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN project_group ON (project.project_id = project_group.projcet_id)
+   ' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:07:44+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,677.10kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:07:47+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,658.70kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'project_group.projcet_id' in 'on clause'[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:20:15+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,659.20kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.001000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN project_group ON (project.project_id = project_group.projcet_id)
+   ' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:47:03+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,677.10kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T15:47:06+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,659.15kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'project_name=%E6%8E%92%E5%BA%8F; group_name=n%2B%2B; project_id=1; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM project LEFT JOIN project_group ON (project.project_id = project_group.proj' at line 1[C:\xampp\htdocs\tp5\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:27:51+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,707.99kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '4') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:38:04+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,705.01kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:38:09+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.130008s][吞吐率：7.69req/s] [内存消耗：1,617.96kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.013000s ]
+[ sql ] [ SQL ] DELETE FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '3') [ RunTime:0.027002s ]
+[ sql ] [ SQL ] DELETE FROM project_group WHERE project_id = '3' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE  FROM project WHERE project.project_id  = '3' [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:38:18+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,678.30kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:38:55+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addproject.html
+[ log ] localhost/tp5/index.php/demo/hello/addproject.html [运行时间：0.196012s][吞吐率：5.10req/s] [内存消耗：1,614.95kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addproject',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '呵呵呵',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addProject[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into project (project_name) VALUE ('呵呵呵') [ RunTime:0.138008s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:38:58+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：1,678.65kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:00+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,705.07kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '呵呵呵' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '5') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:03+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.168010s][吞吐率：5.95req/s] [内存消耗：1,643.31kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '76',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '大发发生奥盛发',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('大发发生奥盛发') [ RunTime:0.055003s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '呵呵呵' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='大发发生奥盛发' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('5','32') [ RunTime:0.041003s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:06+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,705.65kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '呵呵呵' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '5') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:15+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.213012s][吞吐率：4.69req/s] [内存消耗：1,643.23kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '104',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '爱的发顺丰奥盛发撒的f',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('爱的发顺丰奥盛发撒的f') [ RunTime:0.109006s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '呵呵呵' [ RunTime:0.002000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='爱的发顺丰奥盛发撒的f' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('5','33') [ RunTime:0.040003s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:18+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,706.04kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '呵呵呵' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '5') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:26+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.160009s][吞吐率：6.25req/s] [内存消耗：1,618.12kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '31',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '呵呵呵',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '呵呵呵' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '5') [ RunTime:0.043003s ]
+[ sql ] [ SQL ] DELETE FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '5') [ RunTime:0.005000s ]
+[ sql ] [ SQL ] DELETE FROM project_group WHERE project_id = '5' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] DELETE  FROM project WHERE project.project_id  = '5' [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '呵呵呵' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:39:30+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,678.34kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001001s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:41+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addproject.html
+[ log ] localhost/tp5/index.php/demo/hello/addproject.html [运行时间：0.160009s][吞吐率：6.25req/s] [内存消耗：1,616.45kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addproject',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addProject[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into project (project_name) VALUE ('test') [ RunTime:0.092005s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:44+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,680.14kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%91%B5%E5%91%B5%E5%91%B5; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:45+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,706.56kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = 'test' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:48+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.133008s][吞吐率：7.52req/s] [内存消耗：1,644.48kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '大放大',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('大放大') [ RunTime:0.049003s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = 'test' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='大放大' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('6','34') [ RunTime:0.023001s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:51+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：1,707.07kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = 'test' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:55+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.133007s][吞吐率：7.52req/s] [内存消耗：1,644.45kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '58',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '呵呵呵呵啊',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('呵呵呵呵啊') [ RunTime:0.037003s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = 'test' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='呵呵呵呵啊' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('6','35') [ RunTime:0.041002s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:54:58+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,707.34kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = 'test' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:55:04+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：1,627.12kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project_group WHERE project_id = '6' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:02+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,627.73kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project_group WHERE project_id = '6' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:04+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,680.67kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:05+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,680.67kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:07+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,627.73kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project_group WHERE project_id = '6' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:26+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,680.40kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:56:29+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,619.52kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) FROM project_group WHERE project_id = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:58:32+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,680.79kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T16:58:35+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,619.94kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project_group WHERE project_id = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:05:51+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,682.68kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:05:54+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.373021s][吞吐率：2.68req/s] [内存消耗：1,628.88kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => 'test',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = 'test' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project WHERE project.project_id  = '6' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project_group WHERE project_id = '6' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.107006s ]
+[ sql ] [ SQL ] DELETE FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '6') [ RunTime:0.021001s ]
+[ sql ] [ SQL ] DELETE FROM project_group WHERE project_id = '6' [ RunTime:0.098006s ]
+[ sql ] [ SQL ] DELETE  FROM project WHERE project.project_id  = '6' [ RunTime:0.050003s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:06:00+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.025001s][吞吐率：40.00req/s] [内存消耗：1,682.38kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:12:12+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,682.38kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:14:09+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addproject.html
+[ log ] localhost/tp5/index.php/demo/hello/addproject.html [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：1,619.06kb] [文件加载：40]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addproject',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '呵呵呵呵',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addProject[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into project (project_name) VALUE ('呵呵呵呵') [ RunTime:0.044003s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:14:12+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,830.18kb] [文件加载：44]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:14:14+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/del_project.html
+[ log ] localhost/tp5/index.php/demo/hello/del_project.html [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,629.05kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'del_project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'p_n' => '呵呵呵呵',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->del_project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id FROM project WHERE project_name = '呵呵呵呵' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project WHERE project.project_id  = '7' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '7') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '7') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM project_group WHERE project_id = '7' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '7') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '7') [ RunTime:0.005000s ]
+[ sql ] [ SQL ] DELETE FROM project_group WHERE project_id = '7' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE  FROM project WHERE project.project_id  = '7' [ RunTime:0.034002s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:14:15+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,682.33kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=test; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:35:33+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.054004s][吞吐率：18.52req/s] [内存消耗：1,709.55kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '伊利' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '2') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:56:56+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,682.33kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:56:58+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/projectcount.html
+[ log ] localhost/tp5/index.php/demo/hello/projectcount.html [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：1,683.13kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'projectcount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->projectCount[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\projectcount.html [ array (
+  0 => 'project',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT project_id,project_name FROM project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:56:59+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/project.html
+[ log ] localhost/tp5/index.php/demo/hello/project.html [运行时间：0.035002s][吞吐率：28.57req/s] [内存消耗：1,682.31kb] [文件加载：42]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/projectcount.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E4%BC%8A%E5%88%A9; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->project[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\project.html [ array (
+  0 => 'project_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_name from project [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:57:01+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：1,713.88kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/project.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '4') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:57:03+08:00 ] ::1 ::1 POST /tp5/index.php/demo/hello/addgroup.html
+[ log ] localhost/tp5/index.php/demo/hello/addgroup.html [运行时间：0.178010s][吞吐率：5.62req/s] [内存消耗：1,647.18kb] [文件加载：41]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'addgroup',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '',
+)
+[ info ] [ RUN ] app\demo\controller\Hello->addGroup[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] insert into group_ (group_name) VALUE ('') [ RunTime:0.067003s ]
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] select group_id from group_ WHERE group_name ='' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] insert into project_group (project_id,group_id) VALUES ('4','36') [ RunTime:0.046002s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:57:06+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,714.23kb] [文件加载：43]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.001001s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '4') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-06-20T17:57:37+08:00 ] ::1 ::1 GET /tp5/index.php/demo/hello/group.html
+[ log ] localhost/tp5/index.php/demo/hello/group.html [运行时间：0.062004s][吞吐率：16.13req/s] [内存消耗：1,863.27kb] [文件加载：45]
+[ info ] [ LANG ] C:\xampp\htdocs\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'hello',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/tp5/index.php/demo/hello/group.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'group_name=n%2B%2B; project_id=1; project_name=%E5%8F%A3%E5%91%B3%E6%B5%8B%E8%AF%95; pgv_pvi=1445688320; Phpstorm-e4311aeb=e3ecb2d2-64ad-427e-a502-9b52cf11c2cf',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\demo\controller\Hello->group[ C:\xampp\htdocs\tp5\application\demo\controller\Hello.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\tp5/application/demo\view\hello\group.html [ array (
+  0 => 'project_n',
+  1 => 'project_id',
+  2 => 'group_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=sort;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select project_id from project WHERE project_name = '口味测试' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] select group_name from group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '4') [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

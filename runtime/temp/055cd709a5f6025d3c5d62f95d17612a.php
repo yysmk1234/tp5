@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\setattr.html";i:1492308363;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\setattr.html";i:1495765134;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +25,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
+                <li><a href="<?php echo url('demo/hello/projectcount'); ?>">数据计算</a></li>
 
             </ul>
         </div>

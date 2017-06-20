@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目选择</title>
+    <link href="../../../../../tp5/public/static/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/tp5/public/static/layer/skin/default/layer.css">
+    <script src="/tp5/public/static/dist/js/jquery.min.js"></script>
+    <script src="/tp5/public/static/dist/js/bootstrap.js"></script>
+    <script src="/tp5/public/static/layer/layer.js"></script>
+    <script src="/tp5/public/static/layer/layer_m.js"></script>
+    <script src="/tp5/public/static/cookie/jquery.cookie.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">文件设置<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{:url('demo/hello/setattr')}">添加关键字段</a></li>
+                        <li><a href="{:url('demo/hello/testerandgame')}">添加被试</a></li>
+                        <li><a href="{:url('demo/hello/upload')}">文件上传</a></li>
+                    </ul>
+                </li>
+                <li><a href="{:url('demo/hello/project')}">排序计算</a></li>
+                <li><a href="{:url('demo/hello/projectcount')}">数据计算</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+    <div class="container">
+        <h2>选择项目</h2>
+        <ul class="list-group" style="margin-top: 50px">
+            {if condition= "count($project)==0"}
+            <li class="list-group-item">暂时没有分组</li>
+            {else /}
+            {volist name="project" id="pname"}
+            <li class="list-group-item" data="{$pname.project_id}">
+                <label style="width: 93%">{$pname.project_name}</label>
+            </li>
+            {/volist}
+            {/if}
+
+        </ul>
+    </div>
+</body>
+<script>
+    (function () {
+        $('.container ul li').on("click",function () {
+            var projcet_id =  $(this).attr('data');
+            $.cookie("project_id",projcet_id);
+            window.location.assign("{:url('demo/hello/count')}");
+        })
+    })()
+</script>
+</html>

@@ -134,9 +134,9 @@ class Ufunction extends Controller
     /**
      * 写入斜率到data表
      * */
-    public function set_xlData($emoi_y,$scl_y,$high_y,$gamma_y,$game){
+    public function set_xlData($emoi_y,$scl_y,$high_y,$gamma_y,$tag){
         $str = "UPDATE data SET emoi_y = '$emoi_y',scl_y = '$scl_y',high_y = '$high_y',gamma_y = '$gamma_y'
-                WHERE game = '$game'";
+                WHERE game = '$tag'";
         $res = Db::execute($str);
     }
    /**
@@ -147,7 +147,11 @@ class Ufunction extends Controller
        $min = min($arr);
        $arr_ = array();
        foreach ($arr as $key=>$value){
-           array_push($arr_,($value-$min)/($max-$min));
+           if(($max-$min) == 0){
+               array_push($arr_,0);
+           }else{
+               array_push($arr_,($value-$min)/($max-$min));
+           }
        }
        return $arr_;
        

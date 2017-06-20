@@ -5,8 +5,9 @@ use think\Controller;
 use think\Cookie;
 use think\Request;
 use think\Db;
-use PHPExcel_IOFactory;
 use think\Url;
+use PHPExcel_IOFactory;
+
 
 class Hello extends Controller
 {
@@ -632,10 +633,47 @@ class Hello extends Controller
     function del_project(Request $request){
         $project_name = $request->post('p_n');
 //        print_r($project_name) ;
-        $str = "SELECT * FROM project WHERE project_name = '$project_name'";
+        $str = "SELECT project_id FROM project WHERE project_name = '$project_name'";
+        //获取项目ID号
+        $project_id = Db::query($str)[0]['project_id'];
+        //在删除之前先获取各个表中数据的条数，以便后面的验证是否是删除干净
+        $str_count_project = "SELECT COUNT(*) AS num FROM project WHERE project.project_id  = '$project_id'";
+        $str_count_group = "SELECT COUNT(*) AS num FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '$project_id')";
+        $str_count_test = "SELECT COUNT(*) AS num FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '$project_id')";
+        $str_count_p_g = "SELECT COUNT(*) AS num FROM project_group WHERE project_id = '$project_id'";
+        //查询结果数据的记录数
+        $count_project = Db::query($str_count_project)[0]['num'];
+        $count_group = Db::query($str_count_group)[0]['num'];
+        $count_test = Db::query($str_count_test)[0]['num'];
+        $count_p_g = Db::query($str_count_p_g)[0]['num'];
+
+
+        $str_project = "DELETE  FROM project WHERE project.project_id  = '$project_id'";
+        $str_group  = "DELETE FROM group_ WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '$project_id')";
+        $str_test = "DELETE FROM group_test WHERE group_id IN (SELECT group_id FROM project_group WHERE project_id = '$project_id')";
+        $str_p_g = "DELETE FROM project_group WHERE project_id = '$project_id'";
+
+        $result_del_group = Db::execute($str_group);
+        $result_del_test = Db::execute($str_test);
+        $result_del_p_g = Db::execute($str_p_g);
+        $result_del_project = Db::execute($str_project);
+        if ( $result_del_group == $count_group ){
+           if ( $result_del_p_g == $count_p_g){
+               if ( $result_del_test == $count_test){
+                   if ( $result_del_project == $count_project){
+                       return 1;
+                   }
+                   else return 2;
+               }else return 2;
+           }else return 2;
+        }else return 2;
+
         $del_project = Db::query($str);
-//        print_r($del_project);
-        return 1;
+        print_r($count_project);
+        print_r($count_group);
+        print_r($count_test);
+        print_r($count_p_g);
+//        return 1;
     }
 
 
@@ -664,10 +702,16 @@ class Hello extends Controller
         $g_res = Db::query($g_str);
         echo json_encode($g_res);
     }
-
+/**
+ * 计算分组的均值
+ * */
     function sortDataAve(){
         $game = '';
         $group_name = Cookie::get('group_name');
+        $project_name = Cookie::get('project_name');
+        $get_projectId = "SELECT project_id FROM project WHERE project_name = '$project_name'";
+        $project_res = Db::query($get_projectId);
+        $projectId = $project_res[0]['project_id'];
         $str = "SELECT emoi,scl,High_alpha,gamma,tag FROM data_ 
                 INNER JOIN group_test ON (data_.id = group_test.test_id)
                 INNER JOIN group_ ON (group_test.group_id = group_.group_id)
@@ -686,7 +730,7 @@ class Hello extends Controller
              array_push($scl,$value['scl']);
              array_push($high,$value['High_alpha']);
              array_push($gamma,$value['gamma']);
-             $game = $value['tag'];
+             $tag = $value['tag'];
         }
         $emoi_ave = array_sum($emoi)/$len;
         $scl_ave = array_sum($scl)/$len;
@@ -696,15 +740,15 @@ class Hello extends Controller
             'emoi'=>$emoi_ave,
             'scl'=>$scl_ave,
             'high_a'=>$high_ave,
-            'gamma'=>$gamma_ave
+            'gamma'=>$gamma_ave,
         ];
 
 
         //把均值写入data表
-        $str_w = "INSERT INTO data (emoi,scl,High_alpha,gamma,game)
-                   VALUES ('$emoi_ave','$scl_ave','$high_ave','$gamma_ave','$game')";
-        $str_check = "SELECT COUNT(game) AS count FROM data WHERE game = '$game'";
-        $str_del = "DELETE FROM data WHERE game = '$game'";
+        $str_w = "INSERT INTO data (emoi,scl,High_alpha,gamma,game,project_id)
+                   VALUES ('$emoi_ave','$scl_ave','$high_ave','$gamma_ave','$tag','$projectId')";
+        $str_check = "SELECT COUNT(game) AS count FROM data WHERE game = '$tag'";
+        $str_del = "DELETE FROM data WHERE game = '$tag'";
         $count = Db::query($str_check);
 //        var_dump($count);
         if($count[0]['count'] != 0){
@@ -732,11 +776,12 @@ class Hello extends Controller
                             Higt_a_   INT(4),
                             gamma_   INT(4)
                            )ENGINE=InnoDB DEFAULT CHARSET=gbk";
+        $project_id = Cookie::get("project_id");
         //获取data的数据
         $str_select = "SELECT game,emoi,scl,High_alpha,gamma,
                               emoi_sd,scl_sd,high_sd,gamma_sd,
                               emoi_y,scl_y,high_y,gamma_y
-                              FROM data";
+                              FROM data WHERE project_id = '$project_id'";
         //清空数据表
 //        $ls_tab = Db::execute($str_Ctable);
         $str_del = "DELETE FROM data_ls WHERE 1=1";
@@ -861,35 +906,37 @@ class Hello extends Controller
             $gamma_y_ = $flip_gamma_y[$gamma_y]+1;
 
             $str_in = "INSERT INTO data_ls (
-                        game,emoi,scl,High_alpha,gamma,
-                            emoi_,scl_,Higt_a_,gamma_,
-                            emoi_sd,scl_sd,high_sd,gamma_sd,
+                            game,emoi_,scl_,Higt_a_,gamma_,
                             emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
-                            emoi_y,scl_y,high_y,gamma_y,
                             emoi_y_,scl_y_,high_y_,gamma_y_
-) VALUES ('$game','$emoi','$scl','$high_a','$gamma',
-          '$emoi_','$scl_','$high_','$gamma_',
-          '$emoi_sd','$scl_sd','$high_sd','$gamma_sd',
+) VALUES ('$game','$emoi_','$scl_','$high_','$gamma_',
           '$emoi_sd_','$scl_sd_','$high_sd_','$gamma_sd_',
-          '$emoi_y','$scl_y','$high_y','$gamma_y',
           '$emoi_y_','$scl_y_','$high_y_','$gamma_y_'
 )";
             $insert = Db::execute($str_in);
 
         }
-        $str_sel = "SELECT game,emoi,scl,High_alpha,gamma,
+        $str_sel = "SELECT data.game,emoi,scl,High_alpha,gamma,
                             emoi_,scl_,Higt_a_,gamma_,
                             emoi_sd,scl_sd,high_sd,gamma_sd,
                             emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
                             emoi_y,scl_y,high_y,gamma_y,
                             emoi_y_,scl_y_,high_y_,gamma_y_
-                    FROM data_ls";
+                    FROM  data_ls INNER JOIN data ON (data.game = data_ls.game)";
         $data = Db::query($str_sel);
         $this->assign("data",$data);
 //        print_r($str_del);
         return $this->fetch();
     }
 
+
+
+    public function projectCount(){
+        $str = "SELECT project_id,project_name FROM project";
+        $data = Db::query($str);
+        $this->assign("project",$data);
+        return $this->fetch();
+    }
 
 
 }

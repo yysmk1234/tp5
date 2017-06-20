@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1495000020;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1497519916;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +11,11 @@
     <script src="/tp5/public/static/layer/layer.js"></script>
     <script src="/tp5/public/static/layer/layer_m.js"></script>
     <script src="/tp5/public/static/cookie/jquery.cookie.js"></script>
+    <style>
+       tbody tr :hover{
+            background: #C4C9DF;
+        }
+    </style>
 </head>
 <nav class="navbar navbar-default">
     <div class="container">
@@ -25,7 +30,8 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
-                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/projectcount'); ?>">数据计算</a></li>
+            </ul>
         </div>
 
     </div>
@@ -81,7 +87,7 @@
     </form>
 </div>
 
-<div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;">
+<div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;max-height: 500px;overflow-y: scroll">
 
     <form id="choose">
         <label>选择筛选条件</label>
@@ -233,7 +239,7 @@
                 }
             })
         });
-//        console.log($.cookie('group_name'));
+        console.log($.cookie('project_name'));
     })()
 </script>
 </html>

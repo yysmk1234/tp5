@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\project.html";i:1492327212;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\project.html";i:1497949974;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +26,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
-                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/projectcount'); ?>">数据计算</a></li>
 
             </ul>
         </div>
@@ -39,7 +39,7 @@
               <input type="text" name="project_name" class="form-control" style="margin-bottom: 20px">
 
               <button class="btn btn-info" type="button">添加</button>
-              <button class="btn btn-danger" type="button">删除</button>
+              <!--<button class="btn btn-danger" type="button">删除</button>-->
 
           </form>
 
@@ -98,9 +98,12 @@
                     data:project_name,
 //                datatype:"JSON",
                     success:function (data) {
-//                        console.log(data);
+                        console.log(data);
                         if (data == 1){
-                            tips.success('删除成功')
+                            tips.success('删除成功');
+                            setTimeout(function () {
+                                window.location.reload();
+                            },1000)
                         }
                     }
                 })

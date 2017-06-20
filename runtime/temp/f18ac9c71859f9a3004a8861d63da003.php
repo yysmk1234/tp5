@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1495005832;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\count.html";i:1495780167;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +39,7 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo url('demo/hello/project'); ?>">排序计算</a></li>
-                <li><a href="<?php echo url('demo/hello/count'); ?>">数据计算</a></li>
+                <li><a href="<?php echo url('demo/hello/projectcount'); ?>">数据计算</a></li>
             </ul>
         </div>
 
@@ -111,7 +111,8 @@
 <script>
     $(document).on("click",".count",function () {
         var data = {
-            type:JSON.stringify($(this).attr('data'))
+            type:JSON.stringify($(this).attr('data')),
+            project_id:JSON.stringify($.cookie("project_id"))
         }
         $('#c_data').empty();
         var df_str ="<tr>"+

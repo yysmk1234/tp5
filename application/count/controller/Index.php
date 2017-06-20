@@ -11,19 +11,30 @@ class Index extends Ufunction
 {
     public function count(Request $request){
         $type = json_decode($request->post('type'));
+        $project_id = json_decode($request->post('project_id'));
 //        echo $type;
-        $str = "SELECT game,emoi,scl,High_alpha,gamma,
+        $str = "SELECT data.game,emoi,scl,High_alpha,gamma,
                             emoi_,scl_,Higt_a_,gamma_,
                             emoi_sd,scl_sd,high_sd,gamma_sd,
                             emoi_sd_,scl_sd_,high_sd_,gamma_sd_,
                             emoi_y,scl_y,high_y,gamma_y,
                             emoi_y_,scl_y_,high_y_,gamma_y_ 
-                      FROM data_ls ORDER BY ".$type." "."ASC";
+                      FROM data_ls INNER JOIN data ON (data.game = data_ls.game) WHERE data.project_id = '$project_id' ORDER BY ".$type." "."ASC";
         $res = Db::query($str);
         echo json_encode($res);
     }
     public function data_SD(Request $request){
         $group_name = json_decode($request->post('cookie'));
+        /**
+         * 找出对应组的tag
+         * */
+        $str_tag = "SELECT tag FROM data_ 
+                INNER JOIN group_test ON (data_.id = group_test.test_id)
+                INNER JOIN group_ ON (group_test.group_id = group_.group_id)
+                WHERE group_.group_name = '$group_name'";
+        $res_tag = Db::query($str_tag);
+        $tag = $res_tag[0]['tag'];
+
         $str = "SELECT data_name FROM test
                 INNER JOIN data_ ON (data_.test_id = test.test_id)
                 INNER JOIN group_test ON (data_.id = group_test.test_id)
@@ -56,13 +67,24 @@ class Index extends Ufunction
             'high_a'=>$high_alpha_sd,
             'gamma'=>$gamma_sd
         ];
-        $this->set_sdData($emoi_sd,$scl_sd,$high_alpha_sd,$gamma_sd,$group_name);
+        $this->set_sdData($emoi_sd,$scl_sd,$high_alpha_sd,$gamma_sd,$tag);
         echo json_encode($data);
 //        var_dump($res);
 
     }
     public function xie_lv(Request $request){
         $group_name = json_decode($request->post('cookie'));
+        /**
+         * 找出对应组的tag
+         * */
+        $str_tag = "SELECT tag FROM data_ 
+                INNER JOIN group_test ON (data_.id = group_test.test_id)
+                INNER JOIN group_ ON (group_test.group_id = group_.group_id)
+                WHERE group_.group_name = '$group_name'";
+        $res_tag = Db::query($str_tag);
+        $tag = $res_tag[0]['tag'];
+
+
         $str = "SELECT data_name FROM test
                 INNER JOIN data_ ON (data_.test_id = test.test_id)
                 INNER JOIN group_test ON (data_.id = group_test.test_id)
@@ -91,7 +113,7 @@ class Index extends Ufunction
             'high_a'=>$this->average($high_arr),
             'gamma'=>$this->average($gamma_arr)
         ];
-        $this->set_xlData($data['emoi'],$data['scl'],$data['high_a'],$data['gamma'],$group_name);
+        $this->set_xlData($data['emoi'],$data['scl'],$data['high_a'],$data['gamma'],$tag);
         echo json_encode($data);
 
     }
