@@ -55,7 +55,7 @@
            {/if}
 
        </ul>
-+
+
 
       </div>
 
@@ -63,7 +63,11 @@
 <script>
     (function () {
         $('.btn-info').click(function () {
-            var input_ = $()
+            var input_ = $('input[name="project_name"]').val();
+            if (input_ == ''){
+                tips.error("项目名称不能为空！！");
+                return false;
+            }
             var data = $('form').serialize();
             $.ajax({
                 url: "{:url('demo/hello/addproject')}",

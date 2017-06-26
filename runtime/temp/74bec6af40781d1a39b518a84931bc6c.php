@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\project.html";i:1497949974;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\project.html";i:1498026061;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +62,11 @@
 <script>
     (function () {
         $('.btn-info').click(function () {
+            var input_ = $('input[name="project_name"]').val();
+            if (input_ == ''){
+                tips.error("项目名称不能为空！！");
+                return false;
+            }
             var data = $('form').serialize();
             $.ajax({
                 url: "<?php echo url('demo/hello/addproject'); ?>",

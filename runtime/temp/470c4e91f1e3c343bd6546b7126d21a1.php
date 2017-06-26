@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\group.html";i:1497952657;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:58:"C:\xampp\htdocs\tp5/application/demo\view\hello\group.html";i:1498032661;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@
     <label style="margin-top: 50px">项目:<?php echo $project_n; ?></label>
     <form style="padding-top: 50px" >
         <label>请输入组别名称：</label>
-        <input type="text" name="project_name" class="form-control" style="margin-bottom: 20px">
+        <input type="text" name="group_name" class="form-control" style="margin-bottom: 20px">
 
         <button class="btn btn-info" type="button">添加</button>
         <!--<button class="btn btn-danger" type="button">删除</button>-->
@@ -61,6 +61,11 @@
     (function () {
 //        alert($.cookie("project_name"));
         $('.btn-info').click(function () {
+            var input_ = $('input[name="group_name"]').val();
+            if (input_ == ''){
+                tips.error("分组名称不能为空！！");
+                return false;
+            }
             var data = $('form').serialize();
             $.ajax({
                 url: "<?php echo url('demo/hello/addgroup'); ?>",
@@ -88,18 +93,22 @@
             var that = $(this);
             layer.confirm('确定要删除组？'+'<br />'+'删除组后组内的所有数据都会被删除！！',{
                 btn:['确定','取消']},function () {
-                var project_name  = {
-                    p_n:that.parent().attr('data')
+                var data  = {
+                    p_n:$.cookie('project_name'),
+                    g_n:that.parent().attr('data')
                 };
                 $.ajax({
-                    url:"<?php echo url('demo/hello/del_project'); ?>",
+                    url:"<?php echo url('demo/hello/del_group'); ?>",
                     type:"POST",
-                    data:project_name,
+                    data:data,
 //                datatype:"JSON",
                     success:function (data) {
-//                        console.log(data);
+                        console.log(data);
                         if (data == 1){
-                            tips.success('删除成功')
+                            tips.success('删除成功');
+                            setTimeout(function () {
+                                window.location.reload();
+                            },1000)
                         }
                     }
                 })

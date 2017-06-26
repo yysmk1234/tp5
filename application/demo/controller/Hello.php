@@ -408,7 +408,7 @@ class Hello extends Controller
     public function addGroup(Request $request){
         $insert = '';
         //把分组名称写入group_ 表
-        $group_name = $request->post('project_name');
+        $group_name = $request->post('group_name');
         $insert = Db::execute("insert into group_ (group_name) VALUE ('$group_name')");
         //分别获取分组的ID和项目的ID写入project_group 表
         $project_n =  Cookie::get('project_name');
@@ -668,17 +668,53 @@ class Hello extends Controller
            }else return 2;
         }else return 2;
 
-        $del_project = Db::query($str);
-        print_r($count_project);
-        print_r($count_group);
-        print_r($count_test);
-        print_r($count_p_g);
+//        $del_project = Db::query($str);
+//        print_r($count_project);
+//        print_r($count_group);
+//        print_r($count_test);
+//        print_r($count_p_g);
 //        return 1;
     }
+    //删除组内数据
+    public function del_group(Request $request){
+        $projectName = $request->post('p_n');
+        $groupName = $request->post('g_n');
+        $str_p_n = "SELECT project_id FROM project WHERE project_name = '$projectName'";
+        $projectID = Db::query($str_p_n)[0]['project_id'];
+        print_r($projectID);
+        $str_g_n = "SELECT group_id FROM project_group WHERE project_id = '$projectID' AND group_id 
+                      IN(SELECT group_id FROM group_ WHERE group_name = '$groupName')";
 
+        $groupID = Db::query($str_g_n)[0]['group_id'];
+        print_r($groupID);
+        //获取数据库中记录的条数
+        $str_count_p_g = "SELECT COUNT(*) AS num FROM project_group WHERE group_id = '$groupID'";
+        $str_count_test = "SELECT COUNT(*) AS num FROM group_test WHERE group_id = '$groupID'";
+        $str_count_g = "SELECT COUNT(*) AS num FROM group_ WHERE group_id = '$groupID'";
+        //删除语句
+        $str_del_p_g = "DELETE FROM project_group WHERE group_id = '$groupID'";
+        $str_del_test = "DELETE FROM group_test WHERE group_id = '$groupID'";
+        $str_del_g = "DELETE FROM group_ WHERE group_id = '$groupID'";
+
+        $count_p_g = Db::query($str_count_p_g)[0]['num'];
+        $count_test = Db::query($str_count_test)[0]['num'];
+        $count_g = Db::query($str_count_g)[0]['num'];
+
+        $result_p_g = Db::execute($str_del_p_g);
+        $result_test = Db::execute($str_del_test);
+        $result_g = Db::execute($str_del_g);
+
+        if ($result_p_g == $count_p_g){
+            if ( $result_test == $count_test){
+                if ($result_g == $count_g){
+                    return 1;
+                }else return 2;
+            }else return 2;
+        }else return 2;
+    }
 
     //sort_new
-    function sortNew(){
+    public function sortNew(){
         $game = Db::query("select g_id,g_name from game");
         $this->assign('game',$game);
         $group_name = Cookie::get("group_name");
@@ -694,14 +730,34 @@ class Hello extends Controller
        return $this->fetch();
     }
 
-    function sortDataNew(Request $request){
+    public function sortDataNew(Request $request){
         $game_id = $request->post('game');
-        $g_str = "SELECT id,emoi,scl,High_alpha,gamma,tag FROM 
+        $tag = $request->post('tag');
+
+//        echo $tag;
+        if ($tag == '0'){
+            $g_str = "SELECT id,emoi,scl,High_alpha,gamma,tag FROM 
+                  data_ INNER JOIN test ON (data_.test_id = test.test_id)
+                  WHERE test.g_id = '$game_id'";
+        }else{
+            $g_str = "SELECT id,emoi,scl,High_alpha,gamma,tag FROM 
+                  data_ INNER JOIN test ON (data_.test_id = test.test_id)
+                  WHERE test.g_id = '$game_id' AND data_.tag = '$tag'";
+        }
+        $g_res = Db::query($g_str);
+        echo json_encode($g_res);
+    }
+
+    public function sortSelect(Request $request){
+        $game_id = $request->post('game');
+        $g_str = "SELECT distinct tag FROM 
                   data_ INNER JOIN test ON (data_.test_id = test.test_id)
                   WHERE test.g_id = '$game_id'";
         $g_res = Db::query($g_str);
         echo json_encode($g_res);
     }
+
+
 /**
  * 计算分组的均值
  * */

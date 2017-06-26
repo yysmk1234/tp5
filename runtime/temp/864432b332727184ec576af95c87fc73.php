@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1497519916;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:60:"C:\xampp\htdocs\tp5/application/demo\view\hello\sortnew.html";i:1498123658;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +12,11 @@
     <script src="/tp5/public/static/layer/layer_m.js"></script>
     <script src="/tp5/public/static/cookie/jquery.cookie.js"></script>
     <style>
-       tbody tr :hover{
-            background: #C4C9DF;
+       /*tbody tr :hover{*/
+            /*background: #C4C9DF;*/
+        /*}*/
+        select{
+            height: 23px;
         }
     </style>
 </head>
@@ -48,7 +51,7 @@
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>game</td>
+            <td>tag</td>
         </tr>
         <?php if(count($data)==0): ?>
         <tr><td style="border: none ;width: 200px">暂时没有数据</td></tr>
@@ -87,25 +90,32 @@
     </form>
 </div>
 
-<div class="container show_data" style="border: 1px solid #333;display: none;border-radius: 10px;max-height: 500px;overflow-y: scroll">
+<div class="container show_data" style="padding:20px 20px;border: 1px solid #333;display: none;border-radius: 10px;max-height: 500px;overflow-y: scroll">
 
     <form id="choose">
         <label>选择筛选条件</label>
         <br />
-        <label style="padding-top: 20px">请选择游戏：</label>
+        <label style="padding-top: 20px">请选择测试：</label>
+        <br>
         <select name="game">
-            <!--<option value="0">所有</option>-->
+            <option value="0">请选择测试</option>
             <?php if(is_array($game) || $game instanceof \think\Collection || $game instanceof \think\Paginator): $i = 0; $__LIST__ = $game;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$game): $mod = ($i % 2 );++$i;?>
             <option value="<?php echo $game['g_id']; ?>"><?php echo $game['g_name']; ?></option>
             <?php endforeach; endif; else: echo "" ;endif; ?>
+        </select>
+        <br />
+        <label>选择tags:</label>
+        <br>
+        <select name="tag">
+            <option>选择tags</option>
         </select>
         <br />
 
 
 
 
-        <button class="btn btn-info choose" type="button">筛选</button>
-        <button class="btn btn-info add_data" type="button">添加</button>
+        <button class="btn btn-info choose" type="button" style="margin-top: 20px">筛选</button>
+
     </form>
     <table class="table table-condensed" style="margin-top: 20px" id="c_data">
         <tr>
@@ -114,16 +124,37 @@
             <td>scl</td>
             <td>High alpha</td>
             <td>gamma</td>
-            <td>game</td>
+            <td>tag</td>
         </tr>
 
     </table>
-
+    <button class="btn btn-info add_data" type="button">添加</button>
 </div>
 
 </body>
 <script>
     (function () {
+        $('select[name=game]').change(function () {
+            var data = $('#choose').serialize();
+            $.ajax({
+                url:"<?php echo url('demo/hello/sortselect'); ?>",
+                type:"post",
+                data:data,
+                dataType:"json",
+                success:function (data) {
+                    $('select[name = tag]').empty();
+                    var str_defult = "<option value="+0+">"+"所有"+"</option>";
+                    $('select[name = tag]').append(str_defult);
+                    for(var x in data){
+                         var str = "<option value="+data[x].tag+">"+data[x].tag+"</option>";
+                         $('select[name = tag]').append(str);
+                    }
+                }
+            })
+        });
+
+
+
         $('.add').click(function () {
             $('.show_data').show();
         });
@@ -136,7 +167,7 @@
                 "<td>"+"scl"+"</td>"+
                 "<td>"+"High alpha"+"</td>"+
                 "<td>"+"gamma"+"</td>"+
-                "<td>"+"game"+"</td>"+
+                "<td>"+"tag"+"</td>"+
                 "</tr>" ;
             $('#c_data').append(df_str);
             $.ajax({
